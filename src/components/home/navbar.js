@@ -20,7 +20,9 @@ class NavigationBar extends Component {
         className="navBackground"
       >
         <Navbar.Brand href="/">
-          mov<i>Ability</i> <sub className="smallFont">by IATA</sub>
+          <i className="mov">mov</i>
+          <b className="ability">Ability</b> Hub{" "}
+          <sub className="smallFont">by IATA</sub>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -40,9 +42,9 @@ class NavigationBar extends Component {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">More deets</Nav.Link>
-            <Nav.Link eventKey={2} href="#memes">
-              Dank memes
+            <Nav.Link href="/register">Sign Up</Nav.Link>
+            <Nav.Link eventKey={2} href="/login">
+              Log In
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
