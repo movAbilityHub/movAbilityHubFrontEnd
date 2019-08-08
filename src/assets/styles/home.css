@@ -1,0 +1,13 @@
+.card {
+    background-color: rgba(245, 245, 245, 0.815);
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.card:hover {
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    margin-top: 15%;
+    margin-bottom: 15%;
+    font-style: italic;
+}

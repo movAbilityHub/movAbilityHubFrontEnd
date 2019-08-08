@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 
-import "../../assets/styles/navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../../assets/styles/navbar.css";
 
 import Navbar from "./navbar";
 
-class TravelAgent extends Component {
+class TravelAgency extends Component {
   render() {
     return (
-      <div className="min-vh-100">
+      <div>
         <Navbar />
       </div>
     );
   }
 }
 
-export default TravelAgent;
+export default TravelAgency;

@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/navbar.css";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 
 class NavigationBar extends Component {
   render() {
@@ -26,26 +24,15 @@ class NavigationBar extends Component {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-            <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+          <Nav variant="pills" className="mx-auto">
+            <Nav.Link href="/IATA">IATA</Nav.Link>
+            <Nav.Link href="/Airline">Airline</Nav.Link>
+            <Nav.Link href="/Airport">Airport</Nav.Link>
+            <Nav.Link href="/TravelAgency">Travel Agency</Nav.Link>
           </Nav>
-          <Nav>
-            <Nav.Link href="/register">Sign Up</Nav.Link>
-            <Nav.Link eventKey={2} href="/login">
-              Log In
-            </Nav.Link>
+          <Nav variant="pills" className="ml-auto">
+            <Nav.Link href="/Signup">Sign Up</Nav.Link>
+            <Nav.Link href="/Login">Log In</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
