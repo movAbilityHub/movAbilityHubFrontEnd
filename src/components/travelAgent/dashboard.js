@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Route, NavLink, HashRouter } from "react-router-dom";
 
+import "../../assets/styles/navbar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Row from "react-bootstrap/Row";
@@ -24,13 +25,17 @@ class TravelAgent extends Component {
           bg="dark"
           variant="dark"
           fixed="top"
+          className="navBackground"
         >
-          <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Brand href="/">
+        <i>mov</i>Ability<sub className="smallFont">by IATA</sub>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#features">Features</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <Nav.Link href="#">New Request</Nav.Link>
+              <Nav.Link href="#">Open Request</Nav.Link>
+              <Nav.Link href="#">Closed Request</Nav.Link>
               <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
