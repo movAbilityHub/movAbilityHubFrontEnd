@@ -3,20 +3,20 @@ import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/home.css";
 
+import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 
 import Navbar from "./navbar";
 
 class Home extends Component {
   render() {
     return (
-      <div className="min-vh-100">
+      <div className="vh-100">
         <Navbar />
         <Row className="m-5">
-          <Col sm={4}>
-            <Card className="card">
+          <CardDeck className="cardDeck">
+            <Card className="card shadow-lg rounded">
               <Card.Header>Our Mission</Card.Header>
               <Card.Body>
                 <Card.Text>
@@ -28,9 +28,7 @@ class Home extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-          <Col sm={4}>
-            <Card className="card">
+            <Card className="card shadow-lg rounded">
               <Card.Header>Invisible disabilities?</Card.Header>
               <Card.Body>
                 <Card.Text>
@@ -42,9 +40,7 @@ class Home extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-          <Col sm={4}>
-            <Card className="card">
+            <Card className="card shadow-lg rounded">
               <Card.Header>What is movAbility?</Card.Header>
               <Card.Body>
                 <Card.Text>
@@ -55,22 +51,20 @@ class Home extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-          <Col sm={2} />
-          <Col sm={8}>
-            <Card className="card">
+          </CardDeck>
+          <CardDeck className="cardDeck">
+            <Card className="card shadow-lg rounded">
               <Card.Header>What Services are you provided?</Card.Header>
               <Card.Body>
                 <Card.Text>
-                  Our partnet Airports and Airlines will have different services
+                  Our partner Airports and Airlines will have different services
                   provided. They will however follow a set of guidelines set by
                   IATA. Airlines and Airports have the liberty to add more or
                   remove services depending on the need at any point in time.
                 </Card.Text>
               </Card.Body>
             </Card>
-          </Col>
-          <Col sm={2} />
+          </CardDeck>
         </Row>
       </div>
     );
