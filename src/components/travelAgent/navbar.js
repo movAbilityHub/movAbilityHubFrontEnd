@@ -28,25 +28,27 @@ class NavigationBar extends Component {
           <b className="ability">Ability</b> Hub{" "}
           <sub className="smallFont">by IATA</sub>
         </Navbar.Brand>
+        <div className="placeHolder">
+        </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <HashRouter>
             <Nav variant="pills" className="mr-auto">
               <Nav.Link>
-                <NavLink to="/">New Request</NavLink>
+                <NavLink className="active" to="/">New Request</NavLink>
               </Nav.Link>
               <Nav.Link>
-                <NavLink to="/OpenRequests">Open Requests</NavLink>
+                <NavLink className="active" to="/OpenRequests">Open Requests</NavLink>
               </Nav.Link>
               <Nav.Link>
-                <NavLink to="/ClosedRequests">Closed Requests</NavLink>
+                <NavLink className="active" to="/ClosedRequests">Closed Requests</NavLink>
               </Nav.Link>
               <Nav.Link>
-                <NavLink to="/CareReceiver">Care Receiver/Passenger</NavLink>
+                <NavLink className="active" to="/CareReceiver">Care Receiver/Passenger</NavLink>
               </Nav.Link>
             </Nav>
             <Nav variant="pills" className="ml-auto">
-              <Nav.Link>Sign Out</Nav.Link>
+              <Nav.Link className="btn">Sign Out</Nav.Link>
             </Nav>
           </HashRouter>
         </Navbar.Collapse>

@@ -22,17 +22,17 @@ class NavigationBar extends Component {
           <b className="ability">Ability</b> Hub{" "}
           <sub className="smallFont">by IATA</sub>
         </Navbar.Brand>
+        <div className="placeHolder">
+        </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav variant="pills" className="mx-auto">
-            <Nav.Link href="/IATA">IATA</Nav.Link>
-            <Nav.Link href="/Airline">Airline</Nav.Link>
-            <Nav.Link href="/Airport">Airport</Nav.Link>
-            <Nav.Link href="/TravelAgency">Travel Agency</Nav.Link>
-          </Nav>
-          <Nav variant="pills" className="ml-auto">
-            <Nav.Link href="/Signup">Sign Up</Nav.Link>
-            <Nav.Link href="/Login">Log In</Nav.Link>
+            <Nav.Link className="active" href="/IATA">IATA</Nav.Link>
+            <Nav.Link className="active" href="/Airline">Airline</Nav.Link>
+            <Nav.Link className="active" href="/Airport">Airport</Nav.Link>
+            <Nav.Link className="active" href="/TravelAgency">Travel Agency</Nav.Link>
+          <Nav className="ml-auto">
+            <Nav.Link className="active" href="/Signup">Sign Up</Nav.Link>
+            <Nav.Link className="active" href="/Login">Log In</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
