@@ -14,15 +14,17 @@
     color: darkblue;
 }
 
-.active{
+.active {
     color: white;
 }
 
-.active:hover, .active:focus{
+.active:hover,
+.active:focus {
     outline: none !important;
     text-decoration: underline #1565c0 !important;
-    color:black;
+    color: black;
 }
-.placeHolder{
+
+.placeHolder {
     margin-right: 10%;
 }
