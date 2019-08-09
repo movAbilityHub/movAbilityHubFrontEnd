@@ -11,6 +11,7 @@ import CareReceiver from "./careReceiver";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import NewRequests from "./newRequest";
 
 class NavigationBar extends Component {
   render() {
@@ -53,7 +54,7 @@ class NavigationBar extends Component {
           </HashRouter>
         </Navbar.Collapse>
         <div>
-          <Route exact path="/" component={NewRequest} />
+          <Route exact path="/" component={NewRequests} />
           <Route path="/OpenRequests" component={OpenRequests} />
           <Route path="/ClosedRequests" component={ClosedRequests} />
           <Route path="/CareReceiver" component={CareReceiver} />
