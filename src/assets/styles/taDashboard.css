@@ -1,0 +1,24 @@
+.wrapper{
+    margin-left:20%;
+    margin-right:20%;
+    margin-top:5%;
+    margin-bottom:2%;
+
+}
+
+
+.np2p:focus{
+    outline: none !important;
+}
+
+.newRequestBtn{
+    margin-top:2%;
+    width:50%;
+    margin-left: 25%;
+}
+
+.newRequestBtn:hover{
+    border: 1px solid blue;
+    background-color: white;
+    color:blue;
+}
