@@ -6,10 +6,14 @@
 
 }
 
+.form-wrapper label:hover{
+  font-weight: 600;
+}
 
 .np2p:focus{
     outline: none !important;
 }
+
 
 .newRequestBtn{
     margin-top:2%;

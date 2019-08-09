@@ -11,10 +11,11 @@ class NewRequests extends Component {
     super(props);
 
   this.handleTimeChange = this.handleTimeChange.bind(this);
+  this.RadioClicked=this.RadioClicked.bind(this);
 
   this.state = {
-    time: 0
-  
+    time: 0,
+    radio:""
   };
 }
 
@@ -22,57 +23,59 @@ handleTimeChange(time) {
   console.log(time);     // <- prints "3600" if "01:00" is picked
   this.setState({ time });
 }
+
+RadioClicked(e){
+  console.log("here");
+  this.setState({ [e.target.name]: e.target.value}, function() {
+    console.log(this.state.radio);
+  });
+}
   
   render() {
     return (
        
       <Form>
   <Form.Row>
-    <Form.Group as={Col} controlId="formGridDisability">
+    <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridDisability">
       <Form.Label>Disability</Form.Label>
       <Form.Control type="text" placeholder="Enter Disability" />
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridAge">
+    <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridAge">
       <Form.Label>Age</Form.Label>
       <Form.Control type="number" placeholder="Enter Age" />
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridPassportNo">
-    <Form.Label>PassportNo</Form.Label>
+    <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridPassportNo">
+    <Form.Label>Passport No.</Form.Label>
     <Form.Control placeholder="Enter Passport No." />
   </Form.Group>
-    </Form.Row>
 
-  <Form.Row>
-  <Form.Group as={Col}controlId="formGridFlightNo">
-    <Form.Label>FlightNo</Form.Label>
+  <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridFlightNo">
+    <Form.Label>Flight No.</Form.Label>
     <Form.Control placeholder="Enter Flight No." />
   </Form.Group>
 
-  <Form.Group as={Col}controlId="formGridDate">
-  <Form.Label>TravelDate</Form.Label>
+  <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridDate">
+  <Form.Label>Travel Date</Form.Label>
   <Form.Control placeholder="Enter Date" type="date" />
   </Form.Group>
 
-  <Form.Group as={Col}controlId="formGridTime">
-  <Form.Label>TravelTime</Form.Label>
+  <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridTime">
+  <Form.Label>Travel Time</Form.Label>
   <TimePicker start="00:00" end="24:00" step={10} onChange={this.handleTimeChange} value={this.state.time}/>
   </Form.Group>
-  </Form.Row>
-  <Form.Row>
   
-
-    <Form.Group as={Col} controlId="formGridInitialLocation">
-      <Form.Label>StartAirport</Form.Label>
+    <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridInitialLocation">
+      <Form.Label>Start Airport</Form.Label>
       <Form.Control as="select">
          <option>Choose...</option>
          <option>...</option>
       </Form.Control>
     </Form.Group>
 
-    <Form.Group as={Col} controlId="formGridFinalLocation">
-      <Form.Label>StopAirport</Form.Label>
+    <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridFinalLocation">
+      <Form.Label>Stop Airport</Form.Label>
       <Form.Control as="select">
         <option>Choose...</option>
         <option>...</option>
@@ -81,14 +84,38 @@ handleTimeChange(time) {
 
     <Form.Group as={Col} controlId="formGridRenderer">
     <Form.Label>Do you have a transit flight?</Form.Label><br></br>
-    {['radio'].map(type => (
-      <div key={`inline-${type}`} className="mb-3">
-        <Form.Check inline label="Yes" type={type} id={`inline-${type}-1`} value="np2p" name="radio" onClick={this.RadioClicked}/>
-        <Form.Check inline label="No" type={type} id={`inline-${type}-2`} value="p2p" name="radio" onClick={this.RadioClicked}/>
-        </div>
-        ))}
+      <div key={`inline-radio`} className="mb-3">
+        <Form.Check inline label="Yes" type="radio" id={`inline-radio-1`} value="np2p" name="radio" onChange={this.RadioClicked}/>
+        <Form.Check inline label="No" type="radio" id={`inline-radio-2`} value="p2p" name="radio" onChange={this.RadioClicked}/>
+      </div>
     </Form.Group>
   </Form.Row>
+
+{this.state.radio ==="np2p" ?
+<Form.Row>
+<Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridVia1">
+  <Form.Label>Via</Form.Label>
+  <Form.Control as="select">
+     <option>Choose...</option>
+     <option>...</option>
+  </Form.Control>
+</Form.Group>
+<Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridVia2">
+  <Form.Label>Via</Form.Label>
+  <Form.Control as="select">
+     <option>Choose...</option>
+     <option>...</option>
+  </Form.Control>
+</Form.Group>
+<Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridVia3">
+  <Form.Label>Via</Form.Label>
+  <Form.Control as="select">
+     <option>Choose...</option>
+     <option>...</option>
+  </Form.Control>
+</Form.Group>
+</Form.Row>
+:null}
 
   <Button className="newRequestBtn" type="submit">
     Submit

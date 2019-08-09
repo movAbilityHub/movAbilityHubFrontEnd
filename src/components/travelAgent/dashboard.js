@@ -13,9 +13,7 @@ class TravelAgent extends Component {
       <div className="vh-100">
         <Navbar />
         <div className="wrapper">
-        <div className="form-wrapper">
         <NewRequests />
-        </div>
         </div>
       </div>
     );
