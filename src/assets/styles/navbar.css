@@ -21,7 +21,7 @@
 
 .active:focus {
     outline: none !important;
-    text-decoration: underline #1565c0 !important;
+    text-decoration: underline #0d47a1 !important;
     color: black;
 }
 
