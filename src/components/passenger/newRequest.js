@@ -74,11 +74,6 @@ RadioClicked(e){
   </Form.Group>
 
   <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridDisability">
-  <Form.Label>Disability</Form.Label>
-  <Form.Control placeholder="Enter Disability." />
-  </Form.Group>
-
-  <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridDisability">
   <Form.Label>Caretaker No.</Form.Label>
   <Form.Control placeholder="Enter Caretaker No." />
   </Form.Group>
