@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import TravelAgent from "./components/travelAgent/dashboard";
+import Passenger from "./components/passenger/dashboard";
 import Home from "./components/home/home";
 import Iata from "./components/home/iata";
 import Airport from "./components/home/airline";
@@ -17,6 +18,7 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route path="/Passenger/Dashboard" component={Passenger}/>
           <Route path="/TravelAgent/Dashboard" component={TravelAgent} />
           <Route path="/IATA" component={Iata} />
           <Route path="/Airport" component={Airport} />
