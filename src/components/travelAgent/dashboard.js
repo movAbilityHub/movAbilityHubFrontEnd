@@ -46,7 +46,7 @@ class TravelAgent extends Component {
                     Care Receiver/Passenger
                   </Nav.Link>
               </Nav>
-              <Nav className="mr-auto">
+              <Nav className="ml-auto">
                 <Nav.Link className="active rounded">Sign Out</Nav.Link>
               </Nav>
           </Navbar.Collapse>
