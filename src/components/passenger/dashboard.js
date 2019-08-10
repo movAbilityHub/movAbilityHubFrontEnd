@@ -42,7 +42,7 @@ class Passenger extends Component {
               <Nav.Link className="active rounded" as={Link} to="/Passenger/Dashboard/ClosedRequests">
                 Closed Requests
               </Nav.Link>
-              <Nav.Link className="active rounded" to="/Passenger/Dashboard/CareReceiver">
+              <Nav.Link className="active rounded" as={Link} to="/Passenger/Dashboard/CareReceiver">
                 Care Receiver/Passenger
               </Nav.Link>
           </Nav>
