@@ -16,7 +16,7 @@ class Home extends Component {
         <Navbar />
         <Row className="m-5">
           <CardDeck className="cardDeck">
-            <Card className="card shadow-lg rounded">
+            <Card className="shadow-lg rounded" id="card">
               <Card.Header>Our Mission</Card.Header>
               <Card.Body>
                 <Card.Text>
@@ -28,7 +28,7 @@ class Home extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card className="card shadow-lg rounded">
+            <Card className="shadow-lg rounded" id="card">
               <Card.Header>Invisible disabilities?</Card.Header>
               <Card.Body>
                 <Card.Text>
@@ -40,7 +40,7 @@ class Home extends Component {
                 </Card.Text>
               </Card.Body>
             </Card>
-            <Card className="card shadow-lg rounded">
+            <Card className="shadow-lg rounded" id="card">
               <Card.Header>What is movAbility?</Card.Header>
               <Card.Body>
                 <Card.Text>
@@ -53,7 +53,7 @@ class Home extends Component {
             </Card>
           </CardDeck>
           <CardDeck className="cardDeck">
-            <Card className="card shadow-lg rounded">
+            <Card className="shadow-lg rounded" id="card">
               <Card.Header>What Services are you provided?</Card.Header>
               <Card.Body>
                 <Card.Text>
