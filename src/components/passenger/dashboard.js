@@ -4,6 +4,7 @@ import { Route, Switch, Link } from "react-router-dom";
 import "../../assets/styles/navbar.css";
 import "../../assets/styles/taDashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../../assets/styles/tapaOpenRequests.css";
 
 import OpenRequests from "./openRequests";
 import ClosedRequests from "./closedRequests";
