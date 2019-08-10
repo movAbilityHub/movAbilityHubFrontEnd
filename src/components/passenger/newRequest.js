@@ -69,17 +69,17 @@ RadioClicked(e){
   </Form.Group>
 
   <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridTicketNo">
-  <Form.Label>Ticket No</Form.Label>
+  <Form.Label>Ticket No.</Form.Label>
   <Form.Control placeholder="Enter Ticket No." />
   </Form.Group>
 
   <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridDisability">
-  <Form.Label>Enter Disability</Form.Label>
+  <Form.Label>Disability</Form.Label>
   <Form.Control placeholder="Enter Disability." />
   </Form.Group>
 
   <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridDisability">
-  <Form.Label>Enter Caretaker No</Form.Label>
+  <Form.Label>Caretaker No.</Form.Label>
   <Form.Control placeholder="Enter Caretaker No." />
   </Form.Group>
   
@@ -135,8 +135,8 @@ RadioClicked(e){
 :null}
 
 <Form.Group as={Row} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-12" controlId="formGridDescription">
-<Form.Label>Enter Details of service</Form.Label>
-<Form.Control placeholder="Enter Details of service" type="textarea" />
+<Form.Label>Details of Service</Form.Label>
+<Form.Control placeholder="Enter Details of service" as="textarea" />
 </Form.Group>
 
   <Button className="newRequestBtn" type="submit">
