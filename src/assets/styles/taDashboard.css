@@ -1,12 +1,11 @@
 .wrapper{
     margin-left:20%;
     margin-right:20%;
-    margin-top:5%;
+    margin-top:1.5%;
     margin-bottom:2%;
-
 }
 
-.form-wrapper label:hover{
+.wrapper label:hover{
   font-weight: 600;
 }
 
@@ -21,8 +20,6 @@
     margin-left: 25%;
 }
 
-.newRequestBtn:hover{
-    border: 1px solid blue;
-    background-color: white;
-    color:blue;
+.desc{
+    width:100%;
 }

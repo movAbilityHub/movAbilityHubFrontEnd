@@ -16,9 +16,9 @@
 
 .active {
     color: white;
+    height: 100%;
 }
 
-.active:hover,
 .active:focus {
     outline: none !important;
     text-decoration: underline #1565c0 !important;
@@ -27,4 +27,8 @@
 
 .placeHolder {
     margin-right: 10%;
+}
+
+.active:hover {
+    background-color: #0d47a1;
 }
