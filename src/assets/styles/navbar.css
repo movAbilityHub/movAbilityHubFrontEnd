@@ -23,7 +23,6 @@
 .active:focus {
     outline: none !important;
     text-decoration: underline transparent !important;
-    color: black;
 }
 
 .placeHolder {
@@ -32,4 +31,5 @@
 
 .active:hover {
     background-color: #0d47a1;
+    color: white;
 }

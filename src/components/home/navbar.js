@@ -25,23 +25,23 @@ class NavigationBar extends Component {
         <div className="placeHolder" />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav.Link className="active" href="/IATA">
+          <Nav.Link className="active rounded" href="/IATA">
             IATA
           </Nav.Link>
-          <Nav.Link className="active" href="/Airline">
+          <Nav.Link className="active rounded" href="/Airline">
             Airline
           </Nav.Link>
-          <Nav.Link className="active" href="/Airport">
+          <Nav.Link className="active rounded" href="/Airport">
             Airport
           </Nav.Link>
-          <Nav.Link className="active" href="/TravelAgency">
+          <Nav.Link className="active rounded" href="/TravelAgency">
             Travel Agency
           </Nav.Link>
           <Nav className="ml-auto">
-            <Nav.Link className="active" href="/Signup">
+            <Nav.Link className="active rounded" href="/Signup">
               Sign Up
             </Nav.Link>
-            <Nav.Link className="active" href="/Login">
+            <Nav.Link className="active rounded" href="/Login">
               Log In
             </Nav.Link>
           </Nav>
