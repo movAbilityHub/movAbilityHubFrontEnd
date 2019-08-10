@@ -3,7 +3,11 @@ import React, { Component } from "react";
 class OpenRequests extends Component {
   state = {};
   render() {
-    return <div />;
+    return (
+    <h1>I HATE THIS BUG</h1>
+
+    );
+
   }
 }
 

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import TimePicker from 'react-bootstrap-time-picker';
 
@@ -65,6 +66,21 @@ RadioClicked(e){
   <Form.Label>Travel Time</Form.Label>
   <TimePicker start="00:00" end="24:00" step={10} onChange={this.handleTimeChange} value={this.state.time}/>
   </Form.Group>
+
+  <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridTicketNo">
+  <Form.Label>Ticket No</Form.Label>
+  <Form.Control placeholder="Enter Ticket No." />
+  </Form.Group>
+
+  <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridDisability">
+  <Form.Label>Enter Disability</Form.Label>
+  <Form.Control placeholder="Enter Disability." />
+  </Form.Group>
+
+  <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridDisability">
+  <Form.Label>Enter Caretaker No</Form.Label>
+  <Form.Control placeholder="Enter Caretaker No." />
+  </Form.Group>
   
     <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridInitialLocation">
       <Form.Label>Start Airport</Form.Label>
@@ -85,13 +101,13 @@ RadioClicked(e){
     <Form.Group as={Col} controlId="formGridRenderer">
     <Form.Label>Do you have a transit flight?</Form.Label><br></br>
       <div key={`inline-radio`} className="mb-3">
-        <Form.Check inline label="Yes" type="radio" id={`inline-radio-1`} value="np2p" name="radio" onChange={this.RadioClicked}/>
-        <Form.Check inline label="No" type="radio" id={`inline-radio-2`} value="p2p" name="radio" onChange={this.RadioClicked}/>
+        <Form.Check inline label="Yes" type="radio" id={`inline-radio-1`} value="1" name="radio" onChange={this.RadioClicked}/>
+        <Form.Check inline label="No" type="radio" id={`inline-radio-2`} value="2" name="radio" onChange={this.RadioClicked} defaultChecked/>
       </div>
     </Form.Group>
   </Form.Row>
 
-{this.state.radio ==="np2p" ?
+{this.state.radio ==="1" ?
 <Form.Row>
 <Form.Group as={Col} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4" controlId="formGridVia1">
   <Form.Label>Via</Form.Label>
@@ -116,6 +132,11 @@ RadioClicked(e){
 </Form.Group>
 </Form.Row>
 :null}
+
+<Form.Group as={Row} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-12" controlId="formGridDescription">
+<Form.Label>Enter Details of service</Form.Label>
+<Form.Control placeholder="Enter Details of service" type="textarea" />
+</Form.Group>
 
   <Button className="newRequestBtn" type="submit">
     Submit
