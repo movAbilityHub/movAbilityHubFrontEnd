@@ -100,7 +100,7 @@ class Login extends Component {
     } else if (
       this.state.userType === "airport" ||
       this.state.userType === "airline" ||
-      this.state.userType === "traveAgency"
+      this.state.userType === "travelAgency"
     ) {
       otherStaffLogin(staff)
         .then(res => {
