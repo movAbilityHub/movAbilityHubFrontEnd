@@ -1,16 +1,16 @@
-import React, {Component} from "react";
-import {Route,Switch,Link} from "react-router-dom";
+import React, { Component } from "react";
+import { Route, Switch, Link } from "react-router-dom";
 
 import OpenRequests from "./openRequests";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "../../assets/styles/navbar.css";
 
-class Airline extends Component{
-    render(){
-        return(
-          <div className="vh-100">
-          <Navbar
+class Airline extends Component {
+  render() {
+    return (
+      <div className="vh-100">
+        <Navbar
           collapseOnSelect
           expand="lg"
           variant="dark"
@@ -47,17 +47,14 @@ class Airline extends Component{
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-          <div className="wrapper">
+        <div className="wrapper">
           <Switch>
-            <Route
-               exact path="/Airline/Dashboard/"
-              component={OpenRequests}
-            />
+            <Route exact path="/Airline/Dashboard/" component={OpenRequests} />
           </Switch>
         </div>
-          </div>
-        );
-    }
+      </div>
+    );
+  }
 }
 
 export default Airline;

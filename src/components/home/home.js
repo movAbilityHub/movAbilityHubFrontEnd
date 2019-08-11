@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { Route, Switch, Link } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
+<<<<<<< HEAD
 import "../../assets/styles/home.css";
 import pic1 from "../../assets/images/iata1.jpg";
 import pic2 from "../../assets/images/iata2.jpg";
@@ -9,13 +11,27 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Carousel from "react-bootstrap/Carousel";
+=======
+import "../../assets/styles/navbar.css";
+import "../../assets/styles/taDashboard.css";
 
-import Navbar from "./navbar";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+>>>>>>> 13d110cc576ae13cdaed6a0f6be3206d91caf8b7
+
+import Iata from "./iata";
+import Airline from "./airline";
+import Airport from "./airport";
+import TravelAgency from "./travelAgency";
+import HomeLanding from "./homeLanding";
+import Login from "../login/login";
+import Register from "../register/customerRegister";
 
 class Home extends Component {
   render() {
     return (
       <div className="vh-100">
+<<<<<<< HEAD
         <Navbar />
         <Carousel className="sliders">
         <Carousel.Item>
@@ -95,6 +111,62 @@ class Home extends Component {
             </Card>
           </CardDeck>
         </Row>
+=======
+        <Navbar
+          collapseOnSelect
+          expand="lg"
+          variant="dark"
+          fixed="top"
+          sticky="top"
+          className="navBackground"
+        >
+          <Navbar.Brand href="/">
+            <i className="mov">mov</i>
+            <b className="ability">Ability</b> Hub
+            <sub className="smallFont">by IATA</sub>
+          </Navbar.Brand>
+          <div className="placeHolder" />
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link className="active rounded" as={Link} to="/">
+                Home
+              </Nav.Link>
+              <Nav.Link className="active rounded" as={Link} to="/IATA">
+                IATA
+              </Nav.Link>
+              <Nav.Link className="active rounded" as={Link} to="/Airport">
+                Airport
+              </Nav.Link>
+              <Nav.Link className="active rounded" as={Link} to="/Airline">
+                Airline
+              </Nav.Link>
+              <Nav.Link className="active rounded" as={Link} to="/TravelAgency">
+                Travel Agency
+              </Nav.Link>
+            </Nav>
+            <Nav className="ml-auto">
+              <Nav.Link className="active rounded" as={Link} to="/Register">
+                Sign Up
+              </Nav.Link>
+              <Nav.Link className="active rounded" as={Link} to="/Login">
+                Log In
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+        <div>
+          <Switch>
+            <Route exact path="/" component={HomeLanding} />
+            <Route path="/IATA" component={Iata} />
+            <Route path="/Airport" component={Airport} />
+            <Route path="/Airline" component={Airline} />
+            <Route path="/TravelAgency" component={TravelAgency} />
+            <Route path="/Login" component={Login} />{" "}
+            <Route path="/Register" component={Register} />
+          </Switch>
+        </div>
+>>>>>>> 13d110cc576ae13cdaed6a0f6be3206d91caf8b7
       </div>
     );
   }
