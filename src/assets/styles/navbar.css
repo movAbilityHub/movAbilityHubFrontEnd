@@ -16,15 +16,20 @@
 
 .active {
     color: white;
+    height: 100%;
+    text-decoration: underline transparent !important;
 }
 
-.active:hover,
 .active:focus {
     outline: none !important;
-    text-decoration: underline #1565c0 !important;
-    color: black;
+    text-decoration: underline transparent !important;
 }
 
 .placeHolder {
     margin-right: 10%;
+}
+
+.active:hover {
+    background-color: #0d47a1;
+    color: white;
 }

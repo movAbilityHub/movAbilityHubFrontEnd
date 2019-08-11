@@ -1,14 +1,14 @@
-.card {
+#card {
     background-color: white;
 }
 
-.card:hover {
+#card:hover {
     background-color: rgba(0, 0, 0, 0.884);
     color: white;
     font-style: italic;
 }
 
 .cardDeck {
-    margin-top: 3%;
+    margin-top: 2%;
     margin-bottom: 3%;
 }

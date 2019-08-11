@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import TimePicker from 'react-bootstrap-time-picker';
+import {withRouter} from 'react-router-dom';
 
 import "../../assets/styles/taDashboard.css";
 
@@ -16,7 +17,7 @@ class NewRequests extends Component {
 
   this.state = {
     time: 0,
-    radio:""
+    radio:"",
   };
 }
 
@@ -97,7 +98,7 @@ RadioClicked(e){
     <Form.Label>Do you have a transit flight?</Form.Label><br></br>
       <div key={`inline-radio`} className="mb-3">
         <Form.Check inline label="Yes" type="radio" id={`inline-radio-1`} value="1" name="radio" onChange={this.RadioClicked}/>
-        <Form.Check inline label="No" type="radio" id={`inline-radio-2`} value="2" name="radio" onChange={this.RadioClicked} defaultChecked/>
+        <Form.Check inline label="No" type="radio" id={`inline-radio-2`} value="2" name="radio" onChange={this.RadioClicked} defaultChecked />
       </div>
     </Form.Group>
   </Form.Row>
@@ -130,7 +131,7 @@ RadioClicked(e){
 
 <Form.Group as={Row} className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-12" controlId="formGridDescription">
 <Form.Label>Details of Service</Form.Label>
-<Form.Control placeholder="Enter Details of service" as="textarea"/>
+<Form.Control placeholder="Enter Details of service" as="textarea" />
 </Form.Group>
 
   <Button className="newRequestBtn" type="submit">
@@ -141,4 +142,4 @@ RadioClicked(e){
   }
 }
 
-export default NewRequests;
+export default withRouter(NewRequests);

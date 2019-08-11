@@ -5,7 +5,7 @@ import "../../assets/styles/navbar.css";
 
 import Navbar from "./navbar";
 
-class Airport extends Component {
+class AirportInfo extends Component {
   render() {
     return (
       <div>
@@ -15,4 +15,4 @@ class Airport extends Component {
   }
 }
 
-export default Airport;
+export default AirportInfo;

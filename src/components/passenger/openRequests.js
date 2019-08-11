@@ -3,6 +3,8 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
 
+import "../../assets/styles/tapaOpenRequests.css";
+
 class OpenRequests extends Component {
   state = {};
   render() {
