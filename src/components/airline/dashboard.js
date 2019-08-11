@@ -7,6 +7,21 @@ import Navbar from "react-bootstrap/Navbar";
 import "../../assets/styles/navbar.css";
 
 class Airline extends Component {
+  constructor() {
+    super();
+    document.title = "Dashboard";
+    this.signOut = this.signOut.bind(this);
+  }
+  signOut(e) {
+    localStorage.removeItem("session");
+    sessionStorage.removeItem("session");
+    if (
+      !localStorage.getItem("session") &&
+      !sessionStorage.getItem("session")
+    ) {
+      this.props.history.push("/");
+    }
+  }
   render() {
     return (
       <div className="vh-100">

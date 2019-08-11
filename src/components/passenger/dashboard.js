@@ -14,6 +14,21 @@ import Navbar from "react-bootstrap/Navbar";
 import NewRequests from "./newRequest";
 
 class Passenger extends Component {
+  constructor() {
+    super();
+    document.title = "Dashboard";
+    this.signOut = this.signOut.bind(this);
+  }
+  signOut(e) {
+    localStorage.removeItem("session");
+    sessionStorage.removeItem("session");
+    if (
+      !localStorage.getItem("session") &&
+      !sessionStorage.getItem("session")
+    ) {
+      this.props.history.push("/");
+    }
+  }
   render() {
     return (
       <div className="vh-100">
