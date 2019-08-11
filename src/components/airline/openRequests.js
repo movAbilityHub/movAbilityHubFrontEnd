@@ -7,9 +7,8 @@ import ListGroup from "react-bootstrap/ListGroup";
 class OpenRequests extends Component{
     render(){
         return(
-          <div className="vh-100">
           <CardDeck>
-          <Card className="card" style={{ width: "40%" }}>
+          <Card>
           <Card.Header className="text-center">
             RequestID No: {/*ID props added here?*/}
           </Card.Header>
@@ -30,7 +29,7 @@ class OpenRequests extends Component{
           Status: Pending
         </Card.Footer>
           </Card>
-          <Card className="card" style={{ width: "40%" }}>
+          <Card>
           <Card.Header className="text-center">
             RequestID No: {/*ID props added here?*/}
           </Card.Header>
@@ -52,7 +51,6 @@ class OpenRequests extends Component{
         </Card.Footer>
           </Card>
           </CardDeck>
-          </div>
         );
     }
 }

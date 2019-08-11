@@ -9,7 +9,7 @@ class OpenRequests extends Component {
   state = {};
   render() {
     return (
-      <Card className="card" style={{ width: "60%" }}>
+      <Card>
         <Card.Header className="text-center">
           RequestID No: {/*ID props added here?*/}
         </Card.Header>
