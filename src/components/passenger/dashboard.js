@@ -12,6 +12,7 @@ import CareReceiver from "./careReceiver";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NewRequests from "./newRequest";
+import Button from "react-bootstrap/Button";
 
 class Passenger extends Component {
   constructor() {
@@ -79,7 +80,9 @@ class Passenger extends Component {
               </Nav.Link>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link className="active rounded">Sign Out</Nav.Link>
+              <Button onClick={this.signOut} className="rounded">
+                Sign Out
+              </Button>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
