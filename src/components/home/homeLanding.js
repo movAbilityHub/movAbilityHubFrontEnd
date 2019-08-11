@@ -39,7 +39,7 @@ class HomeLanding extends Component {
           </Carousel.Caption>
         </Carousel.Item>
         </Carousel>
-        
+
       <Row className="m-5">
         <CardDeck className="cardDeck">
           <Card className="shadow-lg rounded" id="card">
