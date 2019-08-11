@@ -10,7 +10,7 @@ import "../../assets/styles/taDashboard.css";
 class NewRequests extends Component {
   constructor(props) {
     super(props);
-
+    
     this.handleTimeChange = this.handleTimeChange.bind(this);
     this.RadioClicked = this.RadioClicked.bind(this);
 

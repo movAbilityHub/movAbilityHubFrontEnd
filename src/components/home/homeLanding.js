@@ -2,14 +2,44 @@ import React, { Component } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/home.css";
+import pic1 from "../../assets/images/iata1.jpg";
+import pic2 from "../../assets/images/iata2.jpg";
 
 import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
+import Carousel from "react-bootstrap/Carousel";
 
 class HomeLanding extends Component {
   render() {
     return (
+     <div>
+     <Carousel className="sliders">
+        <Carousel.Item>
+          <img
+            className="d-block w-100 h-50"
+            src={pic2}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>We are movAbility</h3>
+            <p>And we help those who need it.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src={pic1}
+            alt="Third slide"
+          />
+      
+          <Carousel.Caption>
+            <h3>We are aviation lovers</h3>
+            <p>And we help you fly hassle free.</p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        </Carousel>
+        
       <Row className="m-5">
         <CardDeck className="cardDeck">
           <Card className="shadow-lg rounded" id="card">
@@ -62,6 +92,7 @@ class HomeLanding extends Component {
           </Card>
         </CardDeck>
       </Row>
+      </div>
     );
   }
 }
