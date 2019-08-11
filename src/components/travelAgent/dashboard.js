@@ -5,14 +5,33 @@ import "../../assets/styles/navbar.css";
 import "../../assets/styles/taDashboard.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Button from "react-bootstrap/Button";
+
 import OpenRequests from "./openRequests";
 import ClosedRequests from "./closedRequests";
 import CareReceiver from "./careReceiver";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
 import NewRequests from "./newRequest";
 
 class TravelAgent extends Component {
+  constructor() {
+    super();
+    document.title = "Dashboard";
+    this.signOut = this.signOut.bind(this);
+  }
+
+  signOut(e) {
+    localStorage.removeItem("session");
+    sessionStorage.removeItem("session");
+    if (
+      !localStorage.getItem("session") &&
+      !sessionStorage.getItem("session")
+    ) {
+      this.props.history.push("/");
+    }
+  }
+
   render() {
     return (
       <div className="vh-100">
@@ -63,7 +82,9 @@ class TravelAgent extends Component {
               </Nav.Link>
             </Nav>
             <Nav className="ml-auto">
-              <Nav.Link className="active rounded">Sign Out</Nav.Link>
+              <Button onClick={this.signOut} className="rounded">
+                Sign Out
+              </Button>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
