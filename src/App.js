@@ -13,11 +13,11 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/Passenger/Dashboard" component={Passenger} />
-          <Route path="/TravelAgent/Dashboard" component={TravelAgent} />
-          <Route path="/Airport/Dashboard" component={Airport} />
-          <Route path="/Airline/Dashboard" component={Airline} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/Passenger/Dashboard" component={Passenger} />
+          <Route exact path="/TravelAgent/Dashboard" component={TravelAgent} />
+          <Route exact path="/Airport/Dashboard" component={Airport} />
+          <Route exact path="/Airline/Dashboard" component={Airline} />
           <Route component={NotFound} />
         </Switch>
       </Router>

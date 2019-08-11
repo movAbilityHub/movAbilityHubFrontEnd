@@ -81,7 +81,7 @@ class Login extends Component {
             } else {
               sessionStorage.setItem("session", JSON.stringify(res.data.token));
             }
-            this.props.history.push("/Dashboard");
+            this.props.history.push("/Passenger/Dashboard");
           } else {
             this.setState({ errors: "Something went wrong!" });
           }
