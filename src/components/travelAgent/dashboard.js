@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, NavLink, HashRouter, Switch,Link } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 
 import "../../assets/styles/navbar.css";
 import "../../assets/styles/taDashboard.css";
@@ -32,33 +32,61 @@ class TravelAgent extends Component {
           <div className="placeHolder" />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mr-auto">
-                  <Nav.Link className="active rounded" as={Link} to="/TravelAgent/Dashboard/">
-                    New Request
-                  </Nav.Link>
-                  <Nav.Link className="active rounded" as={Link} to="/TravelAgent/Dashboard/OpenRequests">
-                    Open Requests
-                  </Nav.Link>
-                  <Nav.Link className="active rounded" as={Link} to="/TravelAgent/Dashboard/ClosedRequests">
-                    Closed Requests
-                  </Nav.Link>
-                  <Nav.Link className="active rounded" as={Link} to="/TravelAgent/Dashboard/CareReceiver">
-                    Care Receiver/Passenger
-                  </Nav.Link>
-              </Nav>
-              <Nav className="ml-auto">
-                <Nav.Link className="active rounded">Sign Out</Nav.Link>
-              </Nav>
+            <Nav className="mr-auto">
+              <Nav.Link
+                className="active rounded"
+                as={Link}
+                to="/TravelAgent/Dashboard/"
+              >
+                New Request
+              </Nav.Link>
+              <Nav.Link
+                className="active rounded"
+                as={Link}
+                to="/TravelAgent/Dashboard/OpenRequests"
+              >
+                Open Requests
+              </Nav.Link>
+              <Nav.Link
+                className="active rounded"
+                as={Link}
+                to="/TravelAgent/Dashboard/ClosedRequests"
+              >
+                Closed Requests
+              </Nav.Link>
+              <Nav.Link
+                className="active rounded"
+                as={Link}
+                to="/TravelAgent/Dashboard/CareReceiver"
+              >
+                Care Receiver/Passenger
+              </Nav.Link>
+            </Nav>
+            <Nav className="ml-auto">
+              <Nav.Link className="active rounded">Sign Out</Nav.Link>
+            </Nav>
           </Navbar.Collapse>
         </Navbar>
         <div className="wrapper">
-        <Switch>
-        <Route exact path="/TravelAgent/Dashboard/" component={NewRequests} />
-        <Route path="/TravelAgent/Dashboard/OpenRequests" component={OpenRequests} />
-        <Route path="/TravelAgent/Dashboard/ClosedRequests" component={ClosedRequests} />
-        <Route path="/TravelAgent/Dashboard/CareReceiver" component={CareReceiver} />
-        </Switch>
-        
+          <Switch>
+            <Route
+              exact
+              path="/TravelAgent/Dashboard/"
+              component={NewRequests}
+            />
+            <Route
+              path="/TravelAgent/Dashboard/OpenRequests"
+              component={OpenRequests}
+            />
+            <Route
+              path="/TravelAgent/Dashboard/ClosedRequests"
+              component={ClosedRequests}
+            />
+            <Route
+              path="/TravelAgent/Dashboard/CareReceiver"
+              component={CareReceiver}
+            />
+          </Switch>
         </div>
       </div>
     );

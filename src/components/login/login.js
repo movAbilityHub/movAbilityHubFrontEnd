@@ -10,8 +10,6 @@ import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 
-import Navbar from "../home/navbar";
-
 import { customerLogin } from "../../axios/apiCalls";
 import { otherStaffLogin } from "../../axios/apiCalls";
 import { iataStaffLogin } from "../../axios/apiCalls";
@@ -191,80 +189,77 @@ class Login extends Component {
 
   render() {
     return (
-      <div>
-        <Navbar />
-        <Col className="col-xs-10 col-sm-10 col-md-6 m-5 mx-auto text-dark">
-          <Form noValidate onSubmit={this.onSubmit} className="mx-3 formCenter">
-            <h1 className="h3 md-3 font-weight-normal">Please Sign In</h1>
-            <br />
-            <Form.Group as={Col}>
-              <Form.Label>User Type</Form.Label>
-              <Form.Control
-                as="select"
-                name="userType"
-                type="text"
-                value={this.state.userType}
-                onChange={this.onChange}
-              >
-                <option value="customer">Caregiver/Passenger</option>
-                <option value="airline">Airline</option>
-                <option value="airport">Airport</option>
-                <option value="travelAgency">Travel Agency</option>
-                <option value="travelAgent">Travel Agent</option>
-                <option value="iataStaff">IATA Staff</option>
-              </Form.Control>
-            </Form.Group>
-            <Form.Group as={Col}>
-              <label htmlFor="email">Email Address</label>
-              <input
-                type="email"
-                className="form-control"
-                name="email"
-                value={this.state.email}
-                placeholder="Enter email"
+      <Col className="col-xs-10 col-sm-10 col-md-6 m-5 mx-auto text-dark">
+        <Form noValidate onSubmit={this.onSubmit} className="mx-3 formCenter">
+          <h1 className="h3 md-3 font-weight-normal">Please Sign In</h1>
+          <br />
+          <Form.Group as={Col}>
+            <Form.Label>User Type</Form.Label>
+            <Form.Control
+              as="select"
+              name="userType"
+              type="text"
+              value={this.state.userType}
+              onChange={this.onChange}
+            >
+              <option value="customer">Caregiver/Passenger</option>
+              <option value="airline">Airline</option>
+              <option value="airport">Airport</option>
+              <option value="travelAgency">Travel Agency</option>
+              <option value="travelAgent">Travel Agent</option>
+              <option value="iataStaff">IATA Staff</option>
+            </Form.Control>
+          </Form.Group>
+          <Form.Group as={Col}>
+            <label htmlFor="email">Email Address</label>
+            <input
+              type="email"
+              className="form-control"
+              name="email"
+              value={this.state.email}
+              placeholder="Enter email"
+              onChange={this.onChange}
+            />
+          </Form.Group>
+          <Form.Group as={Col}>
+            <label htmlFor="password">Password</label>
+            <InputGroup>
+              <FormControl
+                id="password"
+                type="password"
+                name="password"
+                value={this.state.password}
+                placeholder="Enter password"
                 onChange={this.onChange}
               />
-            </Form.Group>
-            <Form.Group as={Col}>
-              <label htmlFor="password">Password</label>
-              <InputGroup>
-                <FormControl
-                  id="password"
-                  type="password"
-                  name="password"
-                  value={this.state.password}
-                  placeholder="Enter password"
-                  onChange={this.onChange}
-                />
-                <InputGroup.Append>
-                  <Button
-                    variant="outline-primary"
-                    id="togglePassword"
-                    onClick={this.togglePassword}
-                  >
-                    Show
-                  </Button>
-                </InputGroup.Append>
-              </InputGroup>
-            </Form.Group>
-            <Form.Group as={Col}>
-              <Form.Check
-                type="checkbox"
-                id="rememberMe"
-                name="rememberMe"
-                onChange={this.onCheckBoxToggle}
-                label="Remember me"
-                checked={this.state.rememberMe}
-              />
-            </Form.Group>
-            <Form.Group as={Col}>
-              <Button variant="outline-primary" size="lg" type="submit" block>
-                Sign in
-              </Button>
-            </Form.Group>
-          </Form>
-        </Col>
-      </div>
+              <InputGroup.Append>
+                <Button
+                  variant="outline-primary"
+                  id="togglePassword"
+                  onClick={this.togglePassword}
+                >
+                  Show
+                </Button>
+              </InputGroup.Append>
+            </InputGroup>
+          </Form.Group>
+          <Form.Group as={Col}>
+            <Form.Check
+              type="checkbox"
+              id="rememberMe"
+              name="rememberMe"
+              onChange={this.onCheckBoxToggle}
+              label="Remember me"
+              checked={this.state.rememberMe}
+            />
+          </Form.Group>
+          <Form.Group as={Col}>
+            <Button variant="outline-primary" size="lg" type="submit" block>
+              Sign in
+            </Button>
+          </Form.Group>
+        </Form>
+      </Col>
     );
   }
 }
