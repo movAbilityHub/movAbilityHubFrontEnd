@@ -9,7 +9,7 @@ class OpenRequests extends Component {
     return (
       <div className="vh-100">
         <CardDeck>
-          <Card className="card" style={{ width: "40%" }}>
+          <Card>
             <Card.Header className="text-center">
               RequestID No: {/*ID props added here?*/}
             </Card.Header>
@@ -30,7 +30,7 @@ class OpenRequests extends Component {
               Status: Pending
             </Card.Footer>
           </Card>
-          <Card className="card" style={{ width: "60%" }}>
+          <Card>
             <Card.Header className="text-center">
               RequestID No: {/*ID props added here?*/}
             </Card.Header>
