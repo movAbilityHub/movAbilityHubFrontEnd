@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import TravelAgent from "./components/travelAgent/dashboard";
 import Passenger from "./components/passenger/dashboard";
 import Airline from "./components/airline/dashboard";
+import Airport from "./components/airport/dashboard";
 import Home from "./components/home/home";
 import Iata from "./components/home/iata";
 import AirportInfo from "./components/home/airline";
@@ -21,6 +22,8 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/Passenger/Dashboard" component={Passenger}/>
           <Route path="/TravelAgent/Dashboard" component={TravelAgent} />
+          <Route path="/Airport/Dashboard" component={Airport}/>
+          <Route path="/Airline/Dashboard" component={Airline}/>
           <Route path="/IATA" component={Iata} />
           <Route path="/Airport" component={AirportInfo} />
           <Route path="/Airline" component={AirlineInfo} />
