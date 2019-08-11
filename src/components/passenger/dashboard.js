@@ -69,7 +69,7 @@ class Passenger extends Component {
           </Navbar.Collapse>
         </Navbar>
         <div className="wrapper">
-          <switch>
+          <Switch>
             <Route exact path="/Passenger/Dashboard/" component={NewRequests} />
             <Route
               path="/Passenger/Dashboard/OpenRequests"
@@ -83,7 +83,7 @@ class Passenger extends Component {
               path="/Passenger/Dashboard/CareReceiver"
               component={CareReceiver}
             />
-          </switch>
+          </Switch>
         </div>
       </div>
     );
