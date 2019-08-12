@@ -4,9 +4,10 @@ import CardDeck from "react-bootstrap/CardDeck";
 import ListGroup from "react-bootstrap/ListGroup";
 
 class ClosedRequests extends Component {
-  state = {};
   render() {
     return (
+      <div>
+      <h4 className="text-center"><i>Closed Requests Page</i></h4>
       <CardDeck>
       <Card>
         <Card.Header className="text-center">
@@ -45,6 +46,7 @@ class ClosedRequests extends Component {
         </Card.Footer>
       </Card>
       </CardDeck>
+      </div>
     );
   }
 }

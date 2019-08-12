@@ -9,8 +9,8 @@ class CareReceiver extends Component {
   render() {
     return (
       <div>
-        <h4>Update Details</h4>
         <Form>
+        <h4 className="text-center"><i>Update Details Page</i></h4>
           <Form.Row>
             <Form.Group
               as={Col}
@@ -53,7 +53,7 @@ class CareReceiver extends Component {
               />
             </Form.Group>
           </Form.Row>
-          <Button className="updateBtn" type="submit">
+          <Button className="updateBtn w-25 mt-4 mx-auto" type="submit">
             {" "}
             Update
           </Button>

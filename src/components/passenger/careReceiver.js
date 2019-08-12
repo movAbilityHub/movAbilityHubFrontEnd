@@ -11,7 +11,9 @@ class CareReceiver extends Component {
   render() {
     return (
       <div>
-        <h4>Update Details</h4>
+        <h4 className="text-center">
+          <i>Update Details Page</i>
+        </h4>
         <Form>
           <Form.Row>
             <Form.Group
