@@ -8,7 +8,9 @@ class OpenRequests extends Component {
   render() {
     return (
       <div className="vh-100">
-      <h4 className="text-center"><i>Open Requests Page</i></h4>
+        <h4 className="text-center">
+          <i>Open Requests Page</i>
+        </h4>
         <CardDeck>
           <Card>
             <Card.Header className="text-center">
