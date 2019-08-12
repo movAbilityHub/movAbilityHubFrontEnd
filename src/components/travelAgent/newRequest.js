@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import TimePicker from "react-bootstrap-time-picker";
+import PhoneInput from 'react-phone-number-input';
 
 import "../../assets/styles/taDashboard.css";
 
@@ -111,7 +112,10 @@ class NewRequests extends Component {
             controlId="formGridDisability"
           >
             <Form.Label>Caretaker No.</Form.Label>
-            <Form.Control placeholder="Enter Caretaker No." />
+            <PhoneInput
+            placeholder="Enter phone number"
+            value={ this.state.phone }
+            onChange={ phone => this.setState({ phone }) } /> 
           </Form.Group>
 
           <Form.Group
