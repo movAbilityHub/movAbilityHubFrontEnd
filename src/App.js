@@ -5,6 +5,7 @@ import TravelAgent from "./components/travelAgent/dashboard";
 import Passenger from "./components/passenger/dashboard";
 import Airline from "./components/airline/dashboard";
 import Airport from "./components/airport/dashboard";
+import TravelAgency from "./components/travelAgency/dashboard";
 import Home from "./components/home/home";
 import NotFound from "./components/common/notFound";
 
@@ -17,6 +18,7 @@ class App extends Component {
           <Route path="/TravelAgent/Dashboard" component={TravelAgent} />
           <Route path="/Airport/Dashboard" component={Airport} />
           <Route path="/Airline/Dashboard" component={Airline} />
+          <Route path="/TravelAgency/Dashboard" component={TravelAgency} />
           <Route path="/" component={Home} />
           <Route component={NotFound} />
         </Switch>

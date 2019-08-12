@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Route, Switch, Link } from "react-router-dom";
 
-import OpenRequests from "./openRequests.js";
+import AddtravelAgents from "./addTravelAgents";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 
-class Airport extends Component {
+import "../../assets/styles/navbar.css";
+
+class Airline extends Component {
   constructor() {
     super();
     document.title = "Dashboard";
@@ -45,16 +47,16 @@ class Airport extends Component {
               <Nav.Link
                 className="active rounded"
                 as={Link}
-                to="/Airport/Dashboard/"
+                to="/TravelAgency/Dashboard/"
               >
-                Open Requests
+                Add Travel Agent
               </Nav.Link>
               <Nav.Link
                 className="active rounded"
                 as={Link}
-                to="/Airport/Dashboard/ClosedRequests"
+                to="/TravelAgency/Dashboard/TravelAgents"
               >
-                Closed Requests
+                Travel Agents
               </Nav.Link>
             </Nav>
             <Nav className="ml-auto">
@@ -66,7 +68,11 @@ class Airport extends Component {
         </Navbar>
         <div className="wrapper">
           <Switch>
-            <Route exact path="/Airport/Dashboard/" component={OpenRequests} />
+            <Route
+              exact
+              path="/TravelAgency/Dashboard/"
+              component={AddtravelAgents}
+            />
           </Switch>
         </div>
       </div>
@@ -74,4 +80,4 @@ class Airport extends Component {
   }
 }
 
-export default Airport;
+export default Airline;
