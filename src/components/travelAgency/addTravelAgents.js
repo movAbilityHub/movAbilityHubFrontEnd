@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import PhoneInput from 'react-phone-number-input';
 
 import "../../assets/styles/taDashboard.css";
 
@@ -66,11 +67,10 @@ class AddTravelAgents extends Component {
           className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
         >
           <Form.Label>Agent's Phone Number</Form.Label>
-          <Form.Control
-            placeholder="Enter Phone No."
-            namr="phoneNumber"
-            type="number"
-          />
+          <PhoneInput
+          placeholder="Enter phone number"
+          value={ this.state.phone }
+          onChange={ phone => this.setState({ phone }) } /> 
         </Form.Group>
 
         <Form.Group
@@ -101,7 +101,7 @@ class AddTravelAgents extends Component {
           as={Col}
           className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
         >
-          <Form.Label>Retype Temporary Password</Form.Label>
+          <Form.Label>Re-Enter Temporary Password</Form.Label>
           <Form.Control
             placeholder="Enter Password"
             name="password2"
