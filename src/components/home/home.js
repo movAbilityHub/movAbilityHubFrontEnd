@@ -31,7 +31,7 @@ class Home extends Component {
           <Navbar.Brand href="/">
             <i className="mov">mov</i>
             <b className="ability">Ability</b> Hub
-            <sub className="smallFont">by IATA</sub>
+            <sub className="smallFont"><i>by IATA</i></sub>
           </Navbar.Brand>
           <div className="placeHolder" />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
