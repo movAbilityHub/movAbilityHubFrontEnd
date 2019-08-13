@@ -1,11 +1,5 @@
 import React, { Component } from "react";
-import Modal from "react-bootstrap/Modal";
-import ModalFooter from "react-bootstrap/ModalFooter";
-import ModalHeader from "react-bootstrap/ModalHeader";
-import ModalBody from "react-bootstrap/ModalBody";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-
+import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class IATA extends Component {
@@ -13,7 +7,7 @@ class IATA extends Component {
     super(props);
 
     this.state = {
-      modalOpen: true
+      modalOpen: true,
     };
   }
 
@@ -23,22 +17,12 @@ class IATA extends Component {
   render() {
     return (
       <div>
-        <Container>
-          <Modal isOpen={this.state.toggleModal}>
-            <ModalHeader toggle={this.toggleModal.bind(this)}>
-              Page Information
-            </ModalHeader>
-            <ModalBody>
-              This page consists details of IATA as an organisation and the role
-              it plays in the aviation industry.
-            </ModalBody>
-            <ModalFooter>
-              <Button color="primary" onClick={this.toggleModal}>
-                Close
-              </Button>
-            </ModalFooter>
-          </Modal>
-        </Container>
+      <h4 className="text-center"><i>This page is under development. Come back again later.</i></h4>
+      <Card>
+      <Card.Body>
+      This page will display IATA information and recent success. Nothing for now!
+      </Card.Body>
+      </Card>
       </div>
     );
   }
