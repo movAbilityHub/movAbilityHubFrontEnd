@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/home.css";
+import mainpic from "../../assets/images/main.jpg"
 import pic1 from "../../assets/images/iata1.jpg";
 import pic2 from "../../assets/images/iata2.jpg";
 
@@ -15,11 +16,22 @@ class HomeLanding extends Component {
     return (
      <div>
      <Carousel className="sliders">
+     <Carousel.Item>
+     <img
+       className="d-block w-100 vh-100"
+       src={mainpic}
+       alt="First slide"
+     />
+     <Carousel.Caption>
+       <h3>{/* ok */}</h3>
+       <p></p>
+     </Carousel.Caption>
+   </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100 h-50"
+            className="d-block w-100 vh-100"
             src={pic2}
-            alt="First slide"
+            alt="Second slide"
           />
           <Carousel.Caption>
             <h3>We are movAbility</h3>
@@ -28,7 +40,7 @@ class HomeLanding extends Component {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="d-block w-100 vh-100"
             src={pic1}
             alt="Third slide"
           />
