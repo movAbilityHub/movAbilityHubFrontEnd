@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, Link } from "react-router-dom";
+import { Route, Switch, Link, HashRouter } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/navbar.css";
@@ -63,17 +63,19 @@ class Home extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-        <div>
+       
+        <HashRouter>
           <Switch>
             <Route exact path="/" component={HomeLanding} />
             <Route path="/IATA" component={Iata} />
             <Route path="/Airport" component={Airport} />
             <Route path="/Airline" component={Airline} />
             <Route path="/TravelAgency" component={TravelAgency} />
-            <Route path="/Login" component={Login} />{" "}
+            <Route path="/Login" component={Login} />
             <Route path="/Register" component={Register} />
           </Switch>
-        </div>
+          </HashRouter>
+       
       </div>
     );
   }
