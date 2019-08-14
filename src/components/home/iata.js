@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
+import NavBar from "../home/navbar";
 
 class IATA extends Component {
   constructor(props) {
@@ -16,7 +17,8 @@ class IATA extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="vh-100">
+      <NavBar/>
       <h4 className="text-center"><i>This page is under development. Come back again later.</i></h4>
       <Card>
       <Card.Body>
