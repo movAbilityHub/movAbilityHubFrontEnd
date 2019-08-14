@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import jwtDecode from "jwt-decode";
-
+import NavBar from "../home/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/login.css";
 
@@ -188,7 +188,8 @@ class Login extends Component {
   }
 
   render() {
-    return (
+    return (<div>
+      <NavBar/>
       <Col className="col-xs-10 col-sm-10 col-md-6 m-5 mx-auto text-dark">
         <Form noValidate onSubmit={this.onSubmit} className="mx-3 formCenter">
           <h1 className="h3 md-3 font-weight-normal">Please Sign In</h1>
@@ -260,6 +261,7 @@ class Login extends Component {
           </Form.Group>
         </Form>
       </Col>
+      </div>
     );
   }
 }
