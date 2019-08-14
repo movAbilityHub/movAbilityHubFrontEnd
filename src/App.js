@@ -28,17 +28,20 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/IATA" component={IataM} />
-            <Route path="/Airport" component={AirportM} />
-            <Route path="/Airline" component={AirlineM} />
-            <Route path="/TravelAgency" component={TravelM} />
+            <Route exact path="/Airport" component={AirportM} />
+            <Route exact path="/Airline" component={AirlineM} />
+            <Route exact path="/TravelAgency" component={TravelM} />
             <Route path="/Login" component={Login} />
             <Route path="/Register" component={Register} />
             <Route path="/Passenger/Dashboard" component={Passenger} />
             <Route path="/TravelAgent/Dashboard" component={TravelAgent} />
-            <Route path="/Airport/Dashboard" component={Airport} />
-            <Route path="/Airline/Dashboard" component={Airline} />
-            <Route path="/TravelAgency/Dashboard" component={TravelAgency} />
-            <Route path="/TravelAgent" component={NotFound} />
+            <Route exact path="/Airport/Dashboard" component={Airport} />
+            <Route exact path="/Airline/Dashboard" component={Airline} />
+            <Route
+              exact
+              path="/TravelAgency/Dashboard"
+              component={TravelAgency}
+            />
             <Route component={NotFound} />
           </Switch>
         </HashRouter>
