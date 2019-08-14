@@ -18,7 +18,7 @@ import TravelAgency from "./components/travelAgency/dashboard";
 import Home from "./components/home/home";
 import NotFound from "./components/common/notFound";
 import Login from "./components/login/login";
-import Register from "./components/register/customerRegister";
+import Register from "./components/register/Register";
 
 class App extends Component {
   render() {
