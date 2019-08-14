@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import Button from "react-bootstrap/Button";
 import ViewModal from "./modal";
+import "../../assets/styles/aaOpenRequests.css";
 
 class OpenRequests extends Component {
   constructor(props){
@@ -29,17 +30,17 @@ class OpenRequests extends Component {
           Disability: {/* props for Disability here*/}
           <br />
           <hr />
-          <Button className="btnViewMore" variant="primary" onClick={()=>this.setState({modalShow:true})}>
-            View More
+          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="primary" onClick={()=>this.setState({modalShow:true})}>
+            Info
           </Button>
           <ViewModal
               show={this.state.modalShow}
               onHide={modalClose}
               />
-          <Button className="btnAccept" variant="success">
+          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="success">
             Accept
           </Button>
-          <Button className="btnDeny" variant="danger">
+          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="danger">
             Deny
           </Button>
         </Card.Body>
@@ -50,17 +51,17 @@ class OpenRequests extends Component {
           Disability: {/* props for Disability here*/}
           <br />
           <hr />
-          <Button className="btnViewMore" variant="primary" onClick={()=>this.setState({modalShow:true})}>
-            View More
+          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" id="firstbtn" variant="primary" onClick={()=>this.setState({modalShow:true})}>
+            Info
           </Button>
           <ViewModal
               show={this.state.modalShow}
               onHide={modalClose}
               />
-          <Button className="btnAccept" variant="success">
+          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="success">
             Accept
           </Button>
-          <Button className="btnDeny" variant="danger">
+          <Button className="bcol-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="danger">
             Deny
           </Button>
         </Card.Body>
