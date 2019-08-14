@@ -4,6 +4,9 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
 
+import "../../assets/styles/aaOpenRequests.css";
+
+
 class OpenRequests extends Component {
   render() {
     return (
@@ -13,46 +16,40 @@ class OpenRequests extends Component {
         </h4>
         <CardDeck>
           <Card>
-            <Card.Header className="text-center">
-              RequestID No: {/*ID props added here?*/}
-            </Card.Header>
-            <Card.Body>
-              <ListGroup>
-                <ListGroup.Item>Name: </ListGroup.Item>
-                <ListGroup.Item>Disability: </ListGroup.Item>
-              </ListGroup>
-              <br />
-              <Button className="button" variant="primary">
-                View More
-              </Button>
-            </Card.Body>
-            <Card.Footer className="text-muted text-center">
-              Timestamp comes here!
-            </Card.Footer>
-            <Card.Footer className="text-muted text-center">
-              Status: Pending
-            </Card.Footer>
+          <Card.Header>
+          RequestID: {/* props for ID*/}
+          </Card.Header>
+           <Card.Body> 
+           Disability: {/* props for Disability here*/}
+           <br></br><hr/>
+           <Button className="btnViewMore" variant="primary">
+           View More
+         </Button>
+         <Button className="btnAccept" variant="success">
+           Accept
+         </Button>
+         <Button className="btnDeny" variant="warning">
+           Deny
+         </Button>
+         </Card.Body>
           </Card>
           <Card>
-            <Card.Header className="text-center">
-              RequestID No: {/*ID props added here?*/}
-            </Card.Header>
-            <Card.Body>
-              <ListGroup>
-                <ListGroup.Item>Name: </ListGroup.Item>
-                <ListGroup.Item>Disability: </ListGroup.Item>
-              </ListGroup>
-              <br />
-              <Button className="button" variant="primary">
-                View More
-              </Button>
-            </Card.Body>
-            <Card.Footer className="text-muted text-center">
-              Timestamp comes here!
-            </Card.Footer>
-            <Card.Footer className="text-muted text-center">
-              Status: Pending
-            </Card.Footer>
+          <Card.Header>
+          RequestID: {/* props for ID*/}
+          </Card.Header>
+           <Card.Body> 
+           Disability: {/* props for Disability here*/}
+           <br></br><hr/>
+           <Button className="btnViewMore py-1" variant="primary">
+           View More
+         </Button>
+         <Button className="btnAccept py-1" variant="success">
+           Accept
+         </Button>
+         <Button className="btnDeny py-1" variant="warning">
+           Deny
+         </Button>
+         </Card.Body>
           </Card>
         </CardDeck>
       </div>
