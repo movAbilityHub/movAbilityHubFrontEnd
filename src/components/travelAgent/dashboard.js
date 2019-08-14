@@ -11,7 +11,7 @@ import Button from "react-bootstrap/Button";
 
 import OpenRequests from "./openRequests";
 import ClosedRequests from "./closedRequests";
-import CareReceiver from "./careReceiver";
+import CareReceiver from "./details";
 import NewRequests from "./newRequest";
 
 class TravelAgent extends Component {
@@ -76,9 +76,9 @@ class TravelAgent extends Component {
               <Nav.Link
                 className="active rounded"
                 as={Link}
-                to="/TravelAgent/Dashboard/CareReceiver"
+                to="/TravelAgent/Dashboard/Details"
               >
-                Care Receiver/Passenger
+                Update Details
               </Nav.Link>
             </Nav>
             <Nav className="ml-auto">
@@ -104,7 +104,7 @@ class TravelAgent extends Component {
               component={ClosedRequests}
             />
             <Route
-              path="/TravelAgent/Dashboard/CareReceiver"
+              path="/TravelAgent/Dashboard/Details"
               component={CareReceiver}
             />
           </Switch>
