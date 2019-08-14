@@ -1,3 +1,11 @@
 .formCenter {
-    margin-top: 17%;
+    margin-top: 15%;
+}
+
+#RegisterLink{
+    color: gray;
+}
+#RegisterLink:hover{
+    outline: none !important;
+    color:black;
 }

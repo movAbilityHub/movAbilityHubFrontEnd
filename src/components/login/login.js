@@ -3,6 +3,7 @@ import jwtDecode from "jwt-decode";
 import NavBar from "../home/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/login.css";
+import {Link} from "react-router-dom";
 
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
@@ -258,6 +259,7 @@ class Login extends Component {
             <Button variant="outline-primary" size="lg" type="submit" block>
               Sign in
             </Button>
+            <div><Link id="RegisterLink" to="/Register">Don't have an account? Register here</Link></div>
           </Form.Group>
         </Form>
       </Col>
