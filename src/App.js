@@ -19,6 +19,8 @@ import Home from "./components/home/home";
 import NotFound from "./components/common/notFound";
 import Login from "./components/login/login";
 import Register from "./components/register/Register";
+import AirportAdmin from "./components/airport/adminDashboard";
+import AirlineAdmin from "./components/airline/adminDashboard";
 
 class App extends Component {
   render() {
@@ -37,6 +39,8 @@ class App extends Component {
             <Route path="/TravelAgent/Dashboard" component={TravelAgent} />
             <Route exact path="/Airport/Dashboard" component={Airport} />
             <Route exact path="/Airline/Dashboard" component={Airline} />
+            <Route exact path="/Airport/AdminDashboard" component={AirportAdmin}/>
+            <Route exact path="/Airline/AdminDashboard" component={AirlineAdmin}/>
             <Route
               exact
               path="/TravelAgency/Dashboard"
