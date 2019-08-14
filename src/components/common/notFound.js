@@ -11,6 +11,8 @@ class NotFound extends Component {
         </h1>
         <h1 className="text-warning centered">404 NOT FOUND</h1>
         <h3 className="text-white">Page does not exist</h3>
+        <br></br>
+        <h5 className="text-white"><a href="/">Click here to go back to Home</a></h5>
       </div>
     );
   }

@@ -13,3 +13,13 @@
 .centered {
     margin-top: 17%;
 }
+
+a{
+    color:rgb(223, 90, 90) ;
+}
+
+a:focus, a:hover{
+    color:white;
+    outline: none !important;
+    text-decoration: underline transparent !important;
+}
