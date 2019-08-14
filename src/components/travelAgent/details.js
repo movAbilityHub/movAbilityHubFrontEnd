@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import PhoneInput from "react-phone-number-input";
 
-class CareReceiver extends Component {
+class Details extends Component {
   state = {};
   render() {
     return (
@@ -63,4 +63,4 @@ class CareReceiver extends Component {
   }
 }
 
-export default CareReceiver;
+export default Details;
