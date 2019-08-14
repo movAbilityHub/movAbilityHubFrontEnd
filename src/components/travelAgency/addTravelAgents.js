@@ -35,7 +35,7 @@ class AddTravelAgents extends Component {
     return (
       <Form.Row>
         <h2 className="text-center col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12 mb-5">
-          <i>Add a new Travel Agent</i>
+          <i>Add a new Travel Agent Staff</i>
         </h2>
 
         <Form.Group
