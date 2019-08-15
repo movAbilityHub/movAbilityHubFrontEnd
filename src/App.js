@@ -21,6 +21,7 @@ import Login from "./components/login/login";
 import Register from "./components/register/Register";
 import AirportAdmin from "./components/airport/adminDashboard";
 import AirlineAdmin from "./components/airline/adminDashboard";
+import IataAdmin from "./components/iata/adminDashboard";
 
 class App extends Component {
   render() {
@@ -29,7 +30,7 @@ class App extends Component {
         <HashRouter>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/IATA" component={IataM} />
+            <Route exact path="/IATA" component={IataM} />
             <Route exact path="/Airport" component={AirportM} />
             <Route exact path="/Airline" component={AirlineM} />
             <Route exact path="/TravelAgency" component={TravelM} />
@@ -37,10 +38,11 @@ class App extends Component {
             <Route path="/Register" component={Register} />
             <Route path="/Passenger/Dashboard" component={Passenger} />
             <Route path="/TravelAgent/Dashboard" component={TravelAgent} />
-            <Route exact path="/Airport/Dashboard" component={Airport} />
-            <Route exact path="/Airline/Dashboard" component={Airline} />
-            <Route exact path="/Airport/AdminDashboard" component={AirportAdmin}/>
-            <Route exact path="/Airline/AdminDashboard" component={AirlineAdmin}/>
+            <Route path="/Airport/Dashboard" component={Airport} />
+            <Route path="/Airline/Dashboard" component={Airline} />
+            <Route path="/Airport/AdminDashboard" component={AirportAdmin}/>
+            <Route path="/Airline/AdminDashboard" component={AirlineAdmin}/>
+            <Route path="/IATA/AdminDashboard" component={IataAdmin}/>
             <Route
               exact
               path="/TravelAgency/Dashboard"

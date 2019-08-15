@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import { Route, Switch, Link } from "react-router-dom";
 
-import AddAirportStaff from "./addAirportStaff";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 
 import "../../assets/styles/navbar.css";
+import VerifyRegistrationTravelAgent from "./verifyRegistrationTA";
+import VerifyRegistrationAirline from "./viewRegistrationAirline";
+import VerifyRegistrationAirport from "./viewRegistrationAirport";
 
-class AirportAdmin extends Component {
+
+class Iataadmin extends Component {
   constructor() {
     super();
     document.title = "Dashboard";
@@ -47,16 +50,23 @@ class AirportAdmin extends Component {
               <Nav.Link
                 className="active rounded"
                 as={Link}
-                to="/Airport/AdminDashboard/"
+                to="/IATA/AdminDashboard/"
               >
-                Add Airport Staff
+                Travel Agent Registration
               </Nav.Link>
               <Nav.Link
                 className="active rounded"
                 as={Link}
-                to="/Airport/AdminDashboard/Staff"
+                to="/IATA/AdminDashboard/Airline"
               >
-                Manage Airport Staff
+                Airline Registration
+              </Nav.Link>
+              <Nav.Link
+                className="active rounded"
+                as={Link}
+                to="/IATA/AdminDashboard/Airport"
+              >
+                Airport Registration
               </Nav.Link>
             </Nav>
             <Nav className="ml-auto">
@@ -68,11 +78,9 @@ class AirportAdmin extends Component {
         </Navbar>
         <div className="wrapper">
           <Switch>
-            <Route
-              exact
-              path="/Airport/AdminDashboard/"
-              component={AddAirportStaff}
-            />
+            <Route exact path="/IATA/AdminDashboard/" component={VerifyRegistrationTravelAgent} />
+            <Route exact path="/IATA/AdminDashboard/Airline" component={VerifyRegistrationAirline}/>
+            <Route exact path="/IATA/AdminDashboard/Airport" component={VerifyRegistrationAirport}/>
           </Switch>
         </div>
       </div>
@@ -80,4 +88,4 @@ class AirportAdmin extends Component {
   }
 }
 
-export default AirportAdmin;
+export default Iataadmin;
