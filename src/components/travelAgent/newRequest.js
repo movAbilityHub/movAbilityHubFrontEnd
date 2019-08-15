@@ -17,8 +17,14 @@ class NewRequests extends Component {
 
     this.state = {
       time: 0,
-      radio: ""
+      radio: "",
+      changedvia1:false,
+      changedvia2:false,
+      changedvia3:false
     };
+  }
+  handleChangedVia1(){
+
   }
 
   handleTimeChange(time) {
@@ -111,9 +117,21 @@ class NewRequests extends Component {
             </Form.Group>
 
             <Form.Group
+            as={Col}
+            className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
+            controlId="formGridAirlineName"
+          >
+            <Form.Label>Select Airline</Form.Label>
+              <Form.Control as="select">
+                <option>Choose...</option>
+                <option>...</option>
+              </Form.Control>
+            </Form.Group>
+
+            <Form.Group
               as={Col}
               className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
-              controlId="formGridDisability"
+              controlId="formGridCareTakerNo"
             >
               <Form.Label>Caretaker No.</Form.Label>
               <PhoneInput
@@ -128,7 +146,7 @@ class NewRequests extends Component {
               className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
               controlId="formGridInitialLocation"
             >
-              <Form.Label>Start Airport</Form.Label>
+              <Form.Label>Origin</Form.Label>
               <Form.Control as="select">
                 <option>Choose...</option>
                 <option>...</option>
@@ -140,7 +158,7 @@ class NewRequests extends Component {
               className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
               controlId="formGridFinalLocation"
             >
-              <Form.Label>Stop Airport</Form.Label>
+              <Form.Label>Destination</Form.Label>
               <Form.Control as="select">
                 <option>Choose...</option>
                 <option>...</option>
@@ -174,14 +192,15 @@ class NewRequests extends Component {
             </Form.Group>
           </Form.Row>
 
-          {this.state.radio === "1" ? (
+          {this.state.radio === "1" ?
+            <div>
             <Form.Row>
               <Form.Group
                 as={Col}
                 className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
                 controlId="formGridVia1"
               >
-                <Form.Label>Via</Form.Label>
+                <Form.Label>Via 1</Form.Label>
                 <Form.Control as="select">
                   <option>Choose...</option>
                   <option>...</option>
@@ -192,7 +211,7 @@ class NewRequests extends Component {
                 className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
                 controlId="formGridVia2"
               >
-                <Form.Label>Via</Form.Label>
+                <Form.Label>Via 2</Form.Label>
                 <Form.Control as="select">
                   <option>Choose...</option>
                   <option>...</option>
@@ -203,14 +222,52 @@ class NewRequests extends Component {
                 className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
                 controlId="formGridVia3"
               >
-                <Form.Label>Via</Form.Label>
+                <Form.Label>Via 3</Form.Label>
                 <Form.Control as="select">
                   <option>Choose...</option>
                   <option>...</option>
                 </Form.Control>
               </Form.Group>
             </Form.Row>
-          ) : null}
+            <Form.Row>
+            <Form.Group
+              as={Col}
+              className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
+              controlId="formGridAirline1"
+            >
+              <Form.Label>Airline 1</Form.Label>
+              <Form.Control as="select" disabled={!this.state.changedvia1}>
+                <option>Choose...</option>
+                <option>...</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group
+            as={Col}
+            className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
+            controlId="formGridAirline2"
+          >
+            <Form.Label>Airline 2</Form.Label>
+            <Form.Control as="select">
+              <option>Choose...</option>
+              <option>...</option>
+            </Form.Control>
+          </Form.Group>
+          <Form.Group
+          as={Col}
+          className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
+          controlId="formGridAirline3"
+        >
+          <Form.Label>Airline 3</Form.Label>
+          <Form.Control as="select">
+            <option>Choose...</option>
+            <option>...</option>
+          </Form.Control>
+        </Form.Group>
+
+        </Form.Row>
+        </div>
+
+          : null}
 
           <Form.Group
             as={Row}
