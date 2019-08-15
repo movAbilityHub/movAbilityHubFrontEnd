@@ -17,14 +17,8 @@ class NewRequests extends Component {
 
     this.state = {
       time: 0,
-      radio: "",
-      changedvia1:false,
-      changedvia2:false,
-      changedvia3:false
+      radio: ""
     };
-  }
-  handleChangedVia1(){
-
   }
 
   handleTimeChange(time) {
@@ -236,7 +230,7 @@ class NewRequests extends Component {
               controlId="formGridAirline1"
             >
               <Form.Label>Airline 1</Form.Label>
-              <Form.Control as="select" disabled={!this.state.changedvia1}>
+              <Form.Control as="select">
                 <option>Choose...</option>
                 <option>...</option>
               </Form.Control>
