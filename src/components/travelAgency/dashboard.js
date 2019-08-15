@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 
 import "../../assets/styles/navbar.css";
 
-class Airline extends Component {
+class TravelAgency extends Component {
   constructor() {
     super();
     document.title = "Dashboard";
@@ -80,4 +80,4 @@ class Airline extends Component {
   }
 }
 
-export default Airline;
+export default TravelAgency;
