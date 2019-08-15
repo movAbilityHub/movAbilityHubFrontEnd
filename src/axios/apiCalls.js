@@ -121,3 +121,33 @@ export const registeredAirlines = () => {
     method: "GET"
   });
 };
+
+export const viewOpenRequest = user => {
+  return axios({
+    data: {
+      requesterID: user.requesterID
+    },
+    url: `${BASE_URL}/request/viewOpenRequest`,
+    method: "POST"
+  });
+};
+
+export const viewClosedRequest = user => {
+  return axios({
+    data: {
+      requesterID: user.requesterID
+    },
+    url: `${BASE_URL}/request/viewClosedRequest`,
+    method: "POST"
+  });
+};
+
+export const cancelRequest = request => {
+  return axios({
+    data: {
+      id: request.id
+    },
+    url: `${BASE_URL}/request/cancelRequest`,
+    method: "POST"
+  });
+};

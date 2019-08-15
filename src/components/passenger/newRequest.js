@@ -113,7 +113,6 @@ class NewRequests extends Component {
       airlineCode: this.state.airlineCode,
       travelTime: this.state.time
     };
-    console.log(request);
     storeRequest(request)
       .then(res => {
         if (res.status === 201) {

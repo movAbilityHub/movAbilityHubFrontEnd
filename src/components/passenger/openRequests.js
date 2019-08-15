@@ -5,35 +5,165 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 import "../../assets/styles/tapaOpenRequests.css";
 
+import jwtDecode from "jwt-decode";
+
+import { viewOpenRequest } from "../../axios/apiCalls";
+import { cancelRequest } from "../../axios/apiCalls";
+
 class OpenRequests extends Component {
-  state = {};
+  constructor(props) {
+    super(props);
+    this.state = {
+      requesterID: "",
+      openRequests: "",
+      errors: "",
+      success: ""
+    };
+    this.decode = this.decode.bind(this);
+    this.fetchOpenRequest = this.fetchOpenRequest.bind(this);
+    this.deleteRequest = this.deleteRequest.bind(this);
+  }
+
+  async componentDidMount() {
+    this.decode();
+  }
+
+  decode() {
+    let token;
+    if (localStorage.getItem("session")) {
+      token = JSON.parse(localStorage.getItem("session"));
+    } else if (sessionStorage.getItem("session")) {
+      token = JSON.parse(sessionStorage.getItem("session"));
+    }
+    if (token !== null) {
+      const decodedToken = jwtDecode(token);
+      this.setState(
+        {
+          requesterID: decodedToken.id
+        },
+        function() {
+          this.fetchOpenRequest();
+        }
+      );
+    }
+  }
+
+  deleteRequest(e) {
+    const request = {
+      id: e.target.value
+    };
+    cancelRequest(request)
+      .then(res => {
+        if (res.data.success) {
+          this.setState({ success: res.data.response }, function() {
+            this.fetchOpenRequest();
+          });
+        } else {
+          this.setState({
+            errors: res.data
+          });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors:
+            e && e.response ? e.response.data.err : "Something went wrong!"
+        });
+      });
+  }
+
+  fetchOpenRequest() {
+    const request = {
+      requesterID: this.state.requesterID
+    };
+    viewOpenRequest(request)
+      .then(res => {
+        if (res.data.success) {
+          this.setState({ openRequests: res.data.request });
+        } else {
+          this.setState({
+            errors: res.data
+          });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors:
+            e && e.response ? e.response.data.err : "Something went wrong!"
+        });
+      });
+  }
+
   render() {
     return (
       <div>
         <h4 className="text-center">
           <i>Open Requests Page</i>
         </h4>
-        <Card>
-          <Card.Header className="text-center">
-            RequestID No: {/*ID props added here?*/}
-          </Card.Header>
-          <Card.Body>
-            <ListGroup>
-              <ListGroup.Item>Name: </ListGroup.Item>
-              <ListGroup.Item>Disability: </ListGroup.Item>
-              <ListGroup.Item>Ticket No: </ListGroup.Item>
-              <ListGroup.Item>Departure Airport: </ListGroup.Item>
-            </ListGroup>
-            <br />
-            <Card.Text>Services needed come here!</Card.Text>
-            <Button className="button-center" variant="primary">
-              Cancel Request
-            </Button>
-          </Card.Body>
-          <Card.Footer className="text-muted text-center">
-            Timestamp comes here!
-          </Card.Footer>
-        </Card>
+        {this.state.openRequests.length > 0 ? (
+          this.state.openRequests.map((request, index) => (
+            <Card className="my-3" key={index}>
+              <Card.Header className="text-center">
+                Request ID No: {request.id}
+              </Card.Header>
+              <Card.Body>
+                <ListGroup>
+                  <ListGroup.Item>
+                    Requested For: {request.requestedFor}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Disability: {request.disability}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Ticket No: {request.ticketNumber}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Departure Airport: {request.origin}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Response By Airport:{" "}
+                    {request.airportResponse === "true"
+                      ? "Approved"
+                      : request.airportResponse === "false"
+                      ? "Denied"
+                      : "No Action"}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Response By Airline:{" "}
+                    {request.airlineResponse === "true"
+                      ? "Approved"
+                      : request.airlineResponse === "false"
+                      ? "Denied"
+                      : "No Action"}
+                  </ListGroup.Item>
+                </ListGroup>
+                <br />
+                <Card.Text>Services needed: {request.service}</Card.Text>
+                <Card.Text>
+                  Status:{" "}
+                  {request.status === true ? "Open" : "Denied by both parties"}
+                </Card.Text>
+                <Button
+                  className="button-center"
+                  variant="primary"
+                  value={request._id}
+                  onClick={this.deleteRequest}
+                >
+                  Cancel Request
+                </Button>
+              </Card.Body>
+              <Card.Footer className="text-muted text-center">
+                {request.date.slice(0, 10)}
+              </Card.Footer>
+            </Card>
+          ))
+        ) : (
+          <Card className="my-3">
+            <Card.Header className="text-center">
+              No requests raised
+            </Card.Header>
+          </Card>
+        )}
       </div>
     );
   }
