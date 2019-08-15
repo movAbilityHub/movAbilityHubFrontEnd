@@ -1,51 +1,45 @@
 import React, { Component } from "react";
-import jwtDecode from "jwt-decode";
 import NavBar from "../home/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/login.css";
 
-import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
 import PhoneInput from "react-phone-number-input";
+
+import { customerRegister } from "../../axios/apiCalls";
+import { staffRegister } from "../../axios/apiCalls";
 
 class Register extends Component {
   constructor() {
     super();
     document.title = "Registration";
     this.state = {
+      firstName: "",
+      lastName: "",
       email: "",
       password: "",
       password1: "",
       userType: "customer",
       errors: "",
-      airlineCode: "",
-      airlineName: "",
-      airportCode: "",
-      airportName: "",
-      agencyName: "",
-      agencyCode: "",
-      iataCode: "",
-      iataName: ""
+      code: "",
+      organisationName: "",
+      phone: ""
     };
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.ondropdownChange = this.ondropdownChange.bind(this);
   }
+
   onChange(e) {
-    this.setState({ [e.target.name]: e.target.value }, function() {
-      console.log();
-    });
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   ondropdownChange(e) {
-    this.setState({ userType: e.target.value }, function() {
-      console.log(this.state.userType);
-    });
+    this.setState({ userType: e.target.value });
   }
 
   onSubmit(e) {
@@ -53,17 +47,50 @@ class Register extends Component {
     e.preventDefault();
 
     const user = {
+      firstName: this.state.firstName,
+      lastName: this.state.lastName,
       email: this.state.email,
+      phone: this.state.phone,
       password: this.state.password,
       password1: this.state.password1
     };
 
     const staff = {
+      organisationName: this.state.organisationName,
+      code: this.state.code,
       email: this.state.email,
+      phone: this.state.phone,
       password: this.state.password,
       password1: this.state.password1,
       userType: this.state.userType
     };
+    if (this.state.userType === "customer") {
+      customerRegister(user)
+        .then(res => {
+          if (res.status === 200) {
+            this.props.history.push("/Login");
+          }
+        })
+        .catch(e => {
+          this.setState({
+            errors:
+              e && e.response ? e.response.data.error : "Something went wrong!"
+          });
+        });
+    } else {
+      staffRegister(staff)
+        .then(res => {
+          if (res.status === 200) {
+            this.props.history.push("/Login");
+          }
+        })
+        .catch(e => {
+          this.setState({
+            errors:
+              e && e.response ? e.response.data.error : "Something went wrong!"
+          });
+        });
+    }
   }
 
   render() {
@@ -87,9 +114,34 @@ class Register extends Component {
                 <option value="airline">Airline</option>
                 <option value="airport">Airport</option>
                 <option value="travelAgency">Travel Agency</option>
-                <option value="iataStaff">IATA Staff</option>
               </Form.Control>
             </Form.Group>
+            {this.state.userType === "customer" ? (
+              <div>
+                <Form.Group as={Col}>
+                  <label htmlFor="firstName">First Name</label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="firstName"
+                    value={this.state.firstName}
+                    placeholder="Enter first name"
+                    onChange={this.onChange}
+                  />
+                </Form.Group>
+                <Form.Group as={Col}>
+                  <label htmlFor="lastName">Last Name</label>
+                  <FormControl
+                    id="lastName"
+                    type="text"
+                    name="lastName"
+                    value={this.state.lastName}
+                    placeholder="Enter last name"
+                    onChange={this.onChange}
+                  />
+                </Form.Group>
+              </div>
+            ) : null}
             <Form.Group as={Col}>
               <label htmlFor="email">Email Address</label>
               <input
@@ -118,9 +170,9 @@ class Register extends Component {
               <FormControl
                 id="password1"
                 type="password"
-                name="password"
+                name="password1"
                 value={this.state.password1}
-                placeholder="Enter password"
+                placeholder="Re-enter password"
                 onChange={this.onChange}
               />
             </Form.Group>
@@ -140,8 +192,8 @@ class Register extends Component {
                   <FormControl
                     id="codeairline"
                     type="text"
-                    name="codeairline"
-                    value={this.state.airlineCode}
+                    name="code"
+                    value={this.state.code}
                     placeholder="Enter Airline Code"
                     onChange={this.onChange}
                   />
@@ -151,8 +203,8 @@ class Register extends Component {
                   <FormControl
                     id="nameairline"
                     type="text"
-                    name="nameairline"
-                    value={this.state.airlineName}
+                    name="organisationName"
+                    value={this.state.organisationName}
                     placeholder="Enter Airline Name"
                     onChange={this.onChange}
                   />
@@ -165,8 +217,8 @@ class Register extends Component {
                   <FormControl
                     id="codeairport"
                     type="text"
-                    name="codeairport"
-                    value={this.state.airportCode}
+                    name="code"
+                    value={this.state.code}
                     placeholder="Enter Airport Code"
                     onChange={this.onChange}
                   />
@@ -176,8 +228,8 @@ class Register extends Component {
                   <FormControl
                     id="nameairport"
                     type="text"
-                    name="nameairport"
-                    value={this.state.airportName}
+                    name="organisationName"
+                    value={this.state.organisationName}
                     placeholder="Enter Airport Name"
                     onChange={this.onChange}
                   />
@@ -190,8 +242,8 @@ class Register extends Component {
                   <FormControl
                     id="codeagency"
                     type="text"
-                    name="codeagency"
-                    value={this.state.agencyCode}
+                    name="code"
+                    value={this.state.code}
                     placeholder="Enter Agency Code"
                     onChange={this.onChange}
                   />
@@ -201,34 +253,9 @@ class Register extends Component {
                   <FormControl
                     id="nameagency"
                     type="text"
-                    name="nameagency"
-                    value={this.state.agencyName}
+                    name="organisationName"
+                    value={this.state.organisationName}
                     placeholder="Enter Agency Name"
-                    onChange={this.onChange}
-                  />
-                </Form.Group>
-              </div>
-            ) : this.state.userType === "iataStaff" ? (
-              <div>
-                <Form.Group as={Col}>
-                  <label htmlFor="codeStaff">IATA Staff Code</label>
-                  <FormControl
-                    id="codeStaff"
-                    type="text"
-                    name="codeStaff"
-                    value={this.state.iataCode}
-                    placeholder="Enter Agency Code"
-                    onChange={this.onChange}
-                  />
-                </Form.Group>
-                <Form.Group as={Col}>
-                  <label htmlFor="nameStaff">Staff Name</label>
-                  <FormControl
-                    id="nameStaff"
-                    type="text"
-                    name="nameStaff"
-                    value={this.state.iataName}
-                    placeholder="Enter IATA staff Name"
                     onChange={this.onChange}
                   />
                 </Form.Group>
