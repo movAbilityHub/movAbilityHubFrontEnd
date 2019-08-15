@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-concat */
 import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
@@ -6,32 +7,220 @@ import Button from "react-bootstrap/Button";
 import TimePicker from "react-bootstrap-time-picker";
 import { withRouter } from "react-router-dom";
 import PhoneInput from "react-phone-number-input";
+import jwtDecode from "jwt-decode";
 
 import "../../assets/styles/taDashboard.css";
+
+import { storeRequest } from "../../axios/apiCalls";
+import { registeredAirports } from "../../axios/apiCalls";
+import { registeredAirlines } from "../../axios/apiCalls";
 
 class NewRequests extends Component {
   constructor(props) {
     super(props);
 
+    this.onSubmit = this.onSubmit.bind(this);
+    this.onChange = this.onChange.bind(this);
+    this.onAirlineChange = this.onAirlineChange.bind(this);
+    this.onOriginChange = this.onOriginChange.bind(this);
+    this.onDestinationChange = this.onDestinationChange.bind(this);
     this.handleTimeChange = this.handleTimeChange.bind(this);
     this.RadioClicked = this.RadioClicked.bind(this);
+    this.fetchAirports = this.fetchAirports.bind(this);
+    this.fetchAirlines = this.fetchAirlines.bind(this);
+    this.onTransitDestinationChange = this.onTransitDestinationChange.bind(
+      this
+    );
+    this.onTransitAirlineChange = this.onTransitAirlineChange.bind(this);
+    this.decode = this.decode.bind(this);
 
     this.state = {
+      passportNumber: "",
+      ticketNumber: "",
+      travelDate: "",
+      flightNumber: "",
+      origin: "",
+      destination: "",
+      requestedBy: "",
+      requesterID: "",
+      disability: "",
+      age: "",
+      service: "",
+      phone: "",
+      transitDestination: "",
+      transitDestinationCode: "",
+      transitAirline: "",
+      transitAirlineCode: "",
+      destinationCode: "",
+      originCode: "",
+      airline: "",
+      airlineCode: "",
       time: 0,
-      radio: ""
+      radio: "",
+      registeredAirlines: [],
+      registeredAirports: [],
+      errors: "",
+      success: ""
     };
   }
 
+  async componentDidMount() {
+    this.fetchAirports();
+    this.fetchAirlines();
+    this.decode();
+  }
+
+  decode() {
+    let token;
+    if (localStorage.getItem("session")) {
+      token = JSON.parse(localStorage.getItem("session"));
+    } else if (sessionStorage.getItem("session")) {
+      token = JSON.parse(sessionStorage.getItem("session"));
+    }
+    if (token !== null) {
+      const decodedToken = jwtDecode(token);
+      this.setState({
+        requestedBy: decodedToken.firstName + " " + decodedToken.lastName,
+        requesterID: decodedToken.id
+      });
+    }
+  }
+
+  onSubmit(e) {
+    this.setState({ errors: "" });
+    e.preventDefault();
+    const request = {
+      passportNumber: this.state.passportNumber,
+      ticketNumber: this.state.ticketNumber,
+      travelDate: this.state.travelDate,
+      flightNumber: this.state.flightNumber,
+      origin: this.state.origin,
+      destination: this.state.destination,
+      requestedBy: this.state.requestedBy,
+      requesterID: this.state.requesterID,
+      disability: this.state.disability,
+      age: this.state.age,
+      service: this.state.service,
+      requestedFor: this.state.requestedBy,
+      phoneNumber: this.state.phone,
+      transitDestination: this.state.transitDestination,
+      transitDestinationCode: this.state.transitDestinationCode,
+      transitAirline: this.state.transitAirline,
+      transitAirlineCode: this.state.transitAirlineCode,
+      destinationCode: this.state.destinationCode,
+      originCode: this.state.originCode,
+      airline: this.state.airline,
+      airlineCode: this.state.airlineCode,
+      travelTime: this.state.time
+    };
+    console.log(request);
+    storeRequest(request)
+      .then(res => {
+        if (res.status === 201) {
+          this.setState({ success: res.data.message }, function() {
+            console.log(this.state.success);
+          });
+        } else {
+          this.setState({ errors: res.data }, function() {
+            console.log(this.state.errors);
+          });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors:
+            e && e.response ? e.response.data.err : "Something went wrong!"
+        });
+      });
+  }
+
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  onAirlineChange(e) {
+    const value = e.target.value.split("~");
+    this.setState(
+      {
+        airline: value[1],
+        airlineCode: value[0]
+      },
+      function() {
+        console.log(this.state);
+      }
+    );
+  }
+
+  onOriginChange(e) {
+    const value = e.target.value.split("~");
+    this.setState({
+      origin: value[1],
+      originCode: value[0]
+    });
+  }
+
+  onDestinationChange(e) {
+    const value = e.target.value.split("~");
+    this.setState({
+      destination: value[1],
+      destinationCode: value[0]
+    });
+  }
+
+  onTransitDestinationChange(e) {
+    const value = e.target.value.split("~");
+    this.setState({
+      transitDestination: value[1],
+      transitDestinationCode: value[0]
+    });
+  }
+
+  onTransitAirlineChange(e) {
+    const value = e.target.value.split("~");
+    this.setState({
+      transitAirline: value[1],
+      transitAirlineCode: value[0]
+    });
+  }
+
+  fetchAirports() {
+    registeredAirports()
+      .then(res => {
+        if (res.status === 200) {
+          this.setState({
+            registeredAirports: res.data.airports
+          });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          error: e.response.data.err
+        });
+      });
+  }
+
+  fetchAirlines() {
+    registeredAirlines()
+      .then(res => {
+        if (res.status === 200) {
+          this.setState({
+            registeredAirlines: res.data.airlines
+          });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          error: e.response.data.err
+        });
+      });
+  }
+
   handleTimeChange(time) {
-    console.log(time); // <- prints "3600" if "01:00" is picked
     this.setState({ time });
   }
 
   RadioClicked(e) {
-    console.log("here");
-    this.setState({ [e.target.name]: e.target.value }, function() {
-      console.log(this.state.radio);
-    });
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
@@ -40,7 +229,7 @@ class NewRequests extends Component {
         <h4 className="text-center">
           <i>New Request Page</i>
         </h4>
-        <Form>
+        <Form noValidate onSubmit={this.onSubmit}>
           <Form.Row>
             <Form.Group
               as={Col}
@@ -48,7 +237,13 @@ class NewRequests extends Component {
               controlId="formGridDisability"
             >
               <Form.Label>Disability</Form.Label>
-              <Form.Control type="text" placeholder="Enter Disability" />
+              <Form.Control
+                type="text"
+                placeholder="Enter Disability"
+                name="disability"
+                value={this.state.disability}
+                onChange={this.onChange}
+              />
             </Form.Group>
 
             <Form.Group
@@ -57,7 +252,13 @@ class NewRequests extends Component {
               controlId="formGridAge"
             >
               <Form.Label>Age</Form.Label>
-              <Form.Control type="number" placeholder="Enter Age" />
+              <Form.Control
+                type="number"
+                placeholder="Enter Age"
+                name="age"
+                value={this.state.age}
+                onChange={this.onChange}
+              />
             </Form.Group>
 
             <Form.Group
@@ -66,7 +267,12 @@ class NewRequests extends Component {
               controlId="formGridPassportNo"
             >
               <Form.Label>Passport No.</Form.Label>
-              <Form.Control placeholder="Enter Passport No." />
+              <Form.Control
+                placeholder="Enter Passport No."
+                name="passportNumber"
+                value={this.state.passportNumber}
+                onChange={this.onChange}
+              />
             </Form.Group>
 
             <Form.Group
@@ -75,7 +281,12 @@ class NewRequests extends Component {
               controlId="formGridFlightNo"
             >
               <Form.Label>Flight No.</Form.Label>
-              <Form.Control placeholder="Enter Flight No." />
+              <Form.Control
+                placeholder="Enter Flight No."
+                name="flightNumber"
+                value={this.state.flightNumber}
+                onChange={this.onChange}
+              />
             </Form.Group>
 
             <Form.Group
@@ -84,7 +295,13 @@ class NewRequests extends Component {
               controlId="formGridDate"
             >
               <Form.Label>Travel Date</Form.Label>
-              <Form.Control placeholder="Enter Date" type="date" />
+              <Form.Control
+                placeholder="Enter Date"
+                type="date"
+                name="travelDate"
+                value={this.state.travelDate}
+                onChange={this.onChange}
+              />
             </Form.Group>
 
             <Form.Group
@@ -108,18 +325,38 @@ class NewRequests extends Component {
               controlId="formGridTicketNo"
             >
               <Form.Label>Ticket No.</Form.Label>
-              <Form.Control placeholder="Enter Ticket No." />
+              <Form.Control
+                placeholder="Enter Ticket No."
+                name="ticketNumber"
+                value={this.state.ticketNumber}
+                onChange={this.onChange}
+              />
             </Form.Group>
 
             <Form.Group
-            as={Col}
-            className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
-            controlId="formGridAirlineName"
-          >
-            <Form.Label>Select Airline</Form.Label>
-              <Form.Control as="select">
-                <option>Choose...</option>
-                <option>...</option>
+              as={Col}
+              className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
+              controlId="formGridAirlineName"
+            >
+              <Form.Label>Select Airline</Form.Label>
+              <Form.Control
+                as="select"
+                type="text"
+                onChange={this.onAirlineChange}
+              >
+                <option value={"" + "~" + ""} key={0}>
+                  Select an airline
+                </option>
+                {this.state.registeredAirlines.length > 0
+                  ? this.state.registeredAirlines.map((airline, index) => (
+                      <option
+                        value={airline.code + "~" + airline.organisationName}
+                        key={index + 1}
+                      >
+                        {airline.organisationName}
+                      </option>
+                    ))
+                  : null}
               </Form.Control>
             </Form.Group>
 
@@ -142,9 +379,24 @@ class NewRequests extends Component {
               controlId="formGridInitialLocation"
             >
               <Form.Label>Origin</Form.Label>
-              <Form.Control as="select">
-                <option>Choose...</option>
-                <option>...</option>
+              <Form.Control
+                as="select"
+                type="text"
+                onChange={this.onOriginChange}
+              >
+                <option value={"" + "~" + ""} key={0}>
+                  Select origin airport
+                </option>
+                {this.state.registeredAirports.length > 0
+                  ? this.state.registeredAirports.map((airport, index) => (
+                      <option
+                        value={airport.code + "~" + airport.organisationName}
+                        key={index + 1}
+                      >
+                        {airport.organisationName}
+                      </option>
+                    ))
+                  : null}
               </Form.Control>
             </Form.Group>
 
@@ -154,9 +406,24 @@ class NewRequests extends Component {
               controlId="formGridFinalLocation"
             >
               <Form.Label>Destination</Form.Label>
-              <Form.Control as="select">
-                <option>Choose...</option>
-                <option>...</option>
+              <Form.Control
+                as="select"
+                type="text"
+                onChange={this.onDestinationChange}
+              >
+                <option value={"" + "~" + ""} key={0}>
+                  Select destination airport
+                </option>
+                {this.state.registeredAirports.length > 0
+                  ? this.state.registeredAirports.map((airport, index) => (
+                      <option
+                        value={airport.code + "~" + airport.organisationName}
+                        key={index + 1}
+                      >
+                        {airport.organisationName}
+                      </option>
+                    ))
+                  : null}
               </Form.Control>
             </Form.Group>
 
@@ -187,82 +454,68 @@ class NewRequests extends Component {
             </Form.Group>
           </Form.Row>
 
-          {this.state.radio === "1" ? 
+          {this.state.radio === "1" ? (
             <div>
-            <Form.Row>
-              <Form.Group
-                as={Col}
-                className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
-                controlId="formGridVia1"
-              >
-                <Form.Label>Via 1</Form.Label>
-                <Form.Control as="select">
-                  <option>Choose...</option>
-                  <option>...</option>
-                </Form.Control>
-              </Form.Group>
-              <Form.Group
-                as={Col}
-                className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
-                controlId="formGridVia2"
-              >
-                <Form.Label>Via 2</Form.Label>
-                <Form.Control as="select">
-                  <option>Choose...</option>
-                  <option>...</option>
-                </Form.Control>
-              </Form.Group>
-              <Form.Group
-                as={Col}
-                className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
-                controlId="formGridVia3"
-              >
-                <Form.Label>Via 3</Form.Label>
-                <Form.Control as="select">
-                  <option>Choose...</option>
-                  <option>...</option>
-                </Form.Control>
-              </Form.Group>
-            </Form.Row>
-
-          <Form.Row>
-              <Form.Group
-                as={Col}
-                className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
-                controlId="formGridAirline1"
-              >
-                <Form.Label>Airline 1</Form.Label>
-                <Form.Control as="select">
-                  <option>Choose...</option>
-                  <option>...</option>
-                </Form.Control>
-              </Form.Group>
-              <Form.Group
-              as={Col}
-              className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
-              controlId="formGridAirline2"
-            >
-              <Form.Label>Airline 2</Form.Label>
-              <Form.Control as="select">
-                <option>Choose...</option>
-                <option>...</option>
-              </Form.Control>
-            </Form.Group>
-            <Form.Group
-            as={Col}
-            className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
-            controlId="formGridAirline3"
-          >
-            <Form.Label>Airline 3</Form.Label>
-            <Form.Control as="select">
-              <option>Choose...</option>
-              <option>...</option>
-            </Form.Control>
-          </Form.Group>
-
-          </Form.Row>
-          </div>
-           :null}
+              <Form.Row>
+                <Form.Group
+                  as={Col}
+                  className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
+                  controlId="formGridVia1"
+                >
+                  <Form.Label>Via</Form.Label>
+                  <Form.Control
+                    as="select"
+                    type="text"
+                    onChange={this.onTransitDestinationChange}
+                  >
+                    <option value={"" + "~" + ""} key={0}>
+                      Select transit airport
+                    </option>
+                    {this.state.registeredAirports.length > 0
+                      ? this.state.registeredAirports.map((airport, index) => (
+                          <option
+                            value={
+                              airport.code + "~" + airport.organisationName
+                            }
+                            key={index + 1}
+                          >
+                            {airport.organisationName}
+                          </option>
+                        ))
+                      : null}
+                  </Form.Control>
+                </Form.Group>
+                <Form.Group
+                  as={Col}
+                  className="col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4"
+                  controlId="formGridAirline1"
+                >
+                  <Form.Label>Airline</Form.Label>
+                  <Form.Control
+                    as="select"
+                    type="text"
+                    onChange={this.onTransitAirlineChange}
+                  >
+                    <option value={"" + "~" + ""} key={0}>
+                      Select transit airline
+                    </option>
+                    {this.state.registeredAirlines.length > 0
+                      ? this.state.registeredAirlines.map((airline, index) => (
+                          <option
+                            value={
+                              airline.code + "~" + airline.organisationName
+                            }
+                            key={index + 1}
+                          >
+                            {airline.organisationName}
+                          </option>
+                        ))
+                      : null}
+                  </Form.Control>
+                </Form.Group>
+              </Form.Row>
+            </div>
+          ) : null}
 
           <Form.Group
             as={Row}
@@ -273,10 +526,17 @@ class NewRequests extends Component {
             <Form.Control
               placeholder="Enter Details of service"
               as="textarea"
+              name="service"
+              value={this.state.service}
+              onChange={this.onChange}
             />
           </Form.Group>
 
-          <Button className="newRequestBtn" type="submit">
+          <Button
+            className="newRequestBtn"
+            type="submit"
+            onSubmit={this.onSubmit}
+          >
             Submit
           </Button>
         </Form>

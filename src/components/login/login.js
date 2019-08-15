@@ -35,15 +35,11 @@ class Login extends Component {
   }
 
   onChange(e) {
-    this.setState({ [e.target.name]: e.target.value }, function() {
-      console.log(this.state.rememberMe);
-    });
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   onCheckBoxToggle(e) {
-    this.setState({ [e.target.name]: !!e.target.checked }, function() {
-      console.log(this.state.rememberMe);
-    });
+    this.setState({ [e.target.name]: !!e.target.checked });
   }
 
   togglePassword() {
@@ -76,7 +72,7 @@ class Login extends Component {
     if (this.state.userType === "customer") {
       customerLogin(user)
         .then(res => {
-          if (res.status === 200) {
+          if (res.data.success) {
             if (this.state.rememberMe === true) {
               localStorage.setItem("session", JSON.stringify(res.data.token));
             } else {
@@ -84,7 +80,9 @@ class Login extends Component {
             }
             this.props.history.push("/Passenger/Dashboard");
           } else {
-            this.setState({ errors: "Something went wrong!" });
+            this.setState({ errors: res.data }, function() {
+              console.log(this.state.errors);
+            });
           }
         })
         .catch(e => {
@@ -99,7 +97,7 @@ class Login extends Component {
     ) {
       otherStaffLogin(staff)
         .then(res => {
-          if (res.status === 200) {
+          if (res.data.success) {
             if (this.state.rememberMe === true) {
               localStorage.setItem("session", JSON.stringify(res.data.token));
             } else {
@@ -119,20 +117,14 @@ class Login extends Component {
           }
         })
         .catch(e => {
-          this.setState(
-            {
-              errors:
-                e && e.response ? e.response.data : "Something went wrong!"
-            },
-            function() {
-              console.log(this.state);
-            }
-          );
+          this.setState({
+            errors: e && e.response ? e.response.data : "Something went wrong!"
+          });
         });
     } else if (this.state.userType === "travelAgent") {
       travelAgentLogin(user)
         .then(res => {
-          if (res.status === 200) {
+          if (res.data.success) {
             if (this.state.rememberMe === true) {
               localStorage.setItem("session", JSON.stringify(res.data.token));
             } else {
@@ -144,20 +136,14 @@ class Login extends Component {
           }
         })
         .catch(e => {
-          this.setState(
-            {
-              errors:
-                e && e.response ? e.response.data : "Something went wrong!"
-            },
-            function() {
-              console.log(this.state);
-            }
-          );
+          this.setState({
+            errors: e && e.response ? e.response.data : "Something went wrong!"
+          });
         });
     } else if (this.state.userType === "iataStaff") {
       iataStaffLogin(user)
         .then(res => {
-          if (res.status === 200) {
+          if (res.data.success) {
             if (this.state.rememberMe === true) {
               localStorage.setItem("session", JSON.stringify(res.data.token));
             } else {
@@ -169,15 +155,9 @@ class Login extends Component {
           }
         })
         .catch(e => {
-          this.setState(
-            {
-              errors:
-                e && e.response ? e.response.data : "Something went wrong!"
-            },
-            function() {
-              console.log(this.state);
-            }
-          );
+          this.setState({
+            errors: e && e.response ? e.response.data : "Something went wrong!"
+          });
         });
     }
   }

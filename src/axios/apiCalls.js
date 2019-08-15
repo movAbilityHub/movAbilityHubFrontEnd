@@ -77,7 +77,7 @@ export const staffRegister = user => {
   });
 };
 
-export const storeRegister = request => {
+export const storeRequest = request => {
   return axios({
     data: {
       passportNumber: request.passportNumber,
@@ -96,6 +96,8 @@ export const storeRegister = request => {
       phoneNumber: request.phoneNumber,
       transitDestination: request.transitDestination,
       transitDestinationCode: request.transitDestinationCode,
+      transitAirline: request.transitAirline,
+      transitAirlineCode: request.transitAirlineCode,
       destinationCode: request.destinationCode,
       originCode: request.originCode,
       airline: request.airline,
@@ -103,5 +105,19 @@ export const storeRegister = request => {
     },
     url: `${BASE_URL}/request/storeRequest`,
     method: "POST"
+  });
+};
+
+export const registeredAirports = () => {
+  return axios({
+    url: `${BASE_URL}/request/fetchRegisteredAirport`,
+    method: "GET"
+  });
+};
+
+export const registeredAirlines = () => {
+  return axios({
+    url: `${BASE_URL}/request/fetchRegisteredAirline`,
+    method: "GET"
   });
 };

@@ -67,8 +67,13 @@ class Register extends Component {
     if (this.state.userType === "customer") {
       customerRegister(user)
         .then(res => {
-          if (res.status === 200) {
+          if (res.data.success) {
             this.props.history.push("/Login");
+          } else {
+            console.log(res);
+            this.setState({ errors: res.data }, function() {
+              console.log(this.state.errors);
+            });
           }
         })
         .catch(e => {
@@ -80,8 +85,12 @@ class Register extends Component {
     } else {
       staffRegister(staff)
         .then(res => {
-          if (res.status === 200) {
+          if (res.data.success) {
             this.props.history.push("/Login");
+          } else {
+            this.setState({ errors: res.data }, function() {
+              console.log(this.state.errors);
+            });
           }
         })
         .catch(e => {
