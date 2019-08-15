@@ -5,6 +5,7 @@ import OpenRequests from "./openRequests";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
+import ClosedRequests from "./closedRequests";
 
 import "../../assets/styles/navbar.css";
 
@@ -69,6 +70,7 @@ class Airline extends Component {
         <div className="wrapper">
           <Switch>
             <Route exact path="/Airline/Dashboard/" component={OpenRequests} />
+            <Route exact path="/Airline/Dashboard/ClosedRequests" component={ClosedRequests}/>
           </Switch>
         </div>
       </div>

@@ -5,6 +5,7 @@ import OpenRequests from "./openRequests.js";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
+import ClosedRequests from "./closedRequests";
 
 class Airport extends Component {
   constructor() {
@@ -67,6 +68,7 @@ class Airport extends Component {
         <div className="wrapper">
           <Switch>
             <Route exact path="/Airport/Dashboard/" component={OpenRequests} />
+            <Route exact path="/Airport/Dashboard/ClosedRequests" component={ClosedRequests}/>
           </Switch>
         </div>
       </div>
