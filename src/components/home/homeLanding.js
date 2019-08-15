@@ -14,7 +14,7 @@ import Carousel from "react-bootstrap/Carousel";
 class HomeLanding extends Component {
   render() {
     return (
-     <div>
+     <div className="vh-50">
      <Carousel className="sliders">
      <Carousel.Item>
      <img
