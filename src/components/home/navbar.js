@@ -13,7 +13,7 @@ import Airport from "./airport";
 import TravelAgency from "./travelAgency";
 import HomeLanding from "./homeLanding";
 import Login from "../login/login";
-import Register from "../register/customerRegister";
+import Register from "../register/Register";
 
 class NavBar extends Component{
 

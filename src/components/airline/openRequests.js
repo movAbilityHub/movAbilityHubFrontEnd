@@ -33,17 +33,17 @@ class OpenRequests extends Component {
               Disability: {/* props for Disability here*/}
               <br />
               <hr />
-              <Button className="btnViewMore" variant="primary" onClick={()=>this.setState({modalShow:true})}>
-                View More
+              <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="primary" onClick={()=>this.setState({modalShow:true})}>
+                Info
               </Button>
               <ViewModal
               show={this.state.modalShow}
               onHide={modalClose}
               />
-              <Button className="btnAccept" variant="success">
+              <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="success">
                 Accept
               </Button>
-              <Button className="btnDeny" variant="danger">
+              <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="danger">
                 Deny
               </Button>
             </Card.Body>
@@ -54,17 +54,17 @@ class OpenRequests extends Component {
               Disability: {/* props for Disability here*/}
               <br />
               <hr />
-              <Button className="btnViewMore py-1" variant="primary" onClick={()=>this.setState({modalShow:true})}>
-                View More
+              <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="primary" onClick={()=>this.setState({modalShow:true})}>
+                Info
               </Button>
               <ViewModal
               show={this.state.modalShow}
               onHide={modalClose}
               />
-              <Button className="btnAccept py-1" variant="success">
+              <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="success">
                 Accept
               </Button>
-              <Button className="btnDeny py-1" variant="danger">
+              <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="danger">
                 Deny
               </Button>
             </Card.Body>

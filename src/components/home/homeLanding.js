@@ -46,7 +46,7 @@ class HomeLanding extends Component {
           />
       
           <Carousel.Caption>
-            <h3>We are aviation lovers</h3>
+            <h3>We love flying</h3>
             <p>And we help you fly hassle free.</p>
           </Carousel.Caption>
         </Carousel.Item>
