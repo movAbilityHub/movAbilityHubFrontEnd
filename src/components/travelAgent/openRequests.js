@@ -104,33 +104,33 @@ class OpenRequests extends Component {
           this.state.openRequests.map((request, index) => (
             <Card className="my-3" key={index}>
               <Card.Header className="text-center">
-                Request ID No: {request.id}
+                <b>Request ID No:</b> {request.id}
               </Card.Header>
               <Card.Body>
                 <ListGroup>
                   <ListGroup.Item>
-                    Requested For: {request.requestedFor}
+                    <b>Requested For:</b> {request.requestedFor}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Disability: {request.disability}
+                    <b>Disability:</b> {request.disability}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Ticket No: {request.ticketNumber}
+                    <b>Ticket No:</b> {request.ticketNumber}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Departure Airport: {request.origin}
+                    <b>Departure Airport:</b> {request.origin}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Travel Date: {request.travelDate}
+                    <b>Travel Date:</b> {request.travelDate}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Flight Time:{" "}
+                    <b>Flight Time:</b>{" "}
                     {request.travelTime.toString().slice(0, 2) +
                       ":" +
-                      request.travelTime.toString().slice(2, 4)}{" "}
+                      request.travelTime.toString().slice(2, 4)}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Response By Airport:{" "}
+                    <b>Response By Airport:</b>{" "}
                     {request.airportResponse === "true"
                       ? "Approved"
                       : request.airportResponse === "false"
@@ -138,7 +138,7 @@ class OpenRequests extends Component {
                       : "No Action"}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Response By Airline:{" "}
+                    <b>Response By Airline:</b>{" "}
                     {request.airlineResponse === "true"
                       ? "Approved"
                       : request.airlineResponse === "false"
@@ -147,9 +147,11 @@ class OpenRequests extends Component {
                   </ListGroup.Item>
                 </ListGroup>
                 <br />
-                <Card.Text>Services needed: {request.service}</Card.Text>
                 <Card.Text>
-                  Status:{" "}
+                  <b>Services needed:</b> {request.service}
+                </Card.Text>
+                <Card.Text>
+                  <b>Status:</b>{" "}
                   {request.status === true ? "Open" : "Denied by both parties"}
                 </Card.Text>
                 <Button
@@ -162,12 +164,12 @@ class OpenRequests extends Component {
                 </Button>
               </Card.Body>
               <Card.Footer className="text-muted text-center">
-                Raised On:{" "}
+                <b>Raised On:</b>{" "}
                 {request.date.slice(8, 10) +
                   "-" +
                   request.date.slice(5, 7) +
                   "-" +
-                  request.date.slice(0, 4)}{" "}
+                  request.date.slice(0, 4)}
               </Card.Footer>
             </Card>
           ))

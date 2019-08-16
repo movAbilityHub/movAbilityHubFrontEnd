@@ -11,7 +11,7 @@ class Details extends Component {
       <div>
         <Form>
           <h4 className="text-center">
-            <i>Update Details</i>
+            <i>Update Details (Under Development)</i>
           </h4>
           <Form.Row>
             <Form.Group

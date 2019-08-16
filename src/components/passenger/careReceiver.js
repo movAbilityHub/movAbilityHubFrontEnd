@@ -12,7 +12,7 @@ class CareReceiver extends Component {
     return (
       <div>
         <h4 className="text-center">
-          <i>Update Details</i>
+          <i>Update Details (Under Development)</i>
         </h4>
         <Form>
           <Form.Row>

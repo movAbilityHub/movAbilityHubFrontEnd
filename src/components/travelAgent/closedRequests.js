@@ -79,34 +79,36 @@ class ClosedRequests extends Component {
           this.state.closedRequests.map((request, index) => (
             <Card className="my-3" key={index}>
               <Card.Header className="text-center">
-                Request ID No: {request.id}
+                <b>Request ID No:</b> {request.id}
               </Card.Header>
               <Card.Body>
                 <ListGroup>
                   <ListGroup.Item>
-                    Requested For: {request.requestedFor}
+                    <b>Requested For:</b> {request.requestedFor}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Disability: {request.disability}
+                    <b>Disability:</b> {request.disability}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Ticket No: {request.ticketNumber}
+                    <b>Ticket No:</b> {request.ticketNumber}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Departure Airport: {request.origin}
+                    <b>Departure Airport:</b> {request.origin}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    Travel Date: {request.travelDate}
+                    <b>Travel Date:</b> {request.travelDate}
                   </ListGroup.Item>
                 </ListGroup>
                 <br />
-                <Card.Text>Services needed: {request.service}</Card.Text>
                 <Card.Text>
-                  Status: {request.closed ? "Closed" : "Not Closed"}
+                  <b>Services needed:</b> {request.service}
+                </Card.Text>
+                <Card.Text>
+                  <b>Status:</b> {request.closed ? "Closed" : "Not Closed"}
                 </Card.Text>
               </Card.Body>
               <Card.Footer className="text-muted text-center">
-                Raised On:{" "}
+                <b>Raised On:</b>{" "}
                 {request.date.slice(8, 10) +
                   "-" +
                   request.date.slice(5, 7) +
@@ -118,7 +120,7 @@ class ClosedRequests extends Component {
         ) : (
           <Card className="my-3">
             <Card.Header className="text-center">
-              No requests raised
+              Raised On: No requests raised
             </Card.Header>
           </Card>
         )}
