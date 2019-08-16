@@ -234,3 +234,19 @@ export const closeRequest = signature => {
     method: "POST"
   });
 };
+
+export const travelAgentRegister = user => {
+  return axios({
+    data: {
+      firstName: user.firstName,
+      lastName: user.lastName,
+      email: user.email,
+      agencyCode: user.code,
+      phoneNumber: user.phone,
+      password: user.password,
+      password2: user.password2
+    },
+    url: `${BASE_URL}/travelAgents/register`,
+    method: "POST"
+  });
+};
