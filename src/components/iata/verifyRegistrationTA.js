@@ -1,71 +1,198 @@
 import React, { Component } from "react";
 import Card from "react-bootstrap/Card";
-import CardDeck from "react-bootstrap/CardDeck";
 import Button from "react-bootstrap/Button";
 import ViewModal from "./modal";
 import "../../assets/styles/aaOpenRequests.css";
 
+import jwtDecode from "jwt-decode";
+
+import { getAccountsForApproval } from "../../axios/apiCalls";
+import { approveAccount } from "../../axios/apiCalls";
+import { rejectAccount } from "../../axios/apiCalls";
+
 class VerifyRegistrationTravelAgent extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
-      modalShow:false,
+    this.state = {
+      modalShow: false,
+      accounts: [],
+      success: "",
+      errors: "",
+      name: "",
+      staffID: ""
+    };
+    this.decode = this.decode.bind(this);
+    this.performApproval = this.performApproval.bind(this);
+    this.performDenial = this.performDenial.bind(this);
+    this.fetchAccounts = this.fetchAccounts.bind(this);
+  }
+
+  async componentDidMount() {
+    this.decode();
+  }
+
+  decode() {
+    let token;
+    if (localStorage.getItem("session")) {
+      token = JSON.parse(localStorage.getItem("session"));
+    } else if (sessionStorage.getItem("session")) {
+      token = JSON.parse(sessionStorage.getItem("session"));
+    }
+    if (token !== null) {
+      const decodedToken = jwtDecode(token);
+      this.setState(
+        {
+          name: decodedToken.firstName + " " + decodedToken.lastName,
+          staffID: decodedToken.staffID
+        },
+        function() {
+          this.fetchAccounts();
+        }
+      );
     }
   }
 
+  fetchAccounts() {
+    getAccountsForApproval()
+      .then(res => {
+        if (res.data.success) {
+          this.setState({ accounts: res.data.accounts });
+        } else {
+          this.setState({
+            errors: res.data
+          });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors:
+            e && e.response ? e.response.data.err : "Something went wrong!"
+        });
+      });
+  }
+
+  performApproval(e) {
+    const signature = {
+      id: e.target.value,
+      name: this.state.name,
+      staffID: this.state.staffID
+    };
+    approveAccount(signature)
+      .then(res => {
+        if (res.data.success) {
+          this.setState({ success: res.data.message }, function() {
+            this.fetchAccounts();
+          });
+        } else {
+          this.setState({
+            errors: res.data
+          });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors:
+            e && e.response ? e.response.data.err : "Something went wrong!"
+        });
+      });
+  }
+
+  performDenial(e) {
+    const signature = {
+      id: e.target.value
+    };
+    rejectAccount(signature)
+      .then(res => {
+        if (res.data.success) {
+          this.setState(
+            {
+              success: res.data.message
+            },
+            function() {
+              this.fetchAccounts();
+            }
+          );
+        } else {
+          this.setState({
+            errors: res.data
+          });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors:
+            e && e.response ? e.response.data.err : "Something went wrong!"
+        });
+      });
+  }
+
   render() {
-    let modalClose=()=>this.setState({modalShow:false});
+    let modalClose = () => this.setState({ modalShow: false });
 
     return (
       <div className="vh-100">
         <h4 className="text-center">
-          <i>Pending Travel Agent Verification</i>
+          <i>Pending Account Verification</i>
         </h4>
-        <br></br>
-        <CardDeck>
-        <Card>
-        <Card.Header>Name: {/* props for ID*/}</Card.Header>
-        <Card.Body>
-          Code: {/* props for Disability here*/}
-          <br />
-          <hr />
-          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="primary" onClick={()=>this.setState({modalShow:true})}>
-            Info
-          </Button>
-          <ViewModal
-              show={this.state.modalShow}
-              onHide={modalClose}
-              />
-          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="success">
-            Accept
-          </Button>
-          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="danger">
-            Deny
-          </Button>
-        </Card.Body>
-      </Card>
-      <Card>
-        <Card.Header>Name: {/* props for ID*/}</Card.Header>
-        <Card.Body>
-          Code: {/* props for Disability here*/}
-          <br />
-          <hr />
-          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" id="firstbtn" variant="primary" onClick={()=>this.setState({modalShow:true})}>
-            Info
-          </Button>
-          <ViewModal
-              show={this.state.modalShow}
-              onHide={modalClose}
-              />
-          <Button className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="success">
-            Accept
-          </Button>
-          <Button className="bcol-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1" variant="danger">
-            Deny
-          </Button>
-        </Card.Body>
-      </Card>
-        </CardDeck>
+        <br />
+        {this.state.accounts.length > 0 ? (
+          this.state.accounts.map((account, index) => (
+            <Card className="my-3" key={index}>
+              <Card.Header>
+                <b>Name:</b> {account.organisationName}
+              </Card.Header>
+              <Card.Body>
+                <h6>
+                  <b>Organisation Type:</b>{" "}
+                  {account.userType === "airline"
+                    ? "Airline"
+                    : account.userType === "airport"
+                    ? "Airport"
+                    : "Travel Agency"}
+                </h6>
+                <h6>
+                  <b>Organisation Code:</b> {account.code}
+                </h6>
+                <br />
+                <hr />
+                <Button
+                  className="col-8 col-xs-6 col-sm-7 col-md-3 col-lg-2 m-2"
+                  variant="primary"
+                  onClick={() => this.setState({ modalShow: true })}
+                >
+                  Info
+                </Button>
+                <ViewModal
+                  show={this.state.modalShow}
+                  onHide={modalClose}
+                  data={account}
+                />
+                <Button
+                  className="col-8 col-xs-6 col-sm-7 col-md-3 col-lg-2 m-2"
+                  variant="success"
+                  value={account._id}
+                  onClick={this.performApproval}
+                >
+                  Accept
+                </Button>
+                <Button
+                  className="col-8 col-xs-6 col-sm-7 col-md-3 col-lg-2 m-2"
+                  value={account._id}
+                  variant="danger"
+                  onClick={this.performDenial}
+                >
+                  Deny
+                </Button>
+              </Card.Body>
+            </Card>
+          ))
+        ) : (
+          <Card className="my-3">
+            <Card.Header className="text-center">
+              No requests raised
+            </Card.Header>
+          </Card>
+        )}
       </div>
     );
   }

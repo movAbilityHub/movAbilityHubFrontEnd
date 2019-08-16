@@ -151,3 +151,32 @@ export const cancelRequest = request => {
     method: "POST"
   });
 };
+
+export const getAccountsForApproval = () => {
+  return axios({
+    url: `${BASE_URL}/staffIATA/fetchAccountsAwaitingApproval`,
+    method: "GET"
+  });
+};
+
+export const approveAccount = signature => {
+  return axios({
+    data: {
+      name: signature.name,
+      staffID: signature.staffID,
+      id: signature.id
+    },
+    url: `${BASE_URL}/staffIATA/approveAccount`,
+    method: "POST"
+  });
+};
+
+export const rejectAccount = signature => {
+  return axios({
+    data: {
+      id: signature.id
+    },
+    url: `${BASE_URL}/staffIATA/rejectAccount`,
+    method: "POST"
+  });
+};

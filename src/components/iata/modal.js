@@ -3,6 +3,7 @@ import { Modal, Button } from "react-bootstrap";
 
 export class ViewModal extends Component {
   render() {
+    const data = this.props.data;
     return (
       <Modal
         {...this.props}
@@ -12,16 +13,20 @@ export class ViewModal extends Component {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            Code: {/*props */}
+            Organisation Code: {data.code}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <h5>Name: </h5>
-          <h5>Email ID:</h5>
-          <h5>Phone Number:</h5>
+          <h5>
+            <b>Name:</b> {data.organisationName}
+          </h5>
+          <h5>
+            <b>Email ID:</b> {data.email}
+          </h5>
+          <h5>
+            <b>Phone Number:</b> {"+" + data.phoneNumber}
+          </h5>
           <br />
-          <p />
-          <p>{/* add here */}</p>
         </Modal.Body>
         <Modal.Footer>
           <Button onClick={this.props.onHide}>Close</Button>

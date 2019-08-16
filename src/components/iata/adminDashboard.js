@@ -7,9 +7,6 @@ import Button from "react-bootstrap/Button";
 
 import "../../assets/styles/navbar.css";
 import VerifyRegistrationTravelAgent from "./verifyRegistrationTA";
-import VerifyRegistrationAirline from "./viewRegistrationAirline";
-import VerifyRegistrationAirport from "./viewRegistrationAirport";
-
 
 class Iataadmin extends Component {
   constructor() {
@@ -41,7 +38,9 @@ class Iataadmin extends Component {
           <Navbar.Brand href="/">
             <i className="mov">mov</i>
             <b className="ability">Ability</b> Hub
-            <sub className="smallFont"><i>by IATA</i></sub>
+            <sub className="smallFont">
+              <i>by IATA</i>
+            </sub>
           </Navbar.Brand>
           <div className="placeHolder" />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -52,21 +51,7 @@ class Iataadmin extends Component {
                 as={Link}
                 to="/IATA/AdminDashboard/"
               >
-                Travel Agent Registration
-              </Nav.Link>
-              <Nav.Link
-                className="active rounded"
-                as={Link}
-                to="/IATA/AdminDashboard/Airline"
-              >
-                Airline Registration
-              </Nav.Link>
-              <Nav.Link
-                className="active rounded"
-                as={Link}
-                to="/IATA/AdminDashboard/Airport"
-              >
-                Airport Registration
+                Registration Requests
               </Nav.Link>
             </Nav>
             <Nav className="ml-auto">
@@ -78,9 +63,11 @@ class Iataadmin extends Component {
         </Navbar>
         <div className="wrapper">
           <Switch>
-            <Route exact path="/IATA/AdminDashboard/" component={VerifyRegistrationTravelAgent} />
-            <Route exact path="/IATA/AdminDashboard/Airline" component={VerifyRegistrationAirline}/>
-            <Route exact path="/IATA/AdminDashboard/Airport" component={VerifyRegistrationAirport}/>
+            <Route
+              exact
+              path="/IATA/AdminDashboard/"
+              component={VerifyRegistrationTravelAgent}
+            />
           </Switch>
         </div>
       </div>
