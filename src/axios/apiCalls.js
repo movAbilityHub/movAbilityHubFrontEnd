@@ -180,3 +180,57 @@ export const rejectAccount = signature => {
     method: "POST"
   });
 };
+
+export const fetchRequestForAirline = signature => {
+  return axios({
+    data: {
+      code: signature.code,
+      closed: signature.closed
+    },
+    url: `${BASE_URL}/request/fetchRequestForAirline`,
+    method: "POST"
+  });
+};
+
+export const fetchRequestForAirport = signature => {
+  return axios({
+    data: {
+      code: signature.code,
+      closed: signature.closed
+    },
+    url: `${BASE_URL}/request/fetchRequestForAirport`,
+    method: "POST"
+  });
+};
+
+export const performActionByAirline = signature => {
+  return axios({
+    data: {
+      id: signature.id,
+      airlineResponse: signature.airlineResponse
+    },
+    url: `${BASE_URL}/request/performActionByAirline`,
+    method: "POST"
+  });
+};
+
+export const performActionByAirport = signature => {
+  return axios({
+    data: {
+      id: signature.id,
+      airportResponse: signature.airportResponse
+    },
+    url: `${BASE_URL}/request/performActionByAirport`,
+    method: "POST"
+  });
+};
+
+export const closeRequest = signature => {
+  return axios({
+    data: {
+      id: signature.id
+    },
+    url: `${BASE_URL}/request/closeRequest`,
+    method: "POST"
+  });
+};

@@ -19,7 +19,8 @@ class VerifyRegistrationTravelAgent extends Component {
       success: "",
       errors: "",
       name: "",
-      staffID: ""
+      staffID: "",
+      data: ""
     };
     this.decode = this.decode.bind(this);
     this.performApproval = this.performApproval.bind(this);
@@ -158,14 +159,16 @@ class VerifyRegistrationTravelAgent extends Component {
                 <Button
                   className="col-8 col-xs-6 col-sm-7 col-md-3 col-lg-2 m-2"
                   variant="primary"
-                  onClick={() => this.setState({ modalShow: true })}
+                  onClick={() =>
+                    this.setState({ modalShow: true, data: account })
+                  }
                 >
                   Info
                 </Button>
                 <ViewModal
                   show={this.state.modalShow}
                   onHide={modalClose}
-                  data={account}
+                  data={this.state.data}
                 />
                 <Button
                   className="col-8 col-xs-6 col-sm-7 col-md-3 col-lg-2 m-2"

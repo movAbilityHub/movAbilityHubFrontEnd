@@ -120,7 +120,7 @@ class ClosedRequests extends Component {
         ) : (
           <Card className="my-3">
             <Card.Header className="text-center">
-              Raised On: No requests raised
+              No requests closed
             </Card.Header>
           </Card>
         )}
