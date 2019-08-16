@@ -121,6 +121,15 @@ class OpenRequests extends Component {
                     Departure Airport: {request.origin}
                   </ListGroup.Item>
                   <ListGroup.Item>
+                    Travel Date: {request.travelDate}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    Flight Time:{" "}
+                    {request.travelTime.toString().slice(0, 2) +
+                      ":" +
+                      request.travelTime.toString().slice(2, 4)}{" "}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
                     Response By Airport:{" "}
                     {request.airportResponse === "true"
                       ? "Approved"
@@ -153,7 +162,12 @@ class OpenRequests extends Component {
                 </Button>
               </Card.Body>
               <Card.Footer className="text-muted text-center">
-                {request.date.slice(0, 10)}
+                Raised On:{" "}
+                {request.date.slice(8, 10) +
+                  "-" +
+                  request.date.slice(5, 7) +
+                  "-" +
+                  request.date.slice(0, 4)}{" "}
               </Card.Footer>
             </Card>
           ))

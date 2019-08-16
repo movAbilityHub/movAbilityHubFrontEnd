@@ -10,7 +10,9 @@ class Details extends Component {
     return (
       <div>
         <Form>
-        <h4 className="text-center"><i>Update Details Page</i></h4>
+          <h4 className="text-center">
+            <i>Update Details</i>
+          </h4>
           <Form.Row>
             <Form.Group
               as={Col}
