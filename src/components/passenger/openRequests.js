@@ -67,7 +67,7 @@ class OpenRequests extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : "Something went wrong!"
+            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
         });
       });
   }
@@ -89,7 +89,7 @@ class OpenRequests extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : "Something went wrong!"
+            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
         });
       });
   }

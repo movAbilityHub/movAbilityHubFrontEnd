@@ -82,7 +82,7 @@ class Register extends Component {
         .catch(e => {
           this.setState({
             errors:
-              e && e.response ? e.response.data.error : "Something went wrong!",
+              e && e.response ? e.response.data.error : { error: "Something went wrong!" },
             show: true
           });
         });
@@ -98,7 +98,7 @@ class Register extends Component {
         .catch(e => {
           this.setState({
             errors:
-              e && e.response ? e.response.data.error : "Something went wrong!",
+              e && e.response ? e.response.data.error : { error: "Something went wrong!" },
             show: true
           });
         });

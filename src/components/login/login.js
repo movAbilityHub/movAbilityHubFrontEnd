@@ -89,7 +89,7 @@ class Login extends Component {
         })
         .catch(e => {
           this.setState({
-            errors: "Something went wrong!",
+            errors: { error: { error: "Something went wrong!" } },
             show: true
           });
         });
@@ -121,7 +121,7 @@ class Login extends Component {
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : "Something went wrong!",
+            errors: e && e.response ? e.response.data : { error: "Something went wrong!" },
             show: true
           });
         });
@@ -141,7 +141,7 @@ class Login extends Component {
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : "Something went wrong!",
+            errors: e && e.response ? e.response.data : { error: "Something went wrong!" },
             show: true
           });
         });
@@ -161,7 +161,7 @@ class Login extends Component {
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : "Something went wrong!",
+            errors: e && e.response ? e.response.data : { error: "Something went wrong!" },
             show: true
           });
         });
