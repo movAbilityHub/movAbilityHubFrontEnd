@@ -4,13 +4,12 @@ import NavBar from "../home/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/login.css";
 import { Link } from "react-router-dom";
-
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 import FormControl from "react-bootstrap/FormControl";
-
+import Alert from "react-bootstrap/Alert";
 import { customerLogin } from "../../axios/apiCalls";
 import { otherStaffLogin } from "../../axios/apiCalls";
 import { iataStaffLogin } from "../../axios/apiCalls";
@@ -21,10 +20,11 @@ class Login extends Component {
     super();
     document.title = "Login";
     this.state = {
+      show: false,
       email: "",
       password: "",
       userType: "customer",
-      errors: "",
+      errors: null,
       rememberMe: false
     };
 
@@ -32,6 +32,10 @@ class Login extends Component {
     this.onSubmit = this.onSubmit.bind(this);
     this.togglePassword = this.togglePassword.bind(this);
     this.onCheckBoxToggle = this.onCheckBoxToggle.bind(this);
+  }
+
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
   }
 
   onChange(e) {
@@ -55,7 +59,7 @@ class Login extends Component {
   }
 
   onSubmit(e) {
-    this.setState({ errors: "" });
+    this.setState({ errors: null });
     e.preventDefault();
 
     const user = {
@@ -80,14 +84,13 @@ class Login extends Component {
             }
             this.props.history.push("/Passenger/Dashboard");
           } else {
-            this.setState({ errors: res.data }, function() {
-              console.log(this.state.errors);
-            });
+            this.setState({ errors: res.data, show: true });
           }
         })
         .catch(e => {
           this.setState({
-            errors: "Something went wrong!"
+            errors: "Something went wrong!",
+            show: true
           });
         });
     } else if (
@@ -113,12 +116,13 @@ class Login extends Component {
               this.props.history.push("/TravelAgency/Dashboard");
             }
           } else {
-            this.setState({ errors: "Something went wrong!" });
+            this.setState({ errors: res.data, show: true });
           }
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : "Something went wrong!"
+            errors: e && e.response ? e.response.data : "Something went wrong!",
+            show: true
           });
         });
     } else if (this.state.userType === "travelAgent") {
@@ -132,12 +136,13 @@ class Login extends Component {
             }
             this.props.history.push("/TravelAgent/Dashboard");
           } else {
-            this.setState({ errors: "Something went wrong!" });
+            this.setState({ errors: res.data, show: true });
           }
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : "Something went wrong!"
+            errors: e && e.response ? e.response.data : "Something went wrong!",
+            show: true
           });
         });
     } else if (this.state.userType === "iataStaff") {
@@ -151,12 +156,13 @@ class Login extends Component {
             }
             this.props.history.push("/IATA/AdminDashboard");
           } else {
-            this.setState({ errors: "Something went wrong!" });
+            this.setState({ errors: res.data, show: true });
           }
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : "Something went wrong!"
+            errors: e && e.response ? e.response.data : "Something went wrong!",
+            show: true
           });
         });
     }
@@ -166,6 +172,20 @@ class Login extends Component {
     return (
       <div>
         <NavBar />
+        {this.state.show ? (
+          <Alert
+            className="m-3"
+            variant="danger"
+            onClose={() => this.setState({ show: false })}
+            dismissible
+          >
+            {this.state.errors
+              ? Object.values(this.state.errors).map((error, index) => (
+                  <h6 key={index}>{error}</h6>
+                ))
+              : null}
+          </Alert>
+        ) : null}
         <Col className="col-xs-10 col-sm-10 col-md-6 m-5 mx-auto text-dark">
           <Form noValidate onSubmit={this.onSubmit} className="mx-3 formCenter">
             <h1 className="h3 md-3 font-weight-normal">Please Sign In</h1>

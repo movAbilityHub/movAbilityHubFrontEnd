@@ -3,6 +3,7 @@ import NavBar from "../home/navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/styles/login.css";
 
+import Alert from "react-bootstrap/Alert";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
@@ -23,7 +24,8 @@ class Register extends Component {
       password: "",
       password1: "",
       userType: "customer",
-      errors: "",
+      show: false,
+      errors: null,
       code: "",
       organisationName: "",
       phone: ""
@@ -32,6 +34,10 @@ class Register extends Component {
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.ondropdownChange = this.ondropdownChange.bind(this);
+  }
+
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
   }
 
   onChange(e) {
@@ -43,7 +49,7 @@ class Register extends Component {
   }
 
   onSubmit(e) {
-    this.setState({ errors: "" });
+    this.setState({ errors: null });
     e.preventDefault();
 
     const user = {
@@ -70,16 +76,14 @@ class Register extends Component {
           if (res.data.success) {
             this.props.history.push("/Login");
           } else {
-            console.log(res);
-            this.setState({ errors: res.data }, function() {
-              console.log(this.state.errors);
-            });
+            this.setState({ errors: res.data, show: true });
           }
         })
         .catch(e => {
           this.setState({
             errors:
-              e && e.response ? e.response.data.error : "Something went wrong!"
+              e && e.response ? e.response.data.error : "Something went wrong!",
+            show: true
           });
         });
     } else {
@@ -88,15 +92,14 @@ class Register extends Component {
           if (res.data.success) {
             this.props.history.push("/Login");
           } else {
-            this.setState({ errors: res.data }, function() {
-              console.log(this.state.errors);
-            });
+            this.setState({ errors: res.data, show: true });
           }
         })
         .catch(e => {
           this.setState({
             errors:
-              e && e.response ? e.response.data.error : "Something went wrong!"
+              e && e.response ? e.response.data.error : "Something went wrong!",
+            show: true
           });
         });
     }
@@ -106,6 +109,21 @@ class Register extends Component {
     return (
       <div>
         <NavBar />
+        {this.state.show ? (
+          <Alert
+            id="alert"
+            className="m-3"
+            variant="danger"
+            onClose={() => this.setState({ show: false })}
+            dismissible
+          >
+            {this.state.errors
+              ? Object.values(this.state.errors).map((error, index) => (
+                  <h6 key={index}>{error}</h6>
+                ))
+              : null}
+          </Alert>
+        ) : null}
         <Col className="col-xs-10 col-sm-10 col-md-6 m-5 mx-auto text-dark">
           <Form noValidate onSubmit={this.onSubmit} className="mx-3">
             <h1 className="h3 md-3 font-weight-normal">Please Register</h1>
