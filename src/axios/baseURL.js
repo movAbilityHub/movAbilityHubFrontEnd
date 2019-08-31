@@ -1,3 +1,5 @@
+const dotenvConfig = require("dotenv").config();
+
 const getBaseUrl = () => {
   if (process.env.NODE_ENV === "production") {
     return "https://movability.cleverapps.io";
