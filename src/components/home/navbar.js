@@ -8,6 +8,7 @@ import "../../assets/styles/taDashboard.css";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+import logo from "../../assets/images/logo.png";
 class NavBar extends Component {
   render() {
     return (
@@ -20,11 +21,7 @@ class NavBar extends Component {
         className="navBackground"
       >
         <Navbar.Brand href="/">
-          <i className="mov">mov</i>
-          <b className="ability">Ability</b> Hub
-          <sub className="smallFont">
-            <i>by IATA</i>
-          </sub>
+          <img src={logo} alt="logo" className="logoScale" />
         </Navbar.Brand>
         <div className="placeHolder" />
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

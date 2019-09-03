@@ -121,7 +121,10 @@ class Login extends Component {
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : { error: "Something went wrong!" },
+            errors:
+              e && e.response
+                ? e.response.data
+                : { error: "Something went wrong!" },
             show: true
           });
         });
@@ -141,7 +144,10 @@ class Login extends Component {
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : { error: "Something went wrong!" },
+            errors:
+              e && e.response
+                ? e.response.data
+                : { error: "Something went wrong!" },
             show: true
           });
         });
@@ -161,7 +167,10 @@ class Login extends Component {
         })
         .catch(e => {
           this.setState({
-            errors: e && e.response ? e.response.data : { error: "Something went wrong!" },
+            errors:
+              e && e.response
+                ? e.response.data
+                : { error: "Something went wrong!" },
             show: true
           });
         });
@@ -202,7 +211,7 @@ class Login extends Component {
                 <option value="customer">Caregiver/Passenger</option>
                 <option value="airline">Airline</option>
                 <option value="airport">Airport</option>
-                <option value="travelAgency">Travel Agency</option>
+                {/* <option value="travelAgency">Travel Agency</option>*/}
                 <option value="travelAgent">Travel Agent</option>
                 <option value="iataStaff">IATA Staff</option>
               </Form.Control>

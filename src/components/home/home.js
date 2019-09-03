@@ -16,10 +16,12 @@ import HomeLanding from "./homeLanding";
 import Login from "../login/login";
 import Register from "../register/Register";
 
+import logo from "../../assets/images/logo.png";
+
 class Home extends Component {
   render() {
     return (
-      <div className="vh-100">
+      <div className="min-vh-100">
         <Navbar
           collapseOnSelect
           expand="lg"
@@ -29,9 +31,7 @@ class Home extends Component {
           className="navBackground"
         >
           <Navbar.Brand href="/">
-            <i className="mov">mov</i>
-            <b className="ability">Ability</b> Hub
-            <sub className="smallFont"><i>by IATA</i></sub>
+            <img src={logo} alt="logo" className="w-50 h-50" />
           </Navbar.Brand>
           <div className="placeHolder" />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -63,7 +63,7 @@ class Home extends Component {
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-       
+
         <HashRouter>
           <Switch>
             <Route exact path="/" component={HomeLanding} />
@@ -74,8 +74,7 @@ class Home extends Component {
             <Route path="/Login" component={Login} />
             <Route path="/Register" component={Register} />
           </Switch>
-          </HashRouter>
-       
+        </HashRouter>
       </div>
     );
   }

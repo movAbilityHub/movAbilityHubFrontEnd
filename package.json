@@ -8,6 +8,7 @@
         "dotenv": "^8.1.0",
         "jwt-decode": "^2.2.0",
         "react": "^16.9.0",
+        "react-app-polyfill": "^1.0.2",
         "react-bootstrap": "^1.0.0-beta.12",
         "react-bootstrap-time-picker": "^2.0.1",
         "react-dom": "^16.9.0",
@@ -19,7 +20,8 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "deploy": "serve -s build"
     },
     "eslintConfig": {
         "extends": "react-app"

@@ -1,5 +1,6 @@
 .navBackground {
-    background-color: #1565c0;
+    background-color: black !important;
+    opacity: 0.9 !important;
 }
 
 .smallFont {
@@ -12,6 +13,11 @@
 
 .ability {
     color: darkblue;
+}
+
+.logoScale {
+    width: 50%;
+    height: 50%;
 }
 
 .active {
@@ -30,6 +36,6 @@
 }
 
 .active:hover {
-    background-color: #0d47a1;
-    color: white;
+    background-color: white;
+    color: black !important;
 }

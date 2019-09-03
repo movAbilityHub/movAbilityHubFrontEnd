@@ -7,6 +7,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import ClosedRequests from "./closedRequests";
 
+import logo from "../../assets/images/logo.png";
+
 class Airport extends Component {
   constructor() {
     super();
@@ -35,9 +37,7 @@ class Airport extends Component {
           className="navBackground"
         >
           <Navbar.Brand href="/">
-            <i className="mov">mov</i>
-            <b className="ability">Ability</b> Hub
-            <sub className="smallFont"><i>by IATA</i></sub>
+            <img src={logo} alt="logo" className="w-50 h-50" />
           </Navbar.Brand>
           <div className="placeHolder" />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -68,7 +68,11 @@ class Airport extends Component {
         <div className="wrapper">
           <Switch>
             <Route exact path="/Airport/Dashboard/" component={OpenRequests} />
-            <Route exact path="/Airport/Dashboard/ClosedRequests" component={ClosedRequests}/>
+            <Route
+              exact
+              path="/Airport/Dashboard/ClosedRequests"
+              component={ClosedRequests}
+            />
           </Switch>
         </div>
       </div>

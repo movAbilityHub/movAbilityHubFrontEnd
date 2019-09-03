@@ -1,9 +1,22 @@
+.bgimage {
+    background-image: url("../images/movAbility.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
 #card {
+    border-radius: 50px;
     background-color: white;
+    opacity: 0.85;
 }
 
 #card:hover {
-    background-color: rgba(0, 0, 0, 0.884);
+    background-color: black;
+    opacity: 0.98;
     color: white;
     font-style: italic;
 }
@@ -13,6 +26,7 @@
     margin-bottom: 3%;
 }
 
-.sliders h3 ,.sliders p {
+.sliders h3,
+.sliders p {
     color: black;
 }

@@ -7,6 +7,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 
 import "../../assets/styles/navbar.css";
+import logo from "../../assets/images/logo.png";
 
 class TravelAgency extends Component {
   constructor() {
@@ -36,9 +37,7 @@ class TravelAgency extends Component {
           className="navBackground"
         >
           <Navbar.Brand href="/">
-            <i className="mov">mov</i>
-            <b className="ability">Ability</b> Hub
-            <sub className="smallFont"><i>by IATA</i></sub>
+            <img src={logo} alt="logo" className="w-50 h-50" />
           </Navbar.Brand>
           <div className="placeHolder" />
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
