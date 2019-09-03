@@ -8,6 +8,39 @@
     background-attachment: fixed;
 }
 
+#inputs {
+    width: 60%;
+    margin-left: 20%;
+    padding-left: 15%;
+    margin-top: 5%;
+    border: 0.5px solid white;
+}
+
+#txtBegin {
+    color: white;
+    font-size: 30px;
+}
+
+#txtEnd {
+    color: white;
+    font-size: 30px;
+}
+
+#searchIcon {
+    background: transparent !important;
+    border: transparent !important;
+    margin-top: 3%;
+    margin-left: -35%;
+}
+
+#searchIcon:focus #searchIcon:hover {
+    border: 0px transparent !important;
+}
+
+#WhiteLogo {
+    margin-top: 5%;
+}
+
 #card {
     border-radius: 50px;
     background-color: white;
