@@ -115,7 +115,9 @@ class HomeLanding extends Component {
     return (
       <div className="bgimage">
         <div className="vh-100 text-center mt-5">
-          <h1 className="display-3">How can we move you?</h1>
+          <h1 className="display-3" id="mainHead">
+            How can we <span id="moveColor">move</span> you?
+          </h1>
           <div id="inputs" className="">
             <Row id="mainDropdowns">
               <Form.Group

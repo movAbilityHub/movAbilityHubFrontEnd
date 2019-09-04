@@ -23,6 +23,7 @@
 .display-3 {
     font-weight: 400;
     text-shadow: 10%;
+    color: white;
 }
 
 #secondHeader {
@@ -36,13 +37,15 @@
 }
 
 #txtBegin {
-    color: black;
+    color: white;
     font-size: 30px;
+    margin: auto;
 }
 
 #txtEnd {
-    color: black;
+    color: white;
     font-size: 30px;
+    margin: auto;
 }
 
 #searchIcon {
@@ -75,6 +78,10 @@
 
 .iataLogo:hover {
     transform: scale(1.2);
+}
+
+#moveColor {
+    color: #ffd700;
 }
 
 #card {
