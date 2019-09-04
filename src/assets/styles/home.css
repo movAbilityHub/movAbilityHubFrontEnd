@@ -10,10 +10,13 @@
 
 #inputs {
     width: 60%;
-    margin-left: 20%;
+    margin-left: 10%;
     padding-left: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     margin-top: 5%;
-    border: 0.5px solid white;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
 #txtBegin {
@@ -37,8 +40,26 @@
     border: 0px transparent !important;
 }
 
+.searchIconZoom {
+    transition: transform 0.2s;
+    margin: 0 auto;
+}
+
+.searchIconZoom:hover {
+    transform: scale(1.2);
+}
+
 #WhiteLogo {
     margin-top: 5%;
+}
+
+.iataLogo {
+    transition: transform 0.2s;
+    margin: 0 auto;
+}
+
+.iataLogo:hover {
+    transform: scale(1.2);
 }
 
 #card {

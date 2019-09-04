@@ -18,31 +18,36 @@ class HomeLanding extends Component {
       <div className="bgimage">
         <div className="vh-100 text-center mt-5">
           <h1 className="display-3">How can we move you?</h1>
-          <div id="inputs">
-            <Form>
-              <Row id="mainDropdowns">
-                <Form.Group
-                  as={Row}
-                  className="mr-5 col-10 App col-xs-10 col-sm-12 col-md-6 col-lg-4"
-                >
-                  <Form.Label id="txtBegin">Begin</Form.Label>
-                  <Form.Control as="select" type="text"></Form.Control>
-                </Form.Group>
-                <Form.Group
-                  as={Row}
-                  className="mr-5 col-10 col-xs-10 col-sm-12 col-md-6 col-lg-4"
-                >
-                  <Form.Label id="txtEnd">End</Form.Label>
-                  <Form.Control as="select" type="text"></Form.Control>
-                </Form.Group>
-              </Row>
-              <Button id="searchIcon">
-                <img src={Search} alt="Search" width="20%" height="20%"></img>
-              </Button>
-            </Form>
+          <div id="inputs" className="mx-auto">
+            <Row id="mainDropdowns">
+              <Form.Group
+                as={Row}
+                className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4"
+              >
+                <Form.Label id="txtBegin">Begin</Form.Label>
+                <Form.Control as="select" type="text"></Form.Control>
+              </Form.Group>
+              <Form.Group
+                as={Row}
+                className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4"
+              >
+                <Form.Label id="txtEnd">End</Form.Label>
+                <Form.Control as="select" type="text"></Form.Control>
+              </Form.Group>
+            </Row>
+            <img
+              src={Search}
+              id="searchIcon"
+              alt="Search"
+              width="15%"
+              height="15%"
+              className="searchIconZoom"
+            ></img>
           </div>
           <div id="WhiteLogo">
-            <img src={IATAWhite} alt="logo"></img>
+            <a href="https://www.iata.org/Pages/default.aspx" target="_blank">
+              <img src={IATAWhite} alt="logo" className="iataLogo"></img>
+            </a>
           </div>
         </div>
         <Row className="m-5">
