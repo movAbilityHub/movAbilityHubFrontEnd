@@ -19,11 +19,11 @@ class HomeLanding extends Component {
       <div className="bgimage">
         <div className="vh-100 text-center mt-5">
           <h1 className="display-3">How can we move you?</h1>
-          <div id="inputs" className="mx-auto">
+          <div id="inputs" className="">
             <Row id="mainDropdowns">
               <Form.Group
                 as={Row}
-                className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
+                className="col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
               >
                 <Form.Label id="txtBegin">Begin</Form.Label>
                 <Form.Control as="select" type="text" id="dropdown">
@@ -41,7 +41,7 @@ class HomeLanding extends Component {
               </Form.Group>
               <Form.Group
                 as={Row}
-                className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
+                className="col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
               >
                 <Form.Label id="txtEnd">End</Form.Label>
                 <Form.Control as="select" type="text" id="dropdown">
@@ -64,7 +64,7 @@ class HomeLanding extends Component {
               alt="Search"
               width="10%"
               height="10%"
-              className="searchIconZoom mx-auto"
+              className="searchIconZoom col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 mx-auto"
             ></img>
           </div>
           <div id="WhiteLogo">
