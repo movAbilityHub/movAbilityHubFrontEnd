@@ -21,26 +21,34 @@ class HomeLanding extends Component {
             <Row id="mainDropdowns">
               <Form.Group
                 as={Row}
-                className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4"
+                className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
               >
                 <Form.Label id="txtBegin">Begin</Form.Label>
-                <Form.Control as="select" type="text"></Form.Control>
+                <Form.Control
+                  as="select"
+                  type="text"
+                  id="dropdown"
+                ></Form.Control>
               </Form.Group>
               <Form.Group
                 as={Row}
-                className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4"
+                className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
               >
                 <Form.Label id="txtEnd">End</Form.Label>
-                <Form.Control as="select" type="text"></Form.Control>
+                <Form.Control
+                  as="select"
+                  type="text"
+                  id="dropdown"
+                ></Form.Control>
               </Form.Group>
             </Row>
             <img
               src={Search}
               id="searchIcon"
               alt="Search"
-              width="15%"
-              height="15%"
-              className="searchIconZoom"
+              width="10%"
+              height="10%"
+              className="searchIconZoom mx-auto"
             ></img>
           </div>
           <div id="WhiteLogo">
@@ -54,6 +62,9 @@ class HomeLanding extends Component {
           </div>
         </div>
         <Row className="m-5">
+          <h1 className="display-3" id="secondHeader">
+            Our Beliefs
+          </h1>
           <CardDeck className="cardDeck">
             <Card className="shadow-lg rounded" id="card">
               <Card.Header>Our Mission</Card.Header>
