@@ -62,7 +62,7 @@ class HomeLanding extends Component {
           </div>
         </div>
         <Row className="m-5">
-          <h1 className="display-3" id="secondHeader">
+          <h1 className="display-3 mb-4" id="secondHeader">
             Our Beliefs
           </h1>
           <CardDeck className="cardDeck">
