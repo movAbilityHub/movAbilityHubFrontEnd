@@ -95,7 +95,7 @@ class NewRequests extends Component {
   }
 
   onSubmit(e) {
-    this.setState({ errors: null, success: null });
+    this.setState({ errors: null, success: null, show: false });
     e.preventDefault();
     const request = {
       passportNumber: this.state.passportNumber,

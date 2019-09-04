@@ -112,7 +112,7 @@ class VerifyRegistrationTravelAgent extends Component {
   }
 
   performDenial(e) {
-    this.setState({ errors: null, success: null });
+    this.setState({ errors: null, success: null, show: false });
 
     const signature = {
       id: e.target.value

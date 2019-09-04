@@ -49,7 +49,7 @@ class Register extends Component {
   }
 
   onSubmit(e) {
-    this.setState({ errors: null });
+    this.setState({ errors: null, show: false });
     e.preventDefault();
 
     const user = {
@@ -82,7 +82,9 @@ class Register extends Component {
         .catch(e => {
           this.setState({
             errors:
-              e && e.response ? e.response.data.error : { error: "Something went wrong!" },
+              e && e.response
+                ? e.response.data.error
+                : { error: "Something went wrong!" },
             show: true
           });
         });
@@ -98,7 +100,9 @@ class Register extends Component {
         .catch(e => {
           this.setState({
             errors:
-              e && e.response ? e.response.data.error : { error: "Something went wrong!" },
+              e && e.response
+                ? e.response.data.error
+                : { error: "Something went wrong!" },
             show: true
           });
         });

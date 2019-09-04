@@ -59,7 +59,7 @@ class Login extends Component {
   }
 
   onSubmit(e) {
-    this.setState({ errors: null });
+    this.setState({ errors: null, show: false });
     e.preventDefault();
 
     const user = {

@@ -56,7 +56,7 @@ class OpenRequests extends Component {
   }
 
   deleteRequest(e) {
-    this.setState({ errors: null, success: null });
+    this.setState({ errors: null, success: null, show: false });
     const request = {
       id: e.target.value
     };
