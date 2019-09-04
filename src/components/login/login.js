@@ -89,7 +89,7 @@ class Login extends Component {
         })
         .catch(e => {
           this.setState({
-            errors: { error: { error: "Something went wrong!" } },
+            errors: { error: "Something went wrong!" },
             show: true
           });
         });

@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import TimePicker from "react-bootstrap-time-picker";
+import Alert from "react-bootstrap/Alert";
 import { withRouter } from "react-router-dom";
 import PhoneInput from "react-phone-number-input";
 import jwtDecode from "jwt-decode";
@@ -35,6 +36,8 @@ class NewRequests extends Component {
     this.decode = this.decode.bind(this);
 
     this.state = {
+      show: false,
+      errors: null,
       passportNumber: "",
       ticketNumber: "",
       travelDate: "",
@@ -59,8 +62,7 @@ class NewRequests extends Component {
       radio: "",
       registeredAirlines: [],
       registeredAirports: [],
-      errors: "",
-      success: ""
+      success: null
     };
   }
 
@@ -68,6 +70,10 @@ class NewRequests extends Component {
     this.fetchAirports();
     this.fetchAirlines();
     this.decode();
+  }
+
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
   }
 
   decode() {
@@ -87,7 +93,7 @@ class NewRequests extends Component {
   }
 
   onSubmit(e) {
-    this.setState({ errors: "" });
+    this.setState({ errors: null, success: null });
     e.preventDefault();
     const request = {
       passportNumber: this.state.passportNumber,
@@ -116,19 +122,18 @@ class NewRequests extends Component {
     storeRequest(request)
       .then(res => {
         if (res.status === 201) {
-          this.setState({ success: res.data.message }, function() {
-            console.log(this.state.success);
-          });
+          this.setState({ success: res.data.message });
         } else {
-          this.setState({ errors: res.data }, function() {
-            console.log(this.state.errors);
-          });
+          this.setState({ errors: res.data.errors, show: true });
         }
       })
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: "Something went wrong!" },
+          show: true
         });
       });
   }
@@ -139,15 +144,10 @@ class NewRequests extends Component {
 
   onAirlineChange(e) {
     const value = e.target.value.split("~");
-    this.setState(
-      {
-        airline: value[1],
-        airlineCode: value[0]
-      },
-      function() {
-        console.log(this.state);
-      }
-    );
+    this.setState({
+      airline: value[1],
+      airlineCode: value[0]
+    });
   }
 
   onOriginChange(e) {
@@ -193,7 +193,8 @@ class NewRequests extends Component {
       })
       .catch(e => {
         this.setState({
-          error: e.response.data.err
+          errors: { errors: e.response.data.err },
+          show: true
         });
       });
   }
@@ -209,7 +210,8 @@ class NewRequests extends Component {
       })
       .catch(e => {
         this.setState({
-          error: e.response.data.err
+          errors: { error: e.response.data.err },
+          show: true
         });
       });
   }
@@ -225,6 +227,34 @@ class NewRequests extends Component {
   render() {
     return (
       <div>
+        {this.state.show ? (
+          <Alert
+            className="m-3"
+            variant="danger"
+            onClose={() => this.setState({ show: false })}
+            dismissible
+          >
+            {this.state.errors
+              ? Object.values(this.state.errors).map((error, index) => (
+                  <h6 key={index}>{error}</h6>
+                ))
+              : null}
+          </Alert>
+        ) : null}
+        {this.state.success !== null ? (
+          <Alert
+            className="m-3"
+            variant="success"
+            onClose={() => this.setState({ success: null })}
+            dismissible
+          >
+            {this.state.success
+              ? Object.values(this.state.success).map((message, index) => (
+                  <h6 key={index}>{message}</h6>
+                ))
+              : null}
+          </Alert>
+        ) : null}
         <h4 className="text-center">
           <i>New Request Page</i>
         </h4>
@@ -311,7 +341,7 @@ class NewRequests extends Component {
               <Form.Label>Travel Time</Form.Label>
               <TimePicker
                 start="00:00"
-                end="24:00"
+                end="23:50"
                 step={10}
                 onChange={this.handleTimeChange}
                 value={this.state.time}

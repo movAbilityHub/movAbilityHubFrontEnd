@@ -10,14 +10,17 @@ import jwtDecode from "jwt-decode";
 import { viewOpenRequest } from "../../axios/apiCalls";
 import { cancelRequest } from "../../axios/apiCalls";
 
+import Alert from "react-bootstrap/Alert";
+
 class OpenRequests extends Component {
   constructor(props) {
     super(props);
     this.state = {
       requesterID: "",
       openRequests: "",
-      errors: "",
-      success: ""
+      show: false,
+      errors: null,
+      success: null
     };
     this.decode = this.decode.bind(this);
     this.fetchOpenRequest = this.fetchOpenRequest.bind(this);
@@ -26,6 +29,10 @@ class OpenRequests extends Component {
 
   async componentDidMount() {
     this.decode();
+  }
+
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
   }
 
   decode() {
@@ -49,6 +56,7 @@ class OpenRequests extends Component {
   }
 
   deleteRequest(e) {
+    this.setState({ errors: null, success: null });
     const request = {
       id: e.target.value
     };
@@ -59,15 +67,15 @@ class OpenRequests extends Component {
             this.fetchOpenRequest();
           });
         } else {
-          this.setState({
-            errors: res.data
-          });
+          this.setState({ errors: res.data.errors, show: true });
         }
       })
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: { error: "Something went wrong!" } }
         });
       });
   }
@@ -89,7 +97,9 @@ class OpenRequests extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: { error: "Something went wrong!" } }
         });
       });
   }
@@ -97,6 +107,34 @@ class OpenRequests extends Component {
   render() {
     return (
       <div>
+        {this.state.show ? (
+          <Alert
+            className="m-3"
+            variant="danger"
+            onClose={() => this.setState({ show: false })}
+            dismissible
+          >
+            {this.state.errors
+              ? Object.values(this.state.errors).map((error, index) => (
+                  <h6 key={index}>{error}</h6>
+                ))
+              : null}
+          </Alert>
+        ) : null}
+        {this.state.success !== null ? (
+          <Alert
+            className="m-3"
+            variant="success"
+            onClose={() => this.setState({ success: null })}
+            dismissible
+          >
+            {this.state.success
+              ? Object.values(this.state.success).map((message, index) => (
+                  <h6 key={index}>{message}</h6>
+                ))
+              : null}
+          </Alert>
+        ) : null}
         <h4 className="text-center">
           <i>Open Requests Page</i>
         </h4>
@@ -122,12 +160,6 @@ class OpenRequests extends Component {
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <b>Travel Date:</b> {request.travelDate}
-                  </ListGroup.Item>
-                  <ListGroup.Item>
-                    <b>Flight Time:</b>{" "}
-                    {request.travelTime.toString().slice(0, 2) +
-                      ":" +
-                      request.travelTime.toString().slice(2, 4)}
                   </ListGroup.Item>
                   <ListGroup.Item>
                     <b>Response By Airport:</b>{" "}

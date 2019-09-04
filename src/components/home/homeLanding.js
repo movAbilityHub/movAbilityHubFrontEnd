@@ -7,7 +7,6 @@ import CardDeck from "react-bootstrap/CardDeck";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
 
 import Search from "../../assets/images/play.png";
 import IATAWhite from "../../assets/images/logoBig.png";
@@ -45,7 +44,11 @@ class HomeLanding extends Component {
             ></img>
           </div>
           <div id="WhiteLogo">
-            <a href="https://www.iata.org/Pages/default.aspx" target="_blank">
+            <a
+              href="https://www.iata.org/Pages/default.aspx"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={IATAWhite} alt="logo" className="iataLogo"></img>
             </a>
           </div>
