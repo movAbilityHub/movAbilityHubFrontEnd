@@ -11,6 +11,8 @@ import Form from "react-bootstrap/Form";
 import Search from "../../assets/images/play.png";
 import IATAWhite from "../../assets/images/logoBig.png";
 
+const internationalAirports = require("../../assets/data/internationalAirports.json");
+
 class HomeLanding extends Component {
   render() {
     return (
@@ -24,22 +26,36 @@ class HomeLanding extends Component {
                 className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
               >
                 <Form.Label id="txtBegin">Begin</Form.Label>
-                <Form.Control
-                  as="select"
-                  type="text"
-                  id="dropdown"
-                ></Form.Control>
+                <Form.Control as="select" type="text" id="dropdown">
+                  <option value={null} key={0}>
+                    Select Departure
+                  </option>
+                  {internationalAirports.length > 0
+                    ? internationalAirports.map((airport, index) => (
+                        <option value={airport.iataCode} key={index + 1}>
+                          {airport.city}, {airport.country}
+                        </option>
+                      ))
+                    : null}
+                </Form.Control>
               </Form.Group>
               <Form.Group
                 as={Row}
                 className="mr-5 col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
               >
                 <Form.Label id="txtEnd">End</Form.Label>
-                <Form.Control
-                  as="select"
-                  type="text"
-                  id="dropdown"
-                ></Form.Control>
+                <Form.Control as="select" type="text" id="dropdown">
+                  <option value={null} key={0}>
+                    Select Destination
+                  </option>
+                  {internationalAirports.length > 0
+                    ? internationalAirports.map((airport, index) => (
+                        <option value={airport.iataCode} key={index + 1}>
+                          {airport.city}, {airport.country}
+                        </option>
+                      ))
+                    : null}
+                </Form.Control>
               </Form.Group>
             </Row>
             <img
