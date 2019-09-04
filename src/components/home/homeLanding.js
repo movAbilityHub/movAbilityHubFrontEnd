@@ -11,9 +11,101 @@ import Form from "react-bootstrap/Form";
 import Search from "../../assets/images/play.png";
 import IATAWhite from "../../assets/images/logoBig.png";
 
+import { checkDestination } from "../../axios/apiCalls";
+import { checkDeparture } from "../../axios/apiCalls";
+
+import jwtDecode from "jwt-decode";
+
 const internationalAirports = require("../../assets/data/internationalAirports.json");
 
 class HomeLanding extends Component {
+  constructor() {
+    super();
+    this.state = {
+      destination: "",
+      departure: "",
+      status1: false,
+      status2: false,
+      message1: null,
+      message2: null,
+      errors: null
+    };
+
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+    this.redirect = this.redirect.bind(this);
+  }
+
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  onSubmit() {
+    this.setState({
+      status1: false,
+      status2: false,
+      message1: null,
+      message2: null
+    });
+
+    const destination = {
+      destination: this.state.destination
+    };
+
+    const departure = {
+      departure: this.state.departure
+    };
+
+    checkDeparture(departure)
+      .then(res => {
+        if (res.data.success) {
+          this.setState({ status1: res.data.success }, function() {
+            this.redirect();
+          });
+        } else {
+          this.setState({ message1: res.data.success });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors: { error: "Something went wrong!" }
+        });
+      });
+
+    checkDestination(destination)
+      .then(res => {
+        if (res.data.success) {
+          this.setState({ status2: res.data.success }, function() {
+            this.redirect();
+          });
+        } else {
+          this.setState({ message2: res.data.success });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors: { error: "Something went wrong!" }
+        });
+      });
+  }
+
+  redirect() {
+    if (this.state.status1 && this.state.status2) {
+      let token;
+      if (localStorage.getItem("session")) {
+        token = JSON.parse(localStorage.getItem("session"));
+      } else if (sessionStorage.getItem("session")) {
+        token = JSON.parse(sessionStorage.getItem("session"));
+      }
+      if (token !== null) {
+        const decodedToken = jwtDecode(token);
+        if (decodedToken.userType === "customer") {
+          this.props.history.push("/Passenger/Dashboard");
+        }
+      }
+    }
+  }
+
   render() {
     return (
       <div className="bgimage">
@@ -26,7 +118,14 @@ class HomeLanding extends Component {
                 className="col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
               >
                 <Form.Label id="txtBegin">Begin</Form.Label>
-                <Form.Control as="select" type="text" id="dropdown">
+                <Form.Control
+                  as="select"
+                  type="text"
+                  id="dropdown"
+                  name="departure"
+                  value={this.state.departure}
+                  onChange={this.onChange}
+                >
                   <option value={null} key={0}>
                     Select Departure
                   </option>
@@ -44,7 +143,14 @@ class HomeLanding extends Component {
                 className="col-10 col-xs-10 col-sm-9 col-md-9 col-lg-4 mx-auto"
               >
                 <Form.Label id="txtEnd">End</Form.Label>
-                <Form.Control as="select" type="text" id="dropdown">
+                <Form.Control
+                  as="select"
+                  type="text"
+                  id="dropdown"
+                  name="destination"
+                  value={this.state.destination}
+                  onChange={this.onChange}
+                >
                   <option value={null} key={0}>
                     Select Destination
                   </option>
@@ -65,8 +171,10 @@ class HomeLanding extends Component {
               width="10%"
               height="10%"
               className="searchIconZoom col-6 col-xs-6 col-sm-6 col-md-4 col-lg-2 mx-auto"
+              onClick={this.onSubmit}
             ></img>
           </div>
+
           <div id="WhiteLogo">
             <a
               href="https://www.iata.org/Pages/default.aspx"

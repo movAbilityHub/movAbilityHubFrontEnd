@@ -8,10 +8,9 @@ class NotFound extends Component {
     return (
       <div className="navBackground text-center vh-100">
         <a href="/">
-          <img src={logo} alt="logo" className="mt-4 col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3 mx-auto" width="20%" />
-        </a>
-        <h1 className="text-warning centered">404 NOT FOUND</h1>
-        <h3 className="text-white">Page does not exist</h3>
+            <img src={logo} alt="logo" className="mt-4 col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3 mx-auto" width="20%" />
+        </a>        
+        <h1 className="text-warning centered">NOT AUTORIZED</h1>
         <br></br>
         <h5 className="text-white">
           <a href="/">Click here to go back to Home</a>

@@ -22,6 +22,7 @@ import Register from "./components/register/Register";
 import AirportAdmin from "./components/airport/adminDashboard";
 import AirlineAdmin from "./components/airline/adminDashboard";
 import IataAdmin from "./components/iata/adminDashboard";
+import NotAuthorized from "./components/common/notAuthorized";
 
 class App extends Component {
   render() {
@@ -48,6 +49,7 @@ class App extends Component {
               path="/TravelAgency/Dashboard"
               component={TravelAgency}
             />
+            <Route exact path="/NotAuthorized" component={NotAuthorized} />
             <Route component={NotFound} />
           </Switch>
         </HashRouter>

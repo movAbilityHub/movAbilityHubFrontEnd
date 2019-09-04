@@ -250,3 +250,23 @@ export const travelAgentRegister = user => {
     method: "POST"
   });
 };
+
+export const checkDestination = airport => {
+  return axios({
+    data: {
+      destination: airport.destination
+    },
+    url: `${BASE_URL}/customer/checkDestination`,
+    method: "POST"
+  });
+};
+
+export const checkDeparture = airport => {
+  return axios({
+    data: {
+      departure: airport.departure
+    },
+    url: `${BASE_URL}/customer/checkDeparture`,
+    method: "POST"
+  });
+};

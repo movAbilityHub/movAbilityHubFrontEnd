@@ -32,10 +32,38 @@ class Login extends Component {
     this.onSubmit = this.onSubmit.bind(this);
     this.togglePassword = this.togglePassword.bind(this);
     this.onCheckBoxToggle = this.onCheckBoxToggle.bind(this);
+    this.onLoad = this.onLoad.bind(this);
+  }
+
+  componentDidMount() {
+    this.onLoad();
   }
 
   componentDidUpdate() {
     window.scrollTo(0, 0);
+  }
+
+  onLoad() {
+    let token = null;
+    if (localStorage.getItem("session")) {
+      token = JSON.parse(localStorage.getItem("session"));
+    } else if (sessionStorage.getItem("session")) {
+      token = JSON.parse(sessionStorage.getItem("session"));
+    }
+    if (token !== null) {
+      const decodedToken = jwtDecode(token);
+      if (decodedToken.userType === "customer") {
+        this.props.history.push("/Passenger/Dashboard");
+      } else if (decodedToken.userType === "airport") {
+        this.props.history.push("/Airport/Dashboard");
+      } else if (decodedToken.userType === "airline") {
+        this.props.history.push("/Airline/Dashboard");
+      } else if (decodedToken.userType === "travelAgent") {
+        this.props.history.push("/TravelAgent/Dashboard");
+      } else if (decodedToken.userType === "iataStaff") {
+        this.props.history.push("/IATA/AdminDashboard");
+      }
+    }
   }
 
   onChange(e) {
