@@ -10,14 +10,17 @@ import { getAccountsForApproval } from "../../axios/apiCalls";
 import { approveAccount } from "../../axios/apiCalls";
 import { rejectAccount } from "../../axios/apiCalls";
 
+import Alert from "react-bootstrap/Alert";
+
 class VerifyRegistrationTravelAgent extends Component {
   constructor(props) {
     super(props);
     this.state = {
       modalShow: false,
       accounts: [],
-      success: "",
-      errors: "",
+      success: null,
+      show: false,
+      errors: null,
       name: "",
       staffID: "",
       data: ""
@@ -30,6 +33,10 @@ class VerifyRegistrationTravelAgent extends Component {
 
   async componentDidMount() {
     this.decode();
+  }
+
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
   }
 
   decode() {
@@ -67,12 +74,16 @@ class VerifyRegistrationTravelAgent extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: "Something went wrong!" }
         });
       });
   }
 
   performApproval(e) {
+    this.setState({ errors: null, success: null });
+
     const signature = {
       id: e.target.value,
       name: this.state.name,
@@ -81,7 +92,7 @@ class VerifyRegistrationTravelAgent extends Component {
     approveAccount(signature)
       .then(res => {
         if (res.data.success) {
-          this.setState({ success: res.data.message }, function() {
+          this.setState({ success: res.data.message.message }, function() {
             this.fetchAccounts();
           });
         } else {
@@ -93,12 +104,16 @@ class VerifyRegistrationTravelAgent extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: "Something went wrong!" }
         });
       });
   }
 
   performDenial(e) {
+    this.setState({ errors: null, success: null });
+
     const signature = {
       id: e.target.value
     };
@@ -107,7 +122,7 @@ class VerifyRegistrationTravelAgent extends Component {
         if (res.data.success) {
           this.setState(
             {
-              success: res.data.message
+              success: res.data.message.message
             },
             function() {
               this.fetchAccounts();
@@ -122,7 +137,9 @@ class VerifyRegistrationTravelAgent extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: "Something went wrong!" }
         });
       });
   }
@@ -132,6 +149,34 @@ class VerifyRegistrationTravelAgent extends Component {
 
     return (
       <div className="vh-100">
+        {this.state.show ? (
+          <Alert
+            className="m-3"
+            variant="danger"
+            onClose={() => this.setState({ show: false })}
+            dismissible
+          >
+            {this.state.errors
+              ? Object.values(this.state.errors).map((error, index) => (
+                  <h6 key={index}>{error}</h6>
+                ))
+              : null}
+          </Alert>
+        ) : null}
+        {this.state.success !== null ? (
+          <Alert
+            className="m-3"
+            variant="success"
+            onClose={() => this.setState({ success: null })}
+            dismissible
+          >
+            {this.state.success
+              ? Object.values(this.state.success).map((message, index) => (
+                  <h6 key={index}>{message}</h6>
+                ))
+              : null}
+          </Alert>
+        ) : null}
         <h4 className="text-center">
           <i>Pending Account Verification</i>
         </h4>
