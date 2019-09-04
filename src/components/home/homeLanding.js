@@ -27,8 +27,7 @@ class HomeLanding extends Component {
       status1: false,
       status2: false,
       message1: null,
-      message2: null,
-      errors: null
+      message2: null
     };
 
     this.onChange = this.onChange.bind(this);
@@ -63,12 +62,14 @@ class HomeLanding extends Component {
             this.redirect();
           });
         } else {
-          this.setState({ message1: res.data.success });
+          this.setState({ message1: res.data.errors }, function() {
+            console.log(this.state);
+          });
         }
       })
       .catch(e => {
         this.setState({
-          errors: { error: "Something went wrong!" }
+          errors: "Something went wrong!"
         });
       });
 
@@ -79,19 +80,21 @@ class HomeLanding extends Component {
             this.redirect();
           });
         } else {
-          this.setState({ message2: res.data.success });
+          this.setState({ message2: res.data.errors }, function() {
+            console.log(this.state);
+          });
         }
       })
       .catch(e => {
         this.setState({
-          errors: { error: "Something went wrong!" }
+          errors: "Something went wrong!"
         });
       });
   }
 
   redirect() {
     if (this.state.status1 && this.state.status2) {
-      let token;
+      let token = null;
       if (localStorage.getItem("session")) {
         token = JSON.parse(localStorage.getItem("session"));
       } else if (sessionStorage.getItem("session")) {
@@ -102,6 +105,8 @@ class HomeLanding extends Component {
         if (decodedToken.userType === "customer") {
           this.props.history.push("/Passenger/Dashboard");
         }
+      } else {
+        this.props.history.push("/Login");
       }
     }
   }
@@ -174,7 +179,15 @@ class HomeLanding extends Component {
               onClick={this.onSubmit}
             ></img>
           </div>
-
+          <div className="text-white">
+            {this.state.message1 === null ? null : this.state.message1}
+          </div>
+          <div className="text-white">
+            {this.state.message2 === null ? null : this.state.message2}
+          </div>
+          <div className="text-white">
+            {this.state.errors === null ? null : this.state.errors}
+          </div>
           <div id="WhiteLogo">
             <a
               href="https://www.iata.org/Pages/default.aspx"
