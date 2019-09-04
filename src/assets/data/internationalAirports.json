@@ -1,0 +1,5992 @@
+[
+  {
+    "id": 4533,
+    "ident": "LTBJ",
+    "type": "large_airport",
+    "name": "Adnan Menderes International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "İzmir",
+    "iataCode": "ADB"
+  },
+  {
+    "id": 2562,
+    "ident": "EKYT",
+    "type": "large_airport",
+    "name": "Aalborg Airport",
+    "continent": "EU",
+    "country": "DK",
+    "city": "Aalborg",
+    "iataCode": "AAL"
+  },
+  {
+    "id": 2459,
+    "ident": "EGPD",
+    "type": "large_airport",
+    "name": "Aberdeen Dyce Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Aberdeen",
+    "iataCode": "ABZ"
+  },
+  {
+    "id": 5226,
+    "ident": "OMAA",
+    "type": "large_airport",
+    "name": "Abu Dhabi International Airport",
+    "continent": "AS",
+    "country": "AE",
+    "city": "Abu Dhabi",
+    "iataCode": "AUH"
+  },
+  {
+    "id": 2104,
+    "ident": "DNAA",
+    "type": "large_airport",
+    "name": "Nnamdi Azikiwe International Airport",
+    "continent": "AF",
+    "country": "NG",
+    "city": "Abuja",
+    "iataCode": "ABV"
+  },
+  {
+    "id": 4688,
+    "ident": "MMAA",
+    "type": "large_airport",
+    "name": "General Juan N Alvarez International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "Acapulco",
+    "iataCode": "ACA"
+  },
+  {
+    "id": 2090,
+    "ident": "DGAA",
+    "type": "large_airport",
+    "name": "Kotoka International Airport",
+    "continent": "AF",
+    "country": "GH",
+    "city": "Accra",
+    "iataCode": "ACC"
+  },
+  {
+    "id": 5087,
+    "ident": "OEDF",
+    "type": "large_airport",
+    "name": "King Fahd International Airport",
+    "continent": "AS",
+    "country": "SA",
+    "city": "Ad Dammam",
+    "iataCode": "DMM"
+  },
+  {
+    "id": 4512,
+    "ident": "LTAF",
+    "type": "large_airport",
+    "name": "Adana Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Adana",
+    "iataCode": "ADA"
+  },
+  {
+    "id": 3157,
+    "ident": "HAAB",
+    "type": "large_airport",
+    "name": "Addis Ababa Bole International Airport",
+    "continent": "AF",
+    "country": "ET",
+    "city": "Addis Ababa",
+    "iataCode": "ADD"
+  },
+  {
+    "id": 27096,
+    "ident": "YPAD",
+    "type": "large_airport",
+    "name": "Adelaide International Airport",
+    "continent": "OC",
+    "country": "AU",
+    "city": "Adelaide",
+    "iataCode": "ADL"
+  },
+  {
+    "id": 16091,
+    "ident": "KABQ",
+    "type": "large_airport",
+    "name": "Albuquerque International Sunport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Albuquerque",
+    "iataCode": "ABQ"
+  },
+  {
+    "id": 5302,
+    "ident": "OSAP",
+    "type": "large_airport",
+    "name": "Aleppo International Airport",
+    "continent": "AS",
+    "country": "SY",
+    "city": "Aleppo",
+    "iataCode": "ALP"
+  },
+  {
+    "id": 2050,
+    "ident": "DAAG",
+    "type": "large_airport",
+    "name": "Houari Boumediene Airport",
+    "continent": "AF",
+    "country": "DZ",
+    "city": "Algiers",
+    "iataCode": "ALG"
+  },
+  {
+    "id": 3997,
+    "ident": "LEAL",
+    "type": "large_airport",
+    "name": "Alicante International Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Alicante",
+    "iataCode": "ALC"
+  },
+  {
+    "id": 6421,
+    "ident": "UAAA",
+    "type": "large_airport",
+    "name": "Almaty Airport",
+    "continent": "AS",
+    "country": "KZ",
+    "city": "Almaty",
+    "iataCode": "ALA"
+  },
+  {
+    "id": 3377,
+    "ident": "KAMA",
+    "type": "large_airport",
+    "name": "Rick Husband Amarillo International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Amarillo",
+    "iataCode": "AMA"
+  },
+  {
+    "id": 5212,
+    "ident": "OJAI",
+    "type": "large_airport",
+    "name": "Queen Alia International Airport",
+    "continent": "AS",
+    "country": "JO",
+    "city": "Amman",
+    "iataCode": "AMM"
+  },
+  {
+    "id": 26540,
+    "ident": "VIAR",
+    "type": "large_airport",
+    "name": "Sri Guru Ram Dass Jee International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Amritsar",
+    "iataCode": "ATQ"
+  },
+  {
+    "id": 2513,
+    "ident": "EHAM",
+    "type": "large_airport",
+    "name": "Amsterdam Airport Schiphol",
+    "continent": "EU",
+    "country": "NL",
+    "city": "Amsterdam",
+    "iataCode": "AMS"
+  },
+  {
+    "id": 5388,
+    "ident": "PANC",
+    "type": "large_airport",
+    "name": "Ted Stevens Anchorage International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Anchorage",
+    "iataCode": "ANC"
+  },
+  {
+    "id": 5687,
+    "ident": "RPLC",
+    "type": "large_airport",
+    "name": "Diosdado Macapagal International Airport",
+    "continent": "AS",
+    "country": "PH",
+    "city": "Angeles/Mabalacat",
+    "iataCode": "CRK"
+  },
+  {
+    "id": 4509,
+    "ident": "LTAC",
+    "type": "large_airport",
+    "name": "Esenboğa International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Ankara",
+    "iataCode": "ESB"
+  },
+  {
+    "id": 4515,
+    "ident": "LTAI",
+    "type": "large_airport",
+    "name": "Antalya International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Antalya",
+    "iataCode": "AYT"
+  },
+  {
+    "id": 2908,
+    "ident": "FMMI",
+    "type": "large_airport",
+    "name": "Ivato Airport",
+    "continent": "AF",
+    "country": "MG",
+    "city": "Antananarivo",
+    "iataCode": "TNR"
+  },
+  {
+    "id": 27236,
+    "ident": "ZWWW",
+    "type": "large_airport",
+    "name": "Ürümqi Diwopu International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Ürümqi",
+    "iataCode": "URC"
+  },
+  {
+    "id": 3387,
+    "ident": "KAVL",
+    "type": "large_airport",
+    "name": "Asheville Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Asheville",
+    "iataCode": "AVL"
+  },
+  {
+    "id": 26380,
+    "ident": "UTAA",
+    "type": "large_airport",
+    "name": "Ashgabat International Airport",
+    "continent": "AS",
+    "country": "TM",
+    "city": "Ashgabat",
+    "iataCode": "ASB"
+  },
+  {
+    "id": 6423,
+    "ident": "UACC",
+    "type": "large_airport",
+    "name": "Astana International Airport",
+    "continent": "AS",
+    "country": "KZ",
+    "city": "Astana",
+    "iataCode": "TSE"
+  },
+  {
+    "id": 4251,
+    "ident": "LGAV",
+    "type": "large_airport",
+    "name": "Eleftherios Venizelos International Airport",
+    "continent": "EU",
+    "country": "GR",
+    "city": "Athens",
+    "iataCode": "ATH"
+  },
+  {
+    "id": 3384,
+    "ident": "KATL",
+    "type": "large_airport",
+    "name": "Hartsfield Jackson Atlanta International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Atlanta",
+    "iataCode": "ATL"
+  },
+  {
+    "id": 5023,
+    "ident": "NZAA",
+    "type": "large_airport",
+    "name": "Auckland International Airport",
+    "continent": "OC",
+    "country": "NZ",
+    "city": "Auckland",
+    "iataCode": "AKL"
+  },
+  {
+    "id": 3368,
+    "ident": "KAGS",
+    "type": "large_airport",
+    "name": "Augusta Regional At Bush Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Augusta",
+    "iataCode": "AGS"
+  },
+  {
+    "id": 3386,
+    "ident": "KAUS",
+    "type": "large_airport",
+    "name": "Austin Bergstrom International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Austin",
+    "iataCode": "AUS"
+  },
+  {
+    "id": 4958,
+    "ident": "NCRG",
+    "type": "large_airport",
+    "name": "Rarotonga International Airport",
+    "continent": "OC",
+    "country": "CK",
+    "city": "Avarua",
+    "iataCode": "RAR"
+  },
+  {
+    "id": 4226,
+    "ident": "LFSB",
+    "type": "large_airport",
+    "name": "EuroAirport Basel-Mulhouse-Freiburg Airport",
+    "continent": "EU",
+    "country": "FR",
+    "city": "Bâle/Mulhouse",
+    "iataCode": "BSL"
+  },
+  {
+    "id": 2270,
+    "ident": "EDSB",
+    "type": "large_airport",
+    "name": "Karlsruhe Baden-Baden Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Baden-Baden",
+    "iataCode": "FKB"
+  },
+  {
+    "id": 5289,
+    "ident": "ORBI",
+    "type": "large_airport",
+    "name": "Baghdad International Airport",
+    "continent": "AS",
+    "country": "IQ",
+    "city": "Baghdad",
+    "iataCode": "BGW"
+  },
+  {
+    "id": 6440,
+    "ident": "UBBB",
+    "type": "large_airport",
+    "name": "Heydar Aliyev International Airport",
+    "continent": "AS",
+    "country": "AZ",
+    "city": "Baku",
+    "iataCode": "GYD"
+  },
+  {
+    "id": 3435,
+    "ident": "KBWI",
+    "type": "large_airport",
+    "name": "Baltimore/Washington International Thurgood Marshall Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Baltimore",
+    "iataCode": "BWI"
+  },
+  {
+    "id": 3066,
+    "ident": "GABS",
+    "type": "large_airport",
+    "name": "Modibo Keita International Airport",
+    "continent": "AF",
+    "country": "ML",
+    "city": "Bamako",
+    "iataCode": "BKO"
+  },
+  {
+    "id": 26819,
+    "ident": "WBSB",
+    "type": "large_airport",
+    "name": "Brunei International Airport",
+    "continent": "AS",
+    "country": "BN",
+    "city": "Bandar Seri Begawan",
+    "iataCode": "BWN"
+  },
+  {
+    "id": 35145,
+    "ident": "VOBL",
+    "type": "large_airport",
+    "name": "Kempegowda International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Bangalore",
+    "iataCode": "BLR"
+  },
+  {
+    "id": 26638,
+    "ident": "VTBD",
+    "type": "large_airport",
+    "name": "Don Mueang International Airport",
+    "continent": "AS",
+    "country": "TH",
+    "city": "Bangkok",
+    "iataCode": "DMK"
+  },
+  {
+    "id": 28118,
+    "ident": "VTBS",
+    "type": "large_airport",
+    "name": "Suvarnabhumi Airport",
+    "continent": "AS",
+    "country": "TH",
+    "city": "Bangkok",
+    "iataCode": "BKK"
+  },
+  {
+    "id": 3405,
+    "ident": "KBGR",
+    "type": "large_airport",
+    "name": "Bangor International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Bangor",
+    "iataCode": "BGR"
+  },
+  {
+    "id": 4004,
+    "ident": "LEBL",
+    "type": "large_airport",
+    "name": "Barcelona International Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Barcelona",
+    "iataCode": "BCN"
+  },
+  {
+    "id": 6255,
+    "ident": "SVBC",
+    "type": "large_airport",
+    "name": "General José Antonio Anzoategui International Airport",
+    "continent": "SA",
+    "country": "VE",
+    "city": "Barcelona",
+    "iataCode": "BLA"
+  },
+  {
+    "id": 4310,
+    "ident": "LIBD",
+    "type": "large_airport",
+    "name": "Bari Karol Wojtyła Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Bari",
+    "iataCode": "BRI"
+  },
+  {
+    "id": 5294,
+    "ident": "ORMM",
+    "type": "large_airport",
+    "name": "Basrah International Airport",
+    "continent": "AS",
+    "country": "IQ",
+    "city": "Basrah",
+    "iataCode": "BSR"
+  },
+  {
+    "id": 27188,
+    "ident": "ZBAA",
+    "type": "large_airport",
+    "name": "Beijing Capital International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Beijing",
+    "iataCode": "PEK"
+  },
+  {
+    "id": 44093,
+    "ident": "ZBNY",
+    "type": "large_airport",
+    "name": "Beijing Nanyuan Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Beijing",
+    "iataCode": "NAY"
+  },
+  {
+    "id": 5222,
+    "ident": "OLBA",
+    "type": "large_airport",
+    "name": "Beirut Rafic Hariri International Airport",
+    "continent": "AS",
+    "country": "LB",
+    "city": "Beirut",
+    "iataCode": "BEY"
+  },
+  {
+    "id": 5867,
+    "ident": "SBBE",
+    "type": "large_airport",
+    "name": "Val de Cans/Júlio Cezar Ribeiro International Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "Belém",
+    "iataCode": "BEL"
+  },
+  {
+    "id": 2385,
+    "ident": "EGAA",
+    "type": "large_airport",
+    "name": "Belfast International Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Belfast",
+    "iataCode": "BFS"
+  },
+  {
+    "id": 2387,
+    "ident": "EGAC",
+    "type": "large_airport",
+    "name": "George Best Belfast City Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Belfast",
+    "iataCode": "BHD"
+  },
+  {
+    "id": 4610,
+    "ident": "LYBE",
+    "type": "large_airport",
+    "name": "Belgrade Nikola Tesla Airport",
+    "continent": "EU",
+    "country": "RS",
+    "city": "Belgrade",
+    "iataCode": "BEG"
+  },
+  {
+    "id": 4956,
+    "ident": "MZBZ",
+    "type": "large_airport",
+    "name": "Philip S. W. Goldson International Airport",
+    "continent": "NA",
+    "country": "BZ",
+    "city": "Belize City",
+    "iataCode": "BZE"
+  },
+  {
+    "id": 3417,
+    "ident": "KBLV",
+    "type": "large_airport",
+    "name": "Scott AFB/Midamerica Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Belleville",
+    "iataCode": "BLV"
+  },
+  {
+    "id": 5882,
+    "ident": "SBCF",
+    "type": "large_airport",
+    "name": "Tancredo Neves International Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "Belo Horizonte",
+    "iataCode": "CNF"
+  },
+  {
+    "id": 4341,
+    "ident": "LIME",
+    "type": "large_airport",
+    "name": "Il Caravaggio International Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Bergamo",
+    "iataCode": "BGY"
+  },
+  {
+    "id": 2570,
+    "ident": "ENBR",
+    "type": "large_airport",
+    "name": "Bergen Airport Flesland",
+    "continent": "EU",
+    "country": "NO",
+    "city": "Bergen",
+    "iataCode": "BGO"
+  },
+  {
+    "id": 2209,
+    "ident": "EDDB",
+    "type": "large_airport",
+    "name": "Berlin-Schönefeld Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Berlin",
+    "iataCode": "SXF"
+  },
+  {
+    "id": 2223,
+    "ident": "EDDT",
+    "type": "large_airport",
+    "name": "Berlin-Tegel Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Berlin",
+    "iataCode": "TXL"
+  },
+  {
+    "id": 3408,
+    "ident": "KBIL",
+    "type": "large_airport",
+    "name": "Billings Logan International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Billings",
+    "iataCode": "BIL"
+  },
+  {
+    "id": 2487,
+    "ident": "EGUL",
+    "type": "large_airport",
+    "name": "RAF Lakenheath",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Lakenheath",
+    "iataCode": "LKZ"
+  },
+  {
+    "id": 2488,
+    "ident": "EGUN",
+    "type": "large_airport",
+    "name": "RAF Mildenhall",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Mildenhall",
+    "iataCode": "MHZ"
+  },
+  {
+    "id": 2492,
+    "ident": "EGVA",
+    "type": "large_airport",
+    "name": "RAF Fairford",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Fairford",
+    "iataCode": "FFD"
+  },
+  {
+    "id": 2541,
+    "ident": "EKBI",
+    "type": "large_airport",
+    "name": "Billund Airport",
+    "continent": "EU",
+    "country": "DK",
+    "city": "Billund",
+    "iataCode": "BLL"
+  },
+  {
+    "id": 2389,
+    "ident": "EGBB",
+    "type": "large_airport",
+    "name": "Birmingham International Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Birmingham",
+    "iataCode": "BHX"
+  },
+  {
+    "id": 3406,
+    "ident": "KBHM",
+    "type": "large_airport",
+    "name": "Birmingham-Shuttlesworth International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Birmingham",
+    "iataCode": "BHM"
+  },
+  {
+    "id": 6426,
+    "ident": "UAFM",
+    "type": "large_airport",
+    "name": "Manas International Airport",
+    "continent": "AS",
+    "country": "KG",
+    "city": "Bishkek",
+    "iataCode": "FRU"
+  },
+  {
+    "id": 3419,
+    "ident": "KBMI",
+    "type": "large_airport",
+    "name": "Central Illinois Regional Airport at Bloomington-Normal",
+    "continent": "NA",
+    "country": "US",
+    "city": "Bloomington/Normal",
+    "iataCode": "BMI"
+  },
+  {
+    "id": 2569,
+    "ident": "ENBO",
+    "type": "large_airport",
+    "name": "Bodø Airport",
+    "continent": "EU",
+    "country": "NO",
+    "city": "Bodø",
+    "iataCode": "BOO"
+  },
+  {
+    "id": 4567,
+    "ident": "LTFE",
+    "type": "large_airport",
+    "name": "Milas Bodrum International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Bodrum",
+    "iataCode": "BJV"
+  },
+  {
+    "id": 6104,
+    "ident": "SKBO",
+    "type": "large_airport",
+    "name": "El Dorado International Airport",
+    "continent": "SA",
+    "country": "CO",
+    "city": "Bogota",
+    "iataCode": "BOG"
+  },
+  {
+    "id": 3421,
+    "ident": "KBOI",
+    "type": "large_airport",
+    "name": "Boise Air Terminal/Gowen Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Boise",
+    "iataCode": "BOI"
+  },
+  {
+    "id": 4354,
+    "ident": "LIPE",
+    "type": "large_airport",
+    "name": "Bologna Guglielmo Marconi Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Bologna",
+    "iataCode": "BLQ"
+  },
+  {
+    "id": 4060,
+    "ident": "LFBD",
+    "type": "large_airport",
+    "name": "Bordeaux-Mérignac Airport",
+    "continent": "EU",
+    "country": "FR",
+    "city": "Bordeaux/Mérignac",
+    "iataCode": "BOD"
+  },
+  {
+    "id": 3422,
+    "ident": "KBOS",
+    "type": "large_airport",
+    "name": "General Edward Lawrence Logan International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Boston",
+    "iataCode": "BOS"
+  },
+  {
+    "id": 2421,
+    "ident": "EGHH",
+    "type": "large_airport",
+    "name": "Bournemouth Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Bournemouth",
+    "iataCode": "BOH"
+  },
+  {
+    "id": 5872,
+    "ident": "SBBR",
+    "type": "large_airport",
+    "name": "Presidente Juscelino Kubistschek International Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "Brasília",
+    "iataCode": "BSB"
+  },
+  {
+    "id": 4617,
+    "ident": "LZIB",
+    "type": "large_airport",
+    "name": "M. R. Štefánik Airport",
+    "continent": "EU",
+    "country": "SK",
+    "city": "Bratislava",
+    "iataCode": "BTS"
+  },
+  {
+    "id": 2225,
+    "ident": "EDDW",
+    "type": "large_airport",
+    "name": "Bremen Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Bremen",
+    "iataCode": "BRE"
+  },
+  {
+    "id": 26901,
+    "ident": "YBBN",
+    "type": "large_airport",
+    "name": "Brisbane International Airport",
+    "continent": "OC",
+    "country": "AU",
+    "city": "Brisbane",
+    "iataCode": "BNE"
+  },
+  {
+    "id": 2417,
+    "ident": "EGGD",
+    "type": "large_airport",
+    "name": "Bristol Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Bristol",
+    "iataCode": "BRS"
+  },
+  {
+    "id": 3928,
+    "ident": "KTRI",
+    "type": "large_airport",
+    "name": "Tri-Cities Regional TN/VA Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Bristol/Johnson/Kingsport",
+    "iataCode": "TRI"
+  },
+  {
+    "id": 2493,
+    "ident": "EGVN",
+    "type": "large_airport",
+    "name": "RAF Brize Norton",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Brize Norton",
+    "iataCode": "BZZ"
+  },
+  {
+    "id": 2155,
+    "ident": "EBBR",
+    "type": "large_airport",
+    "name": "Brussels Airport",
+    "continent": "EU",
+    "country": "BE",
+    "city": "Brussels",
+    "iataCode": "BRU"
+  },
+  {
+    "id": 2157,
+    "ident": "EBCI",
+    "type": "large_airport",
+    "name": "Brussels South Charleroi Airport",
+    "continent": "EU",
+    "country": "BE",
+    "city": "Brussels",
+    "iataCode": "CRL"
+  },
+  {
+    "id": 4482,
+    "ident": "LROP",
+    "type": "large_airport",
+    "name": "Henri Coandă International Airport",
+    "continent": "EU",
+    "country": "RO",
+    "city": "Bucharest",
+    "iataCode": "OTP"
+  },
+  {
+    "id": 4296,
+    "ident": "LHBP",
+    "type": "large_airport",
+    "name": "Budapest Liszt Ferenc International Airport",
+    "continent": "EU",
+    "country": "HU",
+    "city": "Budapest",
+    "iataCode": "BUD"
+  },
+  {
+    "id": 5781,
+    "ident": "SAEZ",
+    "type": "large_airport",
+    "name": "Ministro Pistarini International Airport",
+    "continent": "SA",
+    "country": "AR",
+    "city": "Buenos Aires",
+    "iataCode": "EZE"
+  },
+  {
+    "id": 3431,
+    "ident": "KBUF",
+    "type": "large_airport",
+    "name": "Buffalo Niagara International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Buffalo",
+    "iataCode": "BUF"
+  },
+  {
+    "id": 3974,
+    "ident": "LBBG",
+    "type": "large_airport",
+    "name": "Burgas Airport",
+    "continent": "EU",
+    "country": "BG",
+    "city": "Burgas",
+    "iataCode": "BOJ"
+  },
+  {
+    "id": 2718,
+    "ident": "ETAR",
+    "type": "large_airport",
+    "name": "Ramstein Air Base",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Ramstein",
+    "iataCode": "RMS"
+  },
+  {
+    "id": 5642,
+    "ident": "RKPK",
+    "type": "large_airport",
+    "name": "Gimhae International Airport",
+    "continent": "AS",
+    "country": "KR",
+    "city": "Busan",
+    "iataCode": "PUS"
+  },
+  {
+    "id": 308633,
+    "ident": "PH-0001",
+    "type": "large_airport",
+    "name": "Laguindingan Airport",
+    "continent": "AS",
+    "country": "PH",
+    "city": "Cagayan de Oro City",
+    "iataCode": "CGY"
+  },
+  {
+    "id": 4332,
+    "ident": "LIEE",
+    "type": "large_airport",
+    "name": "Cagliari Elmas Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Cagliari",
+    "iataCode": "CAG"
+  },
+  {
+    "id": 3183,
+    "ident": "HECA",
+    "type": "large_airport",
+    "name": "Cairo International Airport",
+    "continent": "AF",
+    "country": "EG",
+    "city": "Cairo",
+    "iataCode": "CAI"
+  },
+  {
+    "id": 1973,
+    "ident": "CYYC",
+    "type": "large_airport",
+    "name": "Calgary International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Calgary",
+    "iataCode": "YYC"
+  },
+  {
+    "id": 26610,
+    "ident": "VOCL",
+    "type": "large_airport",
+    "name": "Calicut International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Calicut",
+    "iataCode": "CCJ"
+  },
+  {
+    "id": 27131,
+    "ident": "YSCB",
+    "type": "large_airport",
+    "name": "Canberra International Airport",
+    "continent": "OC",
+    "country": "AU",
+    "city": "Canberra",
+    "iataCode": "CBR"
+  },
+  {
+    "id": 4762,
+    "ident": "MMUN",
+    "type": "large_airport",
+    "name": "Cancún International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "Cancún",
+    "iataCode": "CUN"
+  },
+  {
+    "id": 2775,
+    "ident": "FACT",
+    "type": "large_airport",
+    "name": "Cape Town International Airport",
+    "continent": "AF",
+    "country": "ZA",
+    "city": "Cape Town",
+    "iataCode": "CPT"
+  },
+  {
+    "id": 6300,
+    "ident": "SVMI",
+    "type": "large_airport",
+    "name": "Simón Bolívar International Airport",
+    "continent": "SA",
+    "country": "VE",
+    "city": "Caracas",
+    "iataCode": "CCS"
+  },
+  {
+    "id": 2415,
+    "ident": "EGFF",
+    "type": "large_airport",
+    "name": "Cardiff International Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Cardiff",
+    "iataCode": "CWL"
+  },
+  {
+    "id": 3113,
+    "ident": "GMMN",
+    "type": "large_airport",
+    "name": "Mohammed V International Airport",
+    "continent": "AF",
+    "country": "MA",
+    "city": "Casablanca",
+    "iataCode": "CMN"
+  },
+  {
+    "id": 4318,
+    "ident": "LICC",
+    "type": "large_airport",
+    "name": "Catania-Fontanarossa Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Catania",
+    "iataCode": "CTA"
+  },
+  {
+    "id": 3451,
+    "ident": "KCID",
+    "type": "large_airport",
+    "name": "The Eastern Iowa Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Cedar Rapids",
+    "iataCode": "CID"
+  },
+  {
+    "id": 27195,
+    "ident": "ZGHA",
+    "type": "large_airport",
+    "name": "Changsha Huanghua International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Changsha",
+    "iataCode": "CSX"
+  },
+  {
+    "id": 3450,
+    "ident": "KCHS",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Charleston",
+    "iataCode": "CHS"
+  },
+  {
+    "id": 3467,
+    "ident": "KCRW",
+    "type": "large_airport",
+    "name": "Yeager Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Charleston",
+    "iataCode": "CRW"
+  },
+  {
+    "id": 3457,
+    "ident": "KCLT",
+    "type": "large_airport",
+    "name": "Charlotte Douglas International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Charlotte",
+    "iataCode": "CLT"
+  },
+  {
+    "id": 3448,
+    "ident": "KCHA",
+    "type": "large_airport",
+    "name": "Lovell Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Chattanooga",
+    "iataCode": "CHA"
+  },
+  {
+    "id": 27230,
+    "ident": "ZUUU",
+    "type": "large_airport",
+    "name": "Chengdu Shuangliu International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Chengdu",
+    "iataCode": "CTU"
+  },
+  {
+    "id": 26618,
+    "ident": "VOMM",
+    "type": "large_airport",
+    "name": "Chennai International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Chennai",
+    "iataCode": "MAA"
+  },
+  {
+    "id": 5663,
+    "ident": "RKTU",
+    "type": "large_airport",
+    "name": "Cheongju International Airport/Cheongju Air Base (K-59/G-513)",
+    "continent": "AS",
+    "country": "KR",
+    "city": "Cheongju",
+    "iataCode": "CJJ"
+  },
+  {
+    "id": 26647,
+    "ident": "VTCC",
+    "type": "large_airport",
+    "name": "Chiang Mai International Airport",
+    "continent": "AS",
+    "country": "TH",
+    "city": "Chiang Mai",
+    "iataCode": "CNX"
+  },
+  {
+    "id": 3673,
+    "ident": "KMDW",
+    "type": "large_airport",
+    "name": "Chicago Midway International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Chicago",
+    "iataCode": "MDW"
+  },
+  {
+    "id": 3754,
+    "ident": "KORD",
+    "type": "large_airport",
+    "name": "Chicago O'Hare International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Chicago",
+    "iataCode": "ORD"
+  },
+  {
+    "id": 3845,
+    "ident": "KRFD",
+    "type": "large_airport",
+    "name": "Chicago Rockford International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Chicago/Rockford",
+    "iataCode": "RFD"
+  },
+  {
+    "id": 5544,
+    "ident": "RJCC",
+    "type": "large_airport",
+    "name": "New Chitose Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Chitose / Tomakomai",
+    "iataCode": "CTS"
+  },
+  {
+    "id": 27228,
+    "ident": "ZUCK",
+    "type": "large_airport",
+    "name": "Chongqing Jiangbei International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Chongqing",
+    "iataCode": "CKG"
+  },
+  {
+    "id": 5026,
+    "ident": "NZCH",
+    "type": "large_airport",
+    "name": "Christchurch International Airport",
+    "continent": "OC",
+    "country": "NZ",
+    "city": "Christchurch",
+    "iataCode": "CHC"
+  },
+  {
+    "id": 3471,
+    "ident": "KCVG",
+    "type": "large_airport",
+    "name": "Cincinnati Northern Kentucky International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Cincinnati",
+    "iataCode": "CVG"
+  },
+  {
+    "id": 3454,
+    "ident": "KCLE",
+    "type": "large_airport",
+    "name": "Cleveland Hopkins International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Cleveland",
+    "iataCode": "CLE"
+  },
+  {
+    "id": 2216,
+    "ident": "EDDK",
+    "type": "large_airport",
+    "name": "Cologne Bonn Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Cologne",
+    "iataCode": "CGN"
+  },
+  {
+    "id": 26463,
+    "ident": "VCBI",
+    "type": "large_airport",
+    "name": "Bandaranaike International Colombo Airport",
+    "continent": "AS",
+    "country": "LK",
+    "city": "Colombo",
+    "iataCode": "CMB"
+  },
+  {
+    "id": 3463,
+    "ident": "KCOS",
+    "type": "large_airport",
+    "name": "City of Colorado Springs Municipal Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Colorado Springs",
+    "iataCode": "COS"
+  },
+  {
+    "id": 3438,
+    "ident": "KCAE",
+    "type": "large_airport",
+    "name": "Columbia Metropolitan Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Columbia",
+    "iataCode": "CAE"
+  },
+  {
+    "id": 3458,
+    "ident": "KCMH",
+    "type": "large_airport",
+    "name": "John Glenn Columbus International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Columbus",
+    "iataCode": "CMH"
+  },
+  {
+    "id": 3638,
+    "ident": "KLCK",
+    "type": "large_airport",
+    "name": "Rickenbacker International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Columbus",
+    "iataCode": "LCK"
+  },
+  {
+    "id": 2542,
+    "ident": "EKCH",
+    "type": "large_airport",
+    "name": "Copenhagen Kastrup Airport",
+    "continent": "EU",
+    "country": "DK",
+    "city": "Copenhagen",
+    "iataCode": "CPH"
+  },
+  {
+    "id": 2530,
+    "ident": "EICK",
+    "type": "large_airport",
+    "name": "Cork Airport",
+    "continent": "EU",
+    "country": "IE",
+    "city": "Cork",
+    "iataCode": "ORK"
+  },
+  {
+    "id": 3466,
+    "ident": "KCRP",
+    "type": "large_airport",
+    "name": "Corpus Christi International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Corpus Christi",
+    "iataCode": "CRP"
+  },
+  {
+    "id": 5891,
+    "ident": "SBCT",
+    "type": "large_airport",
+    "name": "Afonso Pena Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "Curitiba",
+    "iataCode": "CWB"
+  },
+  {
+    "id": 6243,
+    "ident": "SPZO",
+    "type": "large_airport",
+    "name": "Alejandro Velasco Astete International Airport",
+    "continent": "SA",
+    "country": "PE",
+    "city": "Cusco",
+    "iataCode": "CUZ"
+  },
+  {
+    "id": 26697,
+    "ident": "VVDN",
+    "type": "large_airport",
+    "name": "Da Nang International Airport",
+    "continent": "AS",
+    "country": "VN",
+    "city": "Da Nang",
+    "iataCode": "DAD"
+  },
+  {
+    "id": 2217,
+    "ident": "EDDL",
+    "type": "large_airport",
+    "name": "Düsseldorf Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Düsseldorf",
+    "iataCode": "DUS"
+  },
+  {
+    "id": 325736,
+    "ident": "GOBD",
+    "type": "large_airport",
+    "name": "Blaise Diagne International Airport",
+    "continent": "AF",
+    "country": "SN",
+    "city": "Dakar",
+    "iataCode": "DSS"
+  },
+  {
+    "id": 3125,
+    "ident": "GOOY",
+    "type": "large_airport",
+    "name": "Léopold Sédar Senghor International Airport",
+    "continent": "AF",
+    "country": "SN",
+    "city": "Dakar",
+    "iataCode": "DKR"
+  },
+  {
+    "id": 3364,
+    "ident": "KADW",
+    "type": "large_airport",
+    "name": "Joint Base Andrews",
+    "continent": "NA",
+    "country": "US",
+    "city": "Camp Springs",
+    "iataCode": "ADW"
+  },
+  {
+    "id": 3366,
+    "ident": "KAFW",
+    "type": "large_airport",
+    "name": "Fort Worth Alliance Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Fort Worth",
+    "iataCode": "AFW"
+  },
+  {
+    "id": 4542,
+    "ident": "LTBS",
+    "type": "large_airport",
+    "name": "Dalaman International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Dalaman",
+    "iataCode": "DLM"
+  },
+  {
+    "id": 27242,
+    "ident": "ZYTL",
+    "type": "large_airport",
+    "name": "Zhoushuizi Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Dalian",
+    "iataCode": "DLC"
+  },
+  {
+    "id": 3479,
+    "ident": "KDAL",
+    "type": "large_airport",
+    "name": "Dallas Love Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Dallas",
+    "iataCode": "DAL"
+  },
+  {
+    "id": 3488,
+    "ident": "KDFW",
+    "type": "large_airport",
+    "name": "Dallas Fort Worth International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Dallas-Fort Worth",
+    "iataCode": "DFW"
+  },
+  {
+    "id": 5303,
+    "ident": "OSDI",
+    "type": "large_airport",
+    "name": "Damascus International Airport",
+    "continent": "AS",
+    "country": "SY",
+    "city": "Damascus",
+    "iataCode": "DAM"
+  },
+  {
+    "id": 3391,
+    "ident": "KBAB",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Marysville",
+    "iataCode": "BAB"
+  },
+  {
+    "id": 3392,
+    "ident": "KBAD",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Bossier City",
+    "iataCode": "BAD"
+  },
+  {
+    "id": 3251,
+    "ident": "HTDA",
+    "type": "large_airport",
+    "name": "Julius Nyerere International Airport",
+    "continent": "AF",
+    "country": "TZ",
+    "city": "Dar es Salaam",
+    "iataCode": "DAR"
+  },
+  {
+    "id": 5697,
+    "ident": "RPMD",
+    "type": "large_airport",
+    "name": "Francisco Bangoy International Airport",
+    "continent": "AS",
+    "country": "PH",
+    "city": "Davao City",
+    "iataCode": "DVO"
+  },
+  {
+    "id": 3481,
+    "ident": "KDAY",
+    "type": "large_airport",
+    "name": "James M Cox Dayton International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Dayton",
+    "iataCode": "DAY"
+  },
+  {
+    "id": 3478,
+    "ident": "KDAB",
+    "type": "large_airport",
+    "name": "Daytona Beach International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Daytona Beach",
+    "iataCode": "DAB"
+  },
+  {
+    "id": 26751,
+    "ident": "WADD",
+    "type": "large_airport",
+    "name": "Ngurah Rai (Bali) International Airport",
+    "continent": "AS",
+    "country": "ID",
+    "city": "Denpasar-Bali Island",
+    "iataCode": "DPS"
+  },
+  {
+    "id": 3486,
+    "ident": "KDEN",
+    "type": "large_airport",
+    "name": "Denver International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Denver",
+    "iataCode": "DEN"
+  },
+  {
+    "id": 3496,
+    "ident": "KDSM",
+    "type": "large_airport",
+    "name": "Des Moines International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Des Moines",
+    "iataCode": "DSM"
+  },
+  {
+    "id": 3497,
+    "ident": "KDTW",
+    "type": "large_airport",
+    "name": "Detroit Metropolitan Wayne County Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Detroit",
+    "iataCode": "DTW"
+  },
+  {
+    "id": 26534,
+    "ident": "VGZR",
+    "type": "large_airport",
+    "name": "Hazrat Shahjalal International Airport",
+    "continent": "AS",
+    "country": "BD",
+    "city": "Dhaka",
+    "iataCode": "DAC"
+  },
+  {
+    "id": 44686,
+    "ident": "QA-0001",
+    "type": "large_airport",
+    "name": "Hamad International Airport",
+    "continent": "AS",
+    "country": "QA",
+    "city": "Doha",
+    "iataCode": "DOH"
+  },
+  {
+    "id": 2401,
+    "ident": "EGCN",
+    "type": "large_airport",
+    "name": "Robin Hood Doncaster Sheffield Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Doncaster",
+    "iataCode": "DSA"
+  },
+  {
+    "id": 2247,
+    "ident": "EDLW",
+    "type": "large_airport",
+    "name": "Dortmund Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Dortmund",
+    "iataCode": "DTM"
+  },
+  {
+    "id": 2210,
+    "ident": "EDDC",
+    "type": "large_airport",
+    "name": "Dresden Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Dresden",
+    "iataCode": "DRS"
+  },
+  {
+    "id": 3441,
+    "ident": "KCBM",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Columbus",
+    "iataCode": "CBM"
+  },
+  {
+    "id": 5235,
+    "ident": "OMDB",
+    "type": "large_airport",
+    "name": "Dubai International Airport",
+    "continent": "AS",
+    "country": "AE",
+    "city": "Dubai",
+    "iataCode": "DXB"
+  },
+  {
+    "id": 2533,
+    "ident": "EIDW",
+    "type": "large_airport",
+    "name": "Dublin Airport",
+    "continent": "EU",
+    "country": "IE",
+    "city": "Dublin",
+    "iataCode": "DUB"
+  },
+  {
+    "id": 3482,
+    "ident": "KDBQ",
+    "type": "large_airport",
+    "name": "Dubuque Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Dubuque",
+    "iataCode": "DBQ"
+  },
+  {
+    "id": 3491,
+    "ident": "KDLH",
+    "type": "large_airport",
+    "name": "Duluth International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Duluth",
+    "iataCode": "DLH"
+  },
+  {
+    "id": 299738,
+    "ident": "OM-0003",
+    "type": "large_airport",
+    "name": "Duqm International Airport",
+    "continent": "AS",
+    "country": "OM",
+    "city": "Duqm",
+    "iataCode": "DQM"
+  },
+  {
+    "id": 300795,
+    "ident": "FALE",
+    "type": "large_airport",
+    "name": "King Shaka International Airport",
+    "continent": "AF",
+    "country": "ZA",
+    "city": "Durban",
+    "iataCode": "DUR"
+  },
+  {
+    "id": 2462,
+    "ident": "EGPH",
+    "type": "large_airport",
+    "name": "Edinburgh Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Edinburgh",
+    "iataCode": "EDI"
+  },
+  {
+    "id": 1717,
+    "ident": "CYEG",
+    "type": "large_airport",
+    "name": "Edmonton International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Edmonton",
+    "iataCode": "YEG"
+  },
+  {
+    "id": 4423,
+    "ident": "LLOV",
+    "type": "large_airport",
+    "name": "Ovda International Airport",
+    "continent": "AS",
+    "country": "IL",
+    "city": "Eilat",
+    "iataCode": "VDA"
+  },
+  {
+    "id": 2518,
+    "ident": "EHEH",
+    "type": "large_airport",
+    "name": "Eindhoven Airport",
+    "continent": "EU",
+    "country": "NL",
+    "city": "Eindhoven",
+    "iataCode": "EIN"
+  },
+  {
+    "id": 3473,
+    "ident": "KCVS",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Clovis",
+    "iataCode": "CVS"
+  },
+  {
+    "id": 44483,
+    "ident": "TN-0002",
+    "type": "large_airport",
+    "name": "Enfidha - Hammamet International Airport",
+    "continent": "AF",
+    "country": "TN",
+    "city": "Enfidha",
+    "iataCode": "NBE"
+  },
+  {
+    "id": 3515,
+    "ident": "KERI",
+    "type": "large_airport",
+    "name": "Erie International Tom Ridge Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Erie",
+    "iataCode": "ERI"
+  },
+  {
+    "id": 4551,
+    "ident": "LTCE",
+    "type": "large_airport",
+    "name": "Erzurum International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Erzurum",
+    "iataCode": "ERZ"
+  },
+  {
+    "id": 3150,
+    "ident": "GVAC",
+    "type": "large_airport",
+    "name": "Amílcar Cabral International Airport",
+    "continent": "AF",
+    "country": "CV",
+    "city": "Espargos",
+    "iataCode": "SID"
+  },
+  {
+    "id": 2481,
+    "ident": "EGTE",
+    "type": "large_airport",
+    "name": "Exeter International Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Exeter",
+    "iataCode": "EXT"
+  },
+  {
+    "id": 5360,
+    "ident": "PAFA",
+    "type": "large_airport",
+    "name": "Fairbanks International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Fairbanks",
+    "iataCode": "FAI"
+  },
+  {
+    "id": 4448,
+    "ident": "LPFR",
+    "type": "large_airport",
+    "name": "Faro Airport",
+    "continent": "EU",
+    "country": "PT",
+    "city": "Faro",
+    "iataCode": "FAO"
+  },
+  {
+    "id": 3490,
+    "ident": "KDLF",
+    "type": "large_airport",
+    "name": "DLF Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Del Rio",
+    "iataCode": "DLF"
+  },
+  {
+    "id": 5901,
+    "ident": "SBFL",
+    "type": "large_airport",
+    "name": "Hercílio Luz International Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "Florianópolis",
+    "iataCode": "FLN"
+  },
+  {
+    "id": 3494,
+    "ident": "KDOV",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Dover",
+    "iataCode": "DOV"
+  },
+  {
+    "id": 3531,
+    "ident": "KFLL",
+    "type": "large_airport",
+    "name": "Fort Lauderdale Hollywood International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Fort Lauderdale",
+    "iataCode": "FLL"
+  },
+  {
+    "id": 3858,
+    "ident": "KRSW",
+    "type": "large_airport",
+    "name": "Southwest Florida International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Fort Myers",
+    "iataCode": "RSW"
+  },
+  {
+    "id": 3499,
+    "ident": "KDYS",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Abilene",
+    "iataCode": "DYS"
+  },
+  {
+    "id": 3503,
+    "ident": "KEDW",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Edwards",
+    "iataCode": "EDW"
+  },
+  {
+    "id": 3513,
+    "ident": "KEND",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Enid",
+    "iataCode": "END"
+  },
+  {
+    "id": 3543,
+    "ident": "KFSM",
+    "type": "large_airport",
+    "name": "Fort Smith Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Fort Smith",
+    "iataCode": "FSM"
+  },
+  {
+    "id": 3547,
+    "ident": "KFWA",
+    "type": "large_airport",
+    "name": "Fort Wayne International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Fort Wayne",
+    "iataCode": "FWA"
+  },
+  {
+    "id": 3528,
+    "ident": "KFFO",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Dayton",
+    "iataCode": "FFO"
+  },
+  {
+    "id": 2212,
+    "ident": "EDDF",
+    "type": "large_airport",
+    "name": "Frankfurt am Main Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Frankfurt am Main",
+    "iataCode": "FRA"
+  },
+  {
+    "id": 3095,
+    "ident": "GFLL",
+    "type": "large_airport",
+    "name": "Lungi International Airport",
+    "continent": "AF",
+    "country": "SL",
+    "city": "Freetown",
+    "iataCode": "FNA"
+  },
+  {
+    "id": 3545,
+    "ident": "KFTW",
+    "type": "large_airport",
+    "name": "Fort Worth Meacham International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Fort Worth",
+    "iataCode": "FTW"
+  },
+  {
+    "id": 5564,
+    "ident": "RJFF",
+    "type": "large_airport",
+    "name": "Fukuoka Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Fukuoka",
+    "iataCode": "FUK"
+  },
+  {
+    "id": 27217,
+    "ident": "ZSFZ",
+    "type": "large_airport",
+    "name": "Fuzhou Changle International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Fuzhou",
+    "iataCode": "FOC"
+  },
+  {
+    "id": 2864,
+    "ident": "FBSK",
+    "type": "large_airport",
+    "name": "Sir Seretse Khama International Airport",
+    "continent": "AF",
+    "country": "BW",
+    "city": "Gaborone",
+    "iataCode": "GBE"
+  },
+  {
+    "id": 4516,
+    "ident": "LTAJ",
+    "type": "large_airport",
+    "name": "Gaziantep International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Gaziantep",
+    "iataCode": "GZT"
+  },
+  {
+    "id": 3567,
+    "ident": "KGSB",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Goldsboro",
+    "iataCode": "GSB"
+  },
+  {
+    "id": 2608,
+    "ident": "EPGD",
+    "type": "large_airport",
+    "name": "Gdańsk Lech Wałęsa Airport",
+    "continent": "EU",
+    "country": "PL",
+    "city": "Gdańsk",
+    "iataCode": "GDN"
+  },
+  {
+    "id": 4490,
+    "ident": "LSGG",
+    "type": "large_airport",
+    "name": "Geneva Cointrin International Airport",
+    "continent": "EU",
+    "country": "CH",
+    "city": "Geneva",
+    "iataCode": "GVA"
+  },
+  {
+    "id": 3573,
+    "ident": "KGUS",
+    "type": "large_airport",
+    "name": "Grissom Air Reserve Base",
+    "continent": "NA",
+    "country": "US",
+    "city": "Peru",
+    "iataCode": "GUS"
+  },
+  {
+    "id": 4344,
+    "ident": "LIMJ",
+    "type": "large_airport",
+    "name": "Genoa Cristoforo Colombo Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Genova",
+    "iataCode": "GOA"
+  },
+  {
+    "id": 3584,
+    "ident": "KHMN",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Alamogordo",
+    "iataCode": "HMN"
+  },
+  {
+    "id": 2783,
+    "ident": "FAGG",
+    "type": "large_airport",
+    "name": "George Airport",
+    "continent": "AF",
+    "country": "ZA",
+    "city": "George",
+    "iataCode": "GRJ"
+  },
+  {
+    "id": 4862,
+    "ident": "MWCR",
+    "type": "large_airport",
+    "name": "Owen Roberts International Airport",
+    "continent": "NA",
+    "country": "KY",
+    "city": "Georgetown",
+    "iataCode": "GCM"
+  },
+  {
+    "id": 2461,
+    "ident": "EGPF",
+    "type": "large_airport",
+    "name": "Glasgow International Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Glasgow",
+    "iataCode": "GLA"
+  },
+  {
+    "id": 2648,
+    "ident": "ESGG",
+    "type": "large_airport",
+    "name": "Gothenburg-Landvetter Airport",
+    "continent": "EU",
+    "country": "SE",
+    "city": "Gothenburg",
+    "iataCode": "GOT"
+  },
+  {
+    "id": 3081,
+    "ident": "GCLP",
+    "type": "large_airport",
+    "name": "Gran Canaria Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Gran Canaria Island",
+    "iataCode": "LPA"
+  },
+  {
+    "id": 3562,
+    "ident": "KGRB",
+    "type": "large_airport",
+    "name": "Austin Straubel International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Green Bay",
+    "iataCode": "GRB"
+  },
+  {
+    "id": 3568,
+    "ident": "KGSO",
+    "type": "large_airport",
+    "name": "Piedmont Triad International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Greensboro",
+    "iataCode": "GSO"
+  },
+  {
+    "id": 3569,
+    "ident": "KGSP",
+    "type": "large_airport",
+    "name": "Greenville Spartanburg International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Greenville",
+    "iataCode": "GSP"
+  },
+  {
+    "id": 42924,
+    "ident": "RU-0035",
+    "type": "large_airport",
+    "name": "Grozny North Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Grozny",
+    "iataCode": "GRV"
+  },
+  {
+    "id": 4710,
+    "ident": "MMGL",
+    "type": "large_airport",
+    "name": "Don Miguel Hidalgo Y Costilla International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "Guadalajara",
+    "iataCode": "GDL"
+  },
+  {
+    "id": 27194,
+    "ident": "ZGGG",
+    "type": "large_airport",
+    "name": "Guangzhou Baiyun International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Guangzhou",
+    "iataCode": "CAN"
+  },
+  {
+    "id": 4644,
+    "ident": "MGGT",
+    "type": "large_airport",
+    "name": "La Aurora Airport",
+    "continent": "NA",
+    "country": "GT",
+    "city": "Guatemala City",
+    "iataCode": "GUA"
+  },
+  {
+    "id": 27196,
+    "ident": "ZGKL",
+    "type": "large_airport",
+    "name": "Guilin Liangjiang International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Guilin City",
+    "iataCode": "KWL"
+  },
+  {
+    "id": 27229,
+    "ident": "ZUGY",
+    "type": "large_airport",
+    "name": "Longdongbao Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Guiyang",
+    "iataCode": "KWE"
+  },
+  {
+    "id": 3561,
+    "ident": "KGPT",
+    "type": "large_airport",
+    "name": "Gulfport Biloxi International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Gulfport",
+    "iataCode": "GPT"
+  },
+  {
+    "id": 5433,
+    "ident": "PGUM",
+    "type": "large_airport",
+    "name": "Antonio B. Won Pat International Airport",
+    "continent": "OC",
+    "country": "GU",
+    "city": "Hagåtña, Guam International Airport",
+    "iataCode": "GUM"
+  },
+  {
+    "id": 3641,
+    "ident": "KLFI",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Hampton",
+    "iataCode": "LFI"
+  },
+  {
+    "id": 27201,
+    "ident": "ZJHK",
+    "type": "large_airport",
+    "name": "Haikou Meilan International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Haikou",
+    "iataCode": "HAK"
+  },
+  {
+    "id": 1770,
+    "ident": "CYHZ",
+    "type": "large_airport",
+    "name": "Halifax / Stanfield International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Halifax",
+    "iataCode": "YHZ"
+  },
+  {
+    "id": 2214,
+    "ident": "EDDH",
+    "type": "large_airport",
+    "name": "Hamburg Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Hamburg",
+    "iataCode": "HAM"
+  },
+  {
+    "id": 3657,
+    "ident": "KLTS",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Altus",
+    "iataCode": "LTS"
+  },
+  {
+    "id": 3658,
+    "ident": "KLUF",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Glendale",
+    "iataCode": "LUF"
+  },
+  {
+    "id": 27218,
+    "ident": "ZSHC",
+    "type": "large_airport",
+    "name": "Hangzhou Xiaoshan International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Hangzhou",
+    "iataCode": "HGH"
+  },
+  {
+    "id": 3667,
+    "ident": "KMCF",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Tampa",
+    "iataCode": "MCF"
+  },
+  {
+    "id": 2224,
+    "ident": "EDDV",
+    "type": "large_airport",
+    "name": "Hannover Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Hannover",
+    "iataCode": "HAJ"
+  },
+  {
+    "id": 26700,
+    "ident": "VVNB",
+    "type": "large_airport",
+    "name": "Noi Bai International Airport",
+    "continent": "AS",
+    "country": "VN",
+    "city": "Hanoi",
+    "iataCode": "HAN"
+  },
+  {
+    "id": 3005,
+    "ident": "FVHA",
+    "type": "large_airport",
+    "name": "Robert Gabriel Mugabe International Airport",
+    "continent": "AF",
+    "country": "ZW",
+    "city": "Harare",
+    "iataCode": "HRE"
+  },
+  {
+    "id": 27238,
+    "ident": "ZYHB",
+    "type": "large_airport",
+    "name": "Taiping Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Harbin",
+    "iataCode": "HRB"
+  },
+  {
+    "id": 3680,
+    "ident": "KMGE",
+    "type": "large_airport",
+    "name": "Dobbins Air Reserve Base",
+    "continent": "NA",
+    "country": "US",
+    "city": "Marietta",
+    "iataCode": "MGE"
+  },
+  {
+    "id": 3396,
+    "ident": "KBDL",
+    "type": "large_airport",
+    "name": "Bradley International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Hartford",
+    "iataCode": "BDL"
+  },
+  {
+    "id": 4839,
+    "ident": "MUHA",
+    "type": "large_airport",
+    "name": "José Martí International Airport",
+    "continent": "NA",
+    "country": "CU",
+    "city": "Havana",
+    "iataCode": "HAV"
+  },
+  {
+    "id": 2307,
+    "ident": "EFHK",
+    "type": "large_airport",
+    "name": "Helsinki Vantaa Airport",
+    "continent": "EU",
+    "country": "FI",
+    "city": "Helsinki",
+    "iataCode": "HEL"
+  },
+  {
+    "id": 4258,
+    "ident": "LGIR",
+    "type": "large_airport",
+    "name": "Heraklion International Nikos Kazantzakis Airport",
+    "continent": "EU",
+    "country": "GR",
+    "city": "Heraklion",
+    "iataCode": "HER"
+  },
+  {
+    "id": 4713,
+    "ident": "MMHO",
+    "type": "large_airport",
+    "name": "General Ignacio P. Garcia International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "Hermosillo",
+    "iataCode": "HMO"
+  },
+  {
+    "id": 3579,
+    "ident": "KHIB",
+    "type": "large_airport",
+    "name": "Range Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Hibbing",
+    "iataCode": "HIB"
+  },
+  {
+    "id": 26708,
+    "ident": "VVTS",
+    "type": "large_airport",
+    "name": "Tan Son Nhat International Airport",
+    "continent": "AS",
+    "country": "VN",
+    "city": "Ho Chi Minh City",
+    "iataCode": "SGN"
+  },
+  {
+    "id": 27189,
+    "ident": "ZBHH",
+    "type": "large_airport",
+    "name": "Baita International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Hohhot",
+    "iataCode": "HET"
+  },
+  {
+    "id": 26535,
+    "ident": "VHHH",
+    "type": "large_airport",
+    "name": "Hong Kong International Airport",
+    "continent": "AS",
+    "country": "HK",
+    "city": "Hong Kong",
+    "iataCode": "HKG"
+  },
+  {
+    "id": 5453,
+    "ident": "PHNL",
+    "type": "large_airport",
+    "name": "Daniel K Inouye International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Honolulu",
+    "iataCode": "HNL"
+  },
+  {
+    "id": 3715,
+    "ident": "KMUO",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Mountain Home",
+    "iataCode": "MUO"
+  },
+  {
+    "id": 3588,
+    "ident": "KHOU",
+    "type": "large_airport",
+    "name": "William P Hobby Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Houston",
+    "iataCode": "HOU"
+  },
+  {
+    "id": 3604,
+    "ident": "KIAH",
+    "type": "large_airport",
+    "name": "George Bush Intercontinental Houston Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Houston",
+    "iataCode": "IAH"
+  },
+  {
+    "id": 3595,
+    "ident": "KHTS",
+    "type": "large_airport",
+    "name": "Tri-State/Milton J. Ferguson Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Huntington",
+    "iataCode": "HTS"
+  },
+  {
+    "id": 3594,
+    "ident": "KHSV",
+    "type": "large_airport",
+    "name": "Huntsville International Carl T Jones Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Huntsville",
+    "iataCode": "HSV"
+  },
+  {
+    "id": 3186,
+    "ident": "HEGN",
+    "type": "large_airport",
+    "name": "Hurghada International Airport",
+    "continent": "AF",
+    "country": "EG",
+    "city": "Hurghada",
+    "iataCode": "HRG"
+  },
+  {
+    "id": 35141,
+    "ident": "VOHS",
+    "type": "large_airport",
+    "name": "Rajiv Gandhi International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Hyderabad",
+    "iataCode": "HYD"
+  },
+  {
+    "id": 3765,
+    "ident": "KPAM",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Panama City",
+    "iataCode": "PAM"
+  },
+  {
+    "id": 3610,
+    "ident": "KIND",
+    "type": "large_airport",
+    "name": "Indianapolis International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Indianapolis",
+    "iataCode": "IND"
+  },
+  {
+    "id": 30601,
+    "ident": "PK-0001",
+    "type": "large_airport",
+    "name": "New Islamabad International Airport",
+    "continent": "AS",
+    "country": "PK",
+    "city": "Islamabad",
+    "iataCode": "ISB"
+  },
+  {
+    "id": 4565,
+    "ident": "LTFC",
+    "type": "large_airport",
+    "name": "Süleyman Demirel International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Isparta",
+    "iataCode": "ISE"
+  },
+  {
+    "id": 4528,
+    "ident": "LTBA",
+    "type": "large_airport",
+    "name": "Atatürk International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Istanbul",
+    "iataCode": "ISL"
+  },
+  {
+    "id": 4569,
+    "ident": "LTFJ",
+    "type": "large_airport",
+    "name": "Sabiha Gökçen International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Istanbul",
+    "iataCode": "SAW"
+  },
+  {
+    "id": 317457,
+    "ident": "TR-0043",
+    "type": "large_airport",
+    "name": "Istanbul Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Istanbul",
+    "iataCode": "IST"
+  },
+  {
+    "id": 3619,
+    "ident": "KJAN",
+    "type": "large_airport",
+    "name": "Jackson-Medgar Wiley Evers International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Jackson",
+    "iataCode": "JAN"
+  },
+  {
+    "id": 3620,
+    "ident": "KJAX",
+    "type": "large_airport",
+    "name": "Jacksonville International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Jacksonville",
+    "iataCode": "JAX"
+  },
+  {
+    "id": 26835,
+    "ident": "WIII",
+    "type": "large_airport",
+    "name": "Soekarno-Hatta International Airport",
+    "continent": "AS",
+    "country": "ID",
+    "city": "Jakarta",
+    "iataCode": "CGK"
+  },
+  {
+    "id": 26755,
+    "ident": "WAJJ",
+    "type": "large_airport",
+    "name": "Sentani International Airport",
+    "continent": "AS",
+    "country": "ID",
+    "city": "Jayapura-Papua Island",
+    "iataCode": "DJJ"
+  },
+  {
+    "id": 300320,
+    "ident": "OMDW",
+    "type": "large_airport",
+    "name": "Al Maktoum International Airport",
+    "continent": "AS",
+    "country": "AE",
+    "city": "Jebel Ali",
+    "iataCode": "DWC"
+  },
+  {
+    "id": 5097,
+    "ident": "OEJN",
+    "type": "large_airport",
+    "name": "King Abdulaziz International Airport",
+    "continent": "AS",
+    "country": "SA",
+    "city": "Jeddah",
+    "iataCode": "JED"
+  },
+  {
+    "id": 3852,
+    "ident": "KRND",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Universal City",
+    "iataCode": "RND"
+  },
+  {
+    "id": 5639,
+    "ident": "RKPC",
+    "type": "large_airport",
+    "name": "Jeju International Airport",
+    "continent": "AS",
+    "country": "KR",
+    "city": "Jeju City",
+    "iataCode": "CJU"
+  },
+  {
+    "id": 27219,
+    "ident": "ZSJN",
+    "type": "large_airport",
+    "name": "Yaoqiang Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Jinan",
+    "iataCode": "TNA"
+  },
+  {
+    "id": 2792,
+    "ident": "FAJS",
+    "type": "large_airport",
+    "name": "OR Tambo International Airport",
+    "continent": "AF",
+    "country": "ZA",
+    "city": "Johannesburg",
+    "iataCode": "JNB"
+  },
+  {
+    "id": 31055,
+    "ident": "FAOR",
+    "type": "large_airport",
+    "name": "OR Tambo International Airport",
+    "continent": "AF",
+    "country": "ZA",
+    "city": "Johannesburg",
+    "iataCode": "JNB"
+  },
+  {
+    "id": 331433,
+    "ident": "JNB",
+    "type": "large_airport",
+    "name": "O R Tambo International",
+    "continent": "AF",
+    "country": "ZA",
+    "city": "Johannesburg",
+    "iataCode": "JNB"
+  },
+  {
+    "id": 3623,
+    "ident": "KJLN",
+    "type": "large_airport",
+    "name": "Joplin Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Joplin",
+    "iataCode": "JLN"
+  },
+  {
+    "id": 3247,
+    "ident": "HSSJ",
+    "type": "large_airport",
+    "name": "Juba International Airport",
+    "continent": "AF",
+    "country": "SS",
+    "city": "Juba",
+    "iataCode": "JUB"
+  },
+  {
+    "id": 5566,
+    "ident": "RJFK",
+    "type": "large_airport",
+    "name": "Kagoshima Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Kagoshima",
+    "iataCode": "KOJ"
+  },
+  {
+    "id": 3263,
+    "ident": "HUEN",
+    "type": "large_airport",
+    "name": "Entebbe International Airport",
+    "continent": "AF",
+    "country": "UG",
+    "city": "Kampala",
+    "iataCode": "EBB"
+  },
+  {
+    "id": 2115,
+    "ident": "DNKN",
+    "type": "large_airport",
+    "name": "Mallam Aminu International Airport",
+    "continent": "AF",
+    "country": "NG",
+    "city": "Kano",
+    "iataCode": "KAN"
+  },
+  {
+    "id": 3668,
+    "ident": "KMCI",
+    "type": "large_airport",
+    "name": "Kansas City International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Kansas City",
+    "iataCode": "MCI"
+  },
+  {
+    "id": 5516,
+    "ident": "RCKH",
+    "type": "large_airport",
+    "name": "Kaohsiung International Airport",
+    "continent": "AS",
+    "country": "TW",
+    "city": "Kaohsiung City",
+    "iataCode": "KHH"
+  },
+  {
+    "id": 6431,
+    "ident": "UAKK",
+    "type": "large_airport",
+    "name": "Sary-Arka Airport",
+    "continent": "AS",
+    "country": "KZ",
+    "city": "Karaganda",
+    "iataCode": "KGF"
+  },
+  {
+    "id": 26596,
+    "ident": "VNKT",
+    "type": "large_airport",
+    "name": "Tribhuvan International Airport",
+    "continent": "AS",
+    "country": "NP",
+    "city": "Kathmandu",
+    "iataCode": "KTM"
+  },
+  {
+    "id": 2613,
+    "ident": "EPKT",
+    "type": "large_airport",
+    "name": "Katowice International Airport",
+    "continent": "EU",
+    "country": "PL",
+    "city": "Katowice",
+    "iataCode": "KTW"
+  },
+  {
+    "id": 3885,
+    "ident": "KSKA",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Spokane",
+    "iataCode": "SKA"
+  },
+  {
+    "id": 26404,
+    "ident": "UWKD",
+    "type": "large_airport",
+    "name": "Kazan International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Kazan",
+    "iataCode": "KZN"
+  },
+  {
+    "id": 6455,
+    "ident": "UHHH",
+    "type": "large_airport",
+    "name": "Khabarovsk-Novy Airport",
+    "continent": "AS",
+    "country": "RU",
+    "city": "Khabarovsk",
+    "iataCode": "KHV"
+  },
+  {
+    "id": 6476,
+    "ident": "UKHH",
+    "type": "large_airport",
+    "name": "Kharkiv International Airport",
+    "continent": "EU",
+    "country": "UA",
+    "city": "Kharkiv",
+    "iataCode": "HRK"
+  },
+  {
+    "id": 3249,
+    "ident": "HSSS",
+    "type": "large_airport",
+    "name": "Khartoum International Airport",
+    "continent": "AF",
+    "country": "SD",
+    "city": "Khartoum",
+    "iataCode": "KRT"
+  },
+  {
+    "id": 6467,
+    "ident": "UKBB",
+    "type": "large_airport",
+    "name": "Boryspil International Airport",
+    "continent": "EU",
+    "country": "UA",
+    "city": "Kiev",
+    "iataCode": "KBP"
+  },
+  {
+    "id": 3237,
+    "ident": "HRYR",
+    "type": "large_airport",
+    "name": "Kigali International Airport",
+    "continent": "AF",
+    "country": "RW",
+    "city": "Kigali",
+    "iataCode": "KGL"
+  },
+  {
+    "id": 3901,
+    "ident": "KSSC",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Sumter",
+    "iataCode": "SSC"
+  },
+  {
+    "id": 4680,
+    "ident": "MKJP",
+    "type": "large_airport",
+    "name": "Norman Manley International Airport",
+    "continent": "NA",
+    "country": "JM",
+    "city": "Kingston",
+    "iataCode": "KIN"
+  },
+  {
+    "id": 3907,
+    "ident": "KSUS",
+    "type": "large_airport",
+    "name": "Spirit of St Louis Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "St Louis",
+    "iataCode": "SUS"
+  },
+  {
+    "id": 3908,
+    "ident": "KSUU",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Fairfield",
+    "iataCode": "SUU"
+  },
+  {
+    "id": 3040,
+    "ident": "FZAA",
+    "type": "large_airport",
+    "name": "Ndjili International Airport",
+    "continent": "AF",
+    "country": "CD",
+    "city": "Kinshasa",
+    "iataCode": "FIH"
+  },
+  {
+    "id": 3938,
+    "ident": "KTYS",
+    "type": "large_airport",
+    "name": "McGhee Tyson Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Knoxville",
+    "iataCode": "TYS"
+  },
+  {
+    "id": 3914,
+    "ident": "KSZL",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Knob Noster",
+    "iataCode": "SZL"
+  },
+  {
+    "id": 3918,
+    "ident": "KTCM",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Tacoma",
+    "iataCode": "TCM"
+  },
+  {
+    "id": 3921,
+    "ident": "KTIK",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Oklahoma City",
+    "iataCode": "TIK"
+  },
+  {
+    "id": 26609,
+    "ident": "VOCI",
+    "type": "large_airport",
+    "name": "Cochin International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Kochi",
+    "iataCode": "COK"
+  },
+  {
+    "id": 26496,
+    "ident": "VECC",
+    "type": "large_airport",
+    "name": "Netaji Subhash Chandra Bose International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Kolkata",
+    "iataCode": "CCU"
+  },
+  {
+    "id": 2609,
+    "ident": "EPKK",
+    "type": "large_airport",
+    "name": "Kraków John Paul II International Airport",
+    "continent": "EU",
+    "country": "PL",
+    "city": "Kraków",
+    "iataCode": "KRK"
+  },
+  {
+    "id": 6506,
+    "ident": "UNKL",
+    "type": "large_airport",
+    "name": "Yemelyanovo Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Krasnoyarsk",
+    "iataCode": "KJA"
+  },
+  {
+    "id": 26874,
+    "ident": "WMKK",
+    "type": "large_airport",
+    "name": "Kuala Lumpur International Airport",
+    "continent": "AS",
+    "country": "MY",
+    "city": "Kuala Lumpur",
+    "iataCode": "KUL"
+  },
+  {
+    "id": 27214,
+    "ident": "ZPPP",
+    "type": "large_airport",
+    "name": "Kunming Changshui International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Kunming",
+    "iataCode": "KMG"
+  },
+  {
+    "id": 5631,
+    "ident": "RKJK",
+    "type": "large_airport",
+    "name": "Kunsan Air Base",
+    "continent": "AS",
+    "country": "KR",
+    "city": "Kunsan",
+    "iataCode": "KUV"
+  },
+  {
+    "id": 3944,
+    "ident": "KVBG",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Lompoc",
+    "iataCode": "VBG"
+  },
+  {
+    "id": 5220,
+    "ident": "OKBK",
+    "type": "large_airport",
+    "name": "Kuwait International Airport",
+    "continent": "AS",
+    "country": "KW",
+    "city": "Kuwait City",
+    "iataCode": "KWI"
+  },
+  {
+    "id": 3951,
+    "ident": "KWRB",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Warner Robins",
+    "iataCode": "WRB"
+  },
+  {
+    "id": 3642,
+    "ident": "KLFT",
+    "type": "large_airport",
+    "name": "Lafayette Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Lafayette",
+    "iataCode": "LFT"
+  },
+  {
+    "id": 2118,
+    "ident": "DNMM",
+    "type": "large_airport",
+    "name": "Murtala Muhammed International Airport",
+    "continent": "AF",
+    "country": "NG",
+    "city": "Lagos",
+    "iataCode": "LOS"
+  },
+  {
+    "id": 5742,
+    "ident": "RPVM",
+    "type": "large_airport",
+    "name": "Mactan Cebu International Airport",
+    "continent": "AS",
+    "country": "PH",
+    "city": "Lapu-Lapu City",
+    "iataCode": "CEB"
+  },
+  {
+    "id": 3980,
+    "ident": "LCLK",
+    "type": "large_airport",
+    "name": "Larnaca International Airport",
+    "continent": "AS",
+    "country": "CY",
+    "city": "Larnarca",
+    "iataCode": "LCA"
+  },
+  {
+    "id": 3631,
+    "ident": "KLAS",
+    "type": "large_airport",
+    "name": "McCarran International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Las Vegas",
+    "iataCode": "LAS"
+  },
+  {
+    "id": 6061,
+    "ident": "SELT",
+    "type": "large_airport",
+    "name": "Cotopaxi International Airport",
+    "continent": "SA",
+    "country": "EC",
+    "city": "Latacunga",
+    "iataCode": "LTX"
+  },
+  {
+    "id": 3982,
+    "ident": "LCRA",
+    "type": "large_airport",
+    "name": "RAF Akrotiri",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Akrotiri",
+    "iataCode": "AKT"
+  },
+  {
+    "id": 5306,
+    "ident": "OSLK",
+    "type": "large_airport",
+    "name": "Bassel Al-Assad International Airport",
+    "continent": "AS",
+    "country": "SY",
+    "city": "Latakia",
+    "iataCode": "LTK"
+  },
+  {
+    "id": 2444,
+    "ident": "EGNM",
+    "type": "large_airport",
+    "name": "Leeds Bradford Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Leeds",
+    "iataCode": "LBA"
+  },
+  {
+    "id": 2220,
+    "ident": "EDDP",
+    "type": "large_airport",
+    "name": "Leipzig/Halle Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Leipzig",
+    "iataCode": "LEJ"
+  },
+  {
+    "id": 3640,
+    "ident": "KLEX",
+    "type": "large_airport",
+    "name": "Blue Grass Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Lexington",
+    "iataCode": "LEX"
+  },
+  {
+    "id": 2162,
+    "ident": "EBLG",
+    "type": "large_airport",
+    "name": "Liège Airport",
+    "continent": "EU",
+    "country": "BE",
+    "city": "Liège",
+    "iataCode": "LGG"
+  },
+  {
+    "id": 4806,
+    "ident": "MRLB",
+    "type": "large_airport",
+    "name": "Daniel Oduber Quiros International Airport",
+    "continent": "NA",
+    "country": "CR",
+    "city": "Liberia",
+    "iataCode": "LIR"
+  },
+  {
+    "id": 6217,
+    "ident": "SPIM",
+    "type": "large_airport",
+    "name": "Jorge Chávez International Airport",
+    "continent": "SA",
+    "country": "PE",
+    "city": "Lima",
+    "iataCode": "LIM"
+  },
+  {
+    "id": 4461,
+    "ident": "LPPT",
+    "type": "large_airport",
+    "name": "Humberto Delgado Airport (Lisbon Portela Airport)",
+    "continent": "EU",
+    "country": "PT",
+    "city": "Lisbon",
+    "iataCode": "LIS"
+  },
+  {
+    "id": 3645,
+    "ident": "KLIT",
+    "type": "large_airport",
+    "name": "Bill & Hillary Clinton National Airport/Adams Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Little Rock",
+    "iataCode": "LIT"
+  },
+  {
+    "id": 2418,
+    "ident": "EGGP",
+    "type": "large_airport",
+    "name": "Liverpool John Lennon Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Liverpool",
+    "iataCode": "LPL"
+  },
+  {
+    "id": 4386,
+    "ident": "LJLJ",
+    "type": "large_airport",
+    "name": "Ljubljana Jože Pučnik Airport",
+    "continent": "EU",
+    "country": "SI",
+    "city": "Ljubljana",
+    "iataCode": "LJU"
+  },
+  {
+    "id": 2419,
+    "ident": "EGGW",
+    "type": "large_airport",
+    "name": "London Luton Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "London",
+    "iataCode": "LTN"
+  },
+  {
+    "id": 2429,
+    "ident": "EGKK",
+    "type": "large_airport",
+    "name": "London Gatwick Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "London",
+    "iataCode": "LGW"
+  },
+  {
+    "id": 2434,
+    "ident": "EGLL",
+    "type": "large_airport",
+    "name": "London Heathrow Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "London",
+    "iataCode": "LHR"
+  },
+  {
+    "id": 2476,
+    "ident": "EGSS",
+    "type": "large_airport",
+    "name": "London Stansted Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "London",
+    "iataCode": "STN"
+  },
+  {
+    "id": 3632,
+    "ident": "KLAX",
+    "type": "large_airport",
+    "name": "Los Angeles International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Los Angeles",
+    "iataCode": "LAX"
+  },
+  {
+    "id": 3873,
+    "ident": "KSDF",
+    "type": "large_airport",
+    "name": "Louisville International Standiford Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Louisville",
+    "iataCode": "SDF"
+  },
+  {
+    "id": 2942,
+    "ident": "FNLU",
+    "type": "large_airport",
+    "name": "Quatro de Fevereiro Airport",
+    "continent": "AF",
+    "country": "AO",
+    "city": "Luanda",
+    "iataCode": "LAD"
+  },
+  {
+    "id": 3633,
+    "ident": "KLBB",
+    "type": "large_airport",
+    "name": "Lubbock Preston Smith International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Lubbock",
+    "iataCode": "LBB"
+  },
+  {
+    "id": 2697,
+    "ident": "ESPA",
+    "type": "large_airport",
+    "name": "Luleå Airport",
+    "continent": "EU",
+    "country": "SE",
+    "city": "Luleå",
+    "iataCode": "LLA"
+  },
+  {
+    "id": 2894,
+    "ident": "FLLS",
+    "type": "large_airport",
+    "name": "Kenneth Kaunda International Airport Lusaka",
+    "continent": "AF",
+    "country": "ZM",
+    "city": "Lusaka",
+    "iataCode": "LUN"
+  },
+  {
+    "id": 2563,
+    "ident": "ELLX",
+    "type": "large_airport",
+    "name": "Luxembourg-Findel International Airport",
+    "continent": "EU",
+    "country": "LU",
+    "city": "Luxembourg",
+    "iataCode": "LUX"
+  },
+  {
+    "id": 3191,
+    "ident": "HELX",
+    "type": "large_airport",
+    "name": "Luxor International Airport",
+    "continent": "AF",
+    "country": "EG",
+    "city": "Luxor",
+    "iataCode": "LXR"
+  },
+  {
+    "id": 4137,
+    "ident": "LFLL",
+    "type": "large_airport",
+    "name": "Lyon Saint-Exupéry Airport",
+    "continent": "EU",
+    "country": "FR",
+    "city": "Lyon",
+    "iataCode": "LYS"
+  },
+  {
+    "id": 4020,
+    "ident": "LEMG",
+    "type": "large_airport",
+    "name": "Málaga Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Málaga",
+    "iataCode": "AGP"
+  },
+  {
+    "id": 2213,
+    "ident": "EDDG",
+    "type": "large_airport",
+    "name": "Münster Osnabrück Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Münster",
+    "iataCode": "FMO"
+  },
+  {
+    "id": 26589,
+    "ident": "VMMC",
+    "type": "large_airport",
+    "name": "Macau International Airport",
+    "continent": "AS",
+    "country": "MO",
+    "city": "Macau",
+    "iataCode": "MFM"
+  },
+  {
+    "id": 3707,
+    "ident": "KMSN",
+    "type": "large_airport",
+    "name": "Dane County Regional Truax Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Madison",
+    "iataCode": "MSN"
+  },
+  {
+    "id": 4019,
+    "ident": "LEMD",
+    "type": "large_airport",
+    "name": "Adolfo Suárez Madrid–Barajas Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Madrid",
+    "iataCode": "MAD"
+  },
+  {
+    "id": 2993,
+    "ident": "FSIA",
+    "type": "large_airport",
+    "name": "Seychelles International Airport",
+    "continent": "AF",
+    "country": "SC",
+    "city": "Mahe Island",
+    "iataCode": "SEZ"
+  },
+  {
+    "id": 299238,
+    "ident": "rjns",
+    "type": "large_airport",
+    "name": "Mt. Fuji Shizuoka Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Makinohara / Shimada",
+    "iataCode": "FSZ"
+  },
+  {
+    "id": 26636,
+    "ident": "VRMM",
+    "type": "large_airport",
+    "name": "Malé International Airport",
+    "continent": "AS",
+    "country": "MV",
+    "city": "Malé",
+    "iataCode": "MLE"
+  },
+  {
+    "id": 2669,
+    "ident": "ESMS",
+    "type": "large_airport",
+    "name": "Malmö Sturup Airport",
+    "continent": "EU",
+    "country": "SE",
+    "city": "Malmö",
+    "iataCode": "MMX"
+  },
+  {
+    "id": 5079,
+    "ident": "OBBI",
+    "type": "large_airport",
+    "name": "Bahrain International Airport",
+    "continent": "AS",
+    "country": "BH",
+    "city": "Manama",
+    "iataCode": "BAH"
+  },
+  {
+    "id": 2398,
+    "ident": "EGCC",
+    "type": "large_airport",
+    "name": "Manchester Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Manchester",
+    "iataCode": "MAN"
+  },
+  {
+    "id": 3684,
+    "ident": "KMHT",
+    "type": "large_airport",
+    "name": "Manchester-Boston Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Manchester",
+    "iataCode": "MHT"
+  },
+  {
+    "id": 26727,
+    "ident": "VYMD",
+    "type": "large_airport",
+    "name": "Mandalay International Airport",
+    "continent": "AS",
+    "country": "MM",
+    "city": "Mandalay",
+    "iataCode": "MDL"
+  },
+  {
+    "id": 5689,
+    "ident": "RPLL",
+    "type": "large_airport",
+    "name": "Ninoy Aquino International Airport",
+    "continent": "AS",
+    "country": "PH",
+    "city": "Manila",
+    "iataCode": "MNL"
+  },
+  {
+    "id": 2975,
+    "ident": "FQMA",
+    "type": "large_airport",
+    "name": "Maputo Airport",
+    "continent": "AF",
+    "country": "MZ",
+    "city": "Maputo",
+    "iataCode": "MPM"
+  },
+  {
+    "id": 4155,
+    "ident": "LFML",
+    "type": "large_airport",
+    "name": "Marseille Provence Airport",
+    "continent": "EU",
+    "country": "FR",
+    "city": "Marseille",
+    "iataCode": "MRS"
+  },
+  {
+    "id": 5183,
+    "ident": "OIMM",
+    "type": "large_airport",
+    "name": "Mashhad International Airport",
+    "continent": "AS",
+    "country": "IR",
+    "city": "Mashhad",
+    "iataCode": "MHD"
+  },
+  {
+    "id": 5101,
+    "ident": "OEMA",
+    "type": "large_airport",
+    "name": "Prince Mohammad Bin Abdulaziz Airport",
+    "continent": "AS",
+    "country": "SA",
+    "city": "Medina",
+    "iataCode": "MED"
+  },
+  {
+    "id": 27066,
+    "ident": "YMML",
+    "type": "large_airport",
+    "name": "Melbourne International Airport",
+    "continent": "OC",
+    "country": "AU",
+    "city": "Melbourne",
+    "iataCode": "MEL"
+  },
+  {
+    "id": 3675,
+    "ident": "KMEM",
+    "type": "large_airport",
+    "name": "Memphis International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Memphis",
+    "iataCode": "MEM"
+  },
+  {
+    "id": 4731,
+    "ident": "MMMX",
+    "type": "large_airport",
+    "name": "Licenciado Benito Juarez International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "Mexico City",
+    "iataCode": "MEX"
+  },
+  {
+    "id": 3685,
+    "ident": "KMIA",
+    "type": "large_airport",
+    "name": "Miami International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Miami",
+    "iataCode": "MIA"
+  },
+  {
+    "id": 4340,
+    "ident": "LIMC",
+    "type": "large_airport",
+    "name": "Malpensa International Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Milan",
+    "iataCode": "MXP"
+  },
+  {
+    "id": 4345,
+    "ident": "LIML",
+    "type": "large_airport",
+    "name": "Milano Linate Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Milan",
+    "iataCode": "LIN"
+  },
+  {
+    "id": 3690,
+    "ident": "KMKE",
+    "type": "large_airport",
+    "name": "General Mitchell International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Milwaukee",
+    "iataCode": "MKE"
+  },
+  {
+    "id": 3709,
+    "ident": "KMSP",
+    "type": "large_airport",
+    "name": "Minneapolis-St Paul International/Wold-Chamberlain Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Minneapolis",
+    "iataCode": "MSP"
+  },
+  {
+    "id": 6501,
+    "ident": "UMMS",
+    "type": "large_airport",
+    "name": "Minsk National Airport",
+    "continent": "EU",
+    "country": "BY",
+    "city": "Minsk",
+    "iataCode": "MSQ"
+  },
+  {
+    "id": 3700,
+    "ident": "KMOB",
+    "type": "large_airport",
+    "name": "Mobile Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Mobile",
+    "iataCode": "MOB"
+  },
+  {
+    "id": 3695,
+    "ident": "KMLI",
+    "type": "large_airport",
+    "name": "Quad City International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Moline",
+    "iataCode": "MLI"
+  },
+  {
+    "id": 3213,
+    "ident": "HKMO",
+    "type": "large_airport",
+    "name": "Mombasa Moi International Airport",
+    "continent": "AF",
+    "country": "KE",
+    "city": "Mombasa",
+    "iataCode": "MBA"
+  },
+  {
+    "id": 3697,
+    "ident": "KMLU",
+    "type": "large_airport",
+    "name": "Monroe Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Monroe",
+    "iataCode": "MLU"
+  },
+  {
+    "id": 3099,
+    "ident": "GLRB",
+    "type": "large_airport",
+    "name": "Roberts International Airport",
+    "continent": "AF",
+    "country": "LR",
+    "city": "Monrovia",
+    "iataCode": "ROB"
+  },
+  {
+    "id": 4732,
+    "ident": "MMMY",
+    "type": "large_airport",
+    "name": "General Mariano Escobedo International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "Monterrey",
+    "iataCode": "MTY"
+  },
+  {
+    "id": 6247,
+    "ident": "SUMU",
+    "type": "large_airport",
+    "name": "Carrasco International /General C L Berisso Airport",
+    "continent": "SA",
+    "country": "UY",
+    "city": "Montevideo",
+    "iataCode": "MVD"
+  },
+  {
+    "id": 3681,
+    "ident": "KMGM",
+    "type": "large_airport",
+    "name": "Montgomery Regional (Dannelly Field) Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Montgomery",
+    "iataCode": "MGM"
+  },
+  {
+    "id": 1928,
+    "ident": "CYUL",
+    "type": "large_airport",
+    "name": "Montreal / Pierre Elliott Trudeau International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Montréal",
+    "iataCode": "YUL"
+  },
+  {
+    "id": 42967,
+    "ident": "UUBW",
+    "type": "large_airport",
+    "name": "Zhukovsky International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Moscow",
+    "iataCode": "ZIA"
+  },
+  {
+    "id": 26394,
+    "ident": "UUDD",
+    "type": "large_airport",
+    "name": "Domodedovo International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Moscow",
+    "iataCode": "DME"
+  },
+  {
+    "id": 26396,
+    "ident": "UUEE",
+    "type": "large_airport",
+    "name": "Sheremetyevo International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Moscow",
+    "iataCode": "SVO"
+  },
+  {
+    "id": 26401,
+    "ident": "UUWW",
+    "type": "large_airport",
+    "name": "Vnukovo International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Moscow",
+    "iataCode": "VKO"
+  },
+  {
+    "id": 26434,
+    "ident": "VABB",
+    "type": "large_airport",
+    "name": "Chhatrapati Shivaji International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Mumbai",
+    "iataCode": "BOM"
+  },
+  {
+    "id": 2218,
+    "ident": "EDDM",
+    "type": "large_airport",
+    "name": "Munich Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Munich",
+    "iataCode": "MUC"
+  },
+  {
+    "id": 5242,
+    "ident": "OOMS",
+    "type": "large_airport",
+    "name": "Muscat International Airport",
+    "continent": "AS",
+    "country": "OM",
+    "city": "Muscat",
+    "iataCode": "MCT"
+  },
+  {
+    "id": 4378,
+    "ident": "LIRN",
+    "type": "large_airport",
+    "name": "Naples International Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Nápoli",
+    "iataCode": "NAP"
+  },
+  {
+    "id": 5671,
+    "ident": "ROAH",
+    "type": "large_airport",
+    "name": "Naha Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Naha",
+    "iataCode": "OKA"
+  },
+  {
+    "id": 3206,
+    "ident": "HKJK",
+    "type": "large_airport",
+    "name": "Jomo Kenyatta International Airport",
+    "continent": "AF",
+    "country": "KE",
+    "city": "Nairobi",
+    "iataCode": "NBO"
+  },
+  {
+    "id": 27221,
+    "ident": "ZSNJ",
+    "type": "large_airport",
+    "name": "Nanjing Lukou Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Nanjing",
+    "iataCode": "NKG"
+  },
+  {
+    "id": 27197,
+    "ident": "ZGNN",
+    "type": "large_airport",
+    "name": "Nanning Wuxu Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Nanning",
+    "iataCode": "NNG"
+  },
+  {
+    "id": 3420,
+    "ident": "KBNA",
+    "type": "large_airport",
+    "name": "Nashville International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Nashville",
+    "iataCode": "BNA"
+  },
+  {
+    "id": 4951,
+    "ident": "MYNN",
+    "type": "large_airport",
+    "name": "Lynden Pindling International Airport",
+    "continent": "NA",
+    "country": "BS",
+    "city": "Nassau",
+    "iataCode": "NAS"
+  },
+  {
+    "id": 313262,
+    "ident": "SBSG",
+    "type": "large_airport",
+    "name": "Governador Aluízio Alves International Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "Natal",
+    "iataCode": "NAT"
+  },
+  {
+    "id": 2998,
+    "ident": "FTTJ",
+    "type": "large_airport",
+    "name": "N'Djamena International Airport",
+    "continent": "AF",
+    "country": "TD",
+    "city": "N'Djamena",
+    "iataCode": "NDJ"
+  },
+  {
+    "id": 26555,
+    "ident": "VIDP",
+    "type": "large_airport",
+    "name": "Indira Gandhi International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "New Delhi",
+    "iataCode": "DEL"
+  },
+  {
+    "id": 3711,
+    "ident": "KMSY",
+    "type": "large_airport",
+    "name": "Louis Armstrong New Orleans International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "New Orleans",
+    "iataCode": "MSY"
+  },
+  {
+    "id": 3622,
+    "ident": "KJFK",
+    "type": "large_airport",
+    "name": "John F Kennedy International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "New York",
+    "iataCode": "JFK"
+  },
+  {
+    "id": 3643,
+    "ident": "KLGA",
+    "type": "large_airport",
+    "name": "La Guardia Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "New York",
+    "iataCode": "LGA"
+  },
+  {
+    "id": 3521,
+    "ident": "KEWR",
+    "type": "large_airport",
+    "name": "Newark Liberty International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Newark",
+    "iataCode": "EWR"
+  },
+  {
+    "id": 2448,
+    "ident": "EGNT",
+    "type": "large_airport",
+    "name": "Newcastle Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Newcastle",
+    "iataCode": "NCL"
+  },
+  {
+    "id": 3770,
+    "ident": "KPHF",
+    "type": "large_airport",
+    "name": "Newport News Williamsburg International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Newport News",
+    "iataCode": "PHF"
+  },
+  {
+    "id": 2125,
+    "ident": "DRRN",
+    "type": "large_airport",
+    "name": "Diori Hamani International Airport",
+    "continent": "AF",
+    "country": "NE",
+    "city": "Niamey",
+    "iataCode": "NIM"
+  },
+  {
+    "id": 4156,
+    "ident": "LFMN",
+    "type": "large_airport",
+    "name": "Nice-Côte d'Azur Airport",
+    "continent": "EU",
+    "country": "FR",
+    "city": "Nice",
+    "iataCode": "NCE"
+  },
+  {
+    "id": 27220,
+    "ident": "ZSNB",
+    "type": "large_airport",
+    "name": "Ningbo Lishe International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Ningbo",
+    "iataCode": "NGB"
+  },
+  {
+    "id": 3755,
+    "ident": "KORF",
+    "type": "large_airport",
+    "name": "Norfolk International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Norfolk",
+    "iataCode": "ORF"
+  },
+  {
+    "id": 2475,
+    "ident": "EGSH",
+    "type": "large_airport",
+    "name": "Norwich International Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Norwich",
+    "iataCode": "NWI"
+  },
+  {
+    "id": 2450,
+    "ident": "EGNX",
+    "type": "large_airport",
+    "name": "East Midlands Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Nottingham",
+    "iataCode": "EMA"
+  },
+  {
+    "id": 323315,
+    "ident": "GQNO",
+    "type": "large_airport",
+    "name": "Nouakchott–Oumtounsy International Airport",
+    "continent": "AF",
+    "country": "MR",
+    "city": "Nouakchott",
+    "iataCode": "NKC"
+  },
+  {
+    "id": 6507,
+    "ident": "UNNT",
+    "type": "large_airport",
+    "name": "Tolmachevo Airport",
+    "continent": "AS",
+    "country": "RU",
+    "city": "Novosibirsk",
+    "iataCode": "OVB"
+  },
+  {
+    "id": 2219,
+    "ident": "EDDN",
+    "type": "large_airport",
+    "name": "Nuremberg Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Nuremberg",
+    "iataCode": "NUE"
+  },
+  {
+    "id": 3744,
+    "ident": "KOAK",
+    "type": "large_airport",
+    "name": "Metropolitan Oakland International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Oakland",
+    "iataCode": "OAK"
+  },
+  {
+    "id": 6487,
+    "ident": "UKOO",
+    "type": "large_airport",
+    "name": "Odessa International Airport",
+    "continent": "EU",
+    "country": "UA",
+    "city": "Odessa",
+    "iataCode": "ODS"
+  },
+  {
+    "id": 3747,
+    "ident": "KOKC",
+    "type": "large_airport",
+    "name": "Will Rogers World Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Oklahoma City",
+    "iataCode": "OKC"
+  },
+  {
+    "id": 3751,
+    "ident": "KOMA",
+    "type": "large_airport",
+    "name": "Eppley Airfield",
+    "continent": "NA",
+    "country": "US",
+    "city": "Omaha",
+    "iataCode": "OMA"
+  },
+  {
+    "id": 3752,
+    "ident": "KONT",
+    "type": "large_airport",
+    "name": "Ontario International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Ontario",
+    "iataCode": "ONT"
+  },
+  {
+    "id": 3670,
+    "ident": "KMCO",
+    "type": "large_airport",
+    "name": "Orlando International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Orlando",
+    "iataCode": "MCO"
+  },
+  {
+    "id": 3876,
+    "ident": "KSFB",
+    "type": "large_airport",
+    "name": "Orlando Sanford International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Orlando",
+    "iataCode": "SFB"
+  },
+  {
+    "id": 5536,
+    "ident": "RJBB",
+    "type": "large_airport",
+    "name": "Kansai International Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Osaka",
+    "iataCode": "KIX"
+  },
+  {
+    "id": 5598,
+    "ident": "RJOO",
+    "type": "large_airport",
+    "name": "Osaka International Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Osaka",
+    "iataCode": "ITM"
+  },
+  {
+    "id": 2578,
+    "ident": "ENGM",
+    "type": "large_airport",
+    "name": "Oslo Gardermoen Airport",
+    "continent": "EU",
+    "country": "NO",
+    "city": "Oslo",
+    "iataCode": "OSL"
+  },
+  {
+    "id": 1840,
+    "ident": "CYOW",
+    "type": "large_airport",
+    "name": "Ottawa Macdonald-Cartier International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Ottawa",
+    "iataCode": "YOW"
+  },
+  {
+    "id": 2088,
+    "ident": "DFFD",
+    "type": "large_airport",
+    "name": "Ouagadougou Airport",
+    "continent": "AF",
+    "country": "BF",
+    "city": "Ouagadougou",
+    "iataCode": "OUA"
+  },
+  {
+    "id": 4321,
+    "ident": "LICJ",
+    "type": "large_airport",
+    "name": "Falcone–Borsellino Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Palermo",
+    "iataCode": "PMO"
+  },
+  {
+    "id": 4035,
+    "ident": "LEPA",
+    "type": "large_airport",
+    "name": "Palma De Mallorca Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Palma De Mallorca",
+    "iataCode": "PMI"
+  },
+  {
+    "id": 4979,
+    "ident": "NTAA",
+    "type": "large_airport",
+    "name": "Faa'a International Airport",
+    "continent": "OC",
+    "country": "PF",
+    "city": "Papeete",
+    "iataCode": "PPT"
+  },
+  {
+    "id": 299747,
+    "ident": "OM-0004",
+    "type": "large_airport",
+    "name": "Rustaq Airport",
+    "continent": "AS",
+    "country": "OM",
+    "city": "Al Masna'ah",
+    "iataCode": "MNH"
+  },
+  {
+    "id": 3981,
+    "ident": "LCPH",
+    "type": "large_airport",
+    "name": "Paphos International Airport",
+    "continent": "AS",
+    "country": "CY",
+    "city": "Paphos",
+    "iataCode": "PFO"
+  },
+  {
+    "id": 4185,
+    "ident": "LFPG",
+    "type": "large_airport",
+    "name": "Charles de Gaulle International Airport",
+    "continent": "EU",
+    "country": "FR",
+    "city": "Paris",
+    "iataCode": "CDG"
+  },
+  {
+    "id": 4189,
+    "ident": "LFPO",
+    "type": "large_airport",
+    "name": "Paris-Orly Airport",
+    "continent": "EU",
+    "country": "FR",
+    "city": "Paris",
+    "iataCode": "ORY"
+  },
+  {
+    "id": 3773,
+    "ident": "KPIA",
+    "type": "large_airport",
+    "name": "General Wayne A. Downing Peoria International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Peoria",
+    "iataCode": "PIA"
+  },
+  {
+    "id": 27119,
+    "ident": "YPPH",
+    "type": "large_airport",
+    "name": "Perth International Airport",
+    "continent": "OC",
+    "country": "AU",
+    "city": "Perth",
+    "iataCode": "PER"
+  },
+  {
+    "id": 3771,
+    "ident": "KPHL",
+    "type": "large_airport",
+    "name": "Philadelphia International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Philadelphia",
+    "iataCode": "PHL"
+  },
+  {
+    "id": 26475,
+    "ident": "VDPP",
+    "type": "large_airport",
+    "name": "Phnom Penh International Airport",
+    "continent": "AS",
+    "country": "KH",
+    "city": "Phnom Penh",
+    "iataCode": "PNH"
+  },
+  {
+    "id": 3772,
+    "ident": "KPHX",
+    "type": "large_airport",
+    "name": "Phoenix Sky Harbor International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Phoenix",
+    "iataCode": "PHX"
+  },
+  {
+    "id": 26674,
+    "ident": "VTSP",
+    "type": "large_airport",
+    "name": "Phuket International Airport",
+    "continent": "AS",
+    "country": "TH",
+    "city": "Phuket",
+    "iataCode": "HKT"
+  },
+  {
+    "id": 4379,
+    "ident": "LIRP",
+    "type": "large_airport",
+    "name": "Pisa International Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Pisa",
+    "iataCode": "PSA"
+  },
+  {
+    "id": 302303,
+    "ident": "RKJB",
+    "type": "large_airport",
+    "name": "Muan International Airport",
+    "continent": "AS",
+    "country": "KR",
+    "city": "Piseo-ri (Muan)",
+    "iataCode": "MWX"
+  },
+  {
+    "id": 3778,
+    "ident": "KPIT",
+    "type": "large_airport",
+    "name": "Pittsburgh International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Pittsburgh",
+    "iataCode": "PIT"
+  },
+  {
+    "id": 4613,
+    "ident": "LYPG",
+    "type": "large_airport",
+    "name": "Podgorica Airport",
+    "continent": "EU",
+    "country": "ME",
+    "city": "Podgorica",
+    "iataCode": "TGD"
+  },
+  {
+    "id": 6366,
+    "ident": "TFFR",
+    "type": "large_airport",
+    "name": "Pointe-à-Pitre Le Raizet",
+    "continent": "NA",
+    "country": "GP",
+    "city": "Pointe-à-Pitre",
+    "iataCode": "PTP"
+  },
+  {
+    "id": 4456,
+    "ident": "LPPD",
+    "type": "large_airport",
+    "name": "João Paulo II Airport",
+    "continent": "EU",
+    "country": "PT",
+    "city": "Ponta Delgada",
+    "iataCode": "PDL"
+  },
+  {
+    "id": 2878,
+    "ident": "FIMP",
+    "type": "large_airport",
+    "name": "Sir Seewoosagur Ramgoolam International Airport",
+    "continent": "AF",
+    "country": "MU",
+    "city": "Port Louis",
+    "iataCode": "MRU"
+  },
+  {
+    "id": 67,
+    "ident": "AYPY",
+    "type": "large_airport",
+    "name": "Port Moresby Jacksons International Airport",
+    "continent": "OC",
+    "country": "PG",
+    "city": "Port Moresby",
+    "iataCode": "POM"
+  },
+  {
+    "id": 3768,
+    "ident": "KPDX",
+    "type": "large_airport",
+    "name": "Portland International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Portland",
+    "iataCode": "PDX"
+  },
+  {
+    "id": 3796,
+    "ident": "KPWM",
+    "type": "large_airport",
+    "name": "Portland International Jetport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Portland",
+    "iataCode": "PWM"
+  },
+  {
+    "id": 4459,
+    "ident": "LPPR",
+    "type": "large_airport",
+    "name": "Francisco de Sá Carneiro Airport",
+    "continent": "EU",
+    "country": "PT",
+    "city": "Porto",
+    "iataCode": "OPO"
+  },
+  {
+    "id": 2625,
+    "ident": "EPPO",
+    "type": "large_airport",
+    "name": "Poznań-Ławica Airport",
+    "continent": "EU",
+    "country": "PL",
+    "city": "Poznań",
+    "iataCode": "POZ"
+  },
+  {
+    "id": 4408,
+    "ident": "LKPR",
+    "type": "large_airport",
+    "name": "Václav Havel Airport Prague",
+    "continent": "EU",
+    "country": "CZ",
+    "city": "Prague",
+    "iataCode": "PRG"
+  },
+  {
+    "id": 4451,
+    "ident": "LPLA",
+    "type": "large_airport",
+    "name": "Lajes Airport",
+    "continent": "EU",
+    "country": "PT",
+    "city": "Praia da Vitória",
+    "iataCode": "TER"
+  },
+  {
+    "id": 4614,
+    "ident": "BKPR",
+    "type": "large_airport",
+    "name": "Priština International Airport",
+    "continent": "EU",
+    "country": "XK",
+    "city": "Prishtina",
+    "iataCode": "PRN"
+  },
+  {
+    "id": 3795,
+    "ident": "KPVD",
+    "type": "large_airport",
+    "name": "Theodore Francis Green State Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Providence",
+    "iataCode": "PVD"
+  },
+  {
+    "id": 4745,
+    "ident": "MMPR",
+    "type": "large_airport",
+    "name": "Licenciado Gustavo Díaz Ordaz International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "Puerto Vallarta",
+    "iataCode": "PVR"
+  },
+  {
+    "id": 4636,
+    "ident": "MDPC",
+    "type": "large_airport",
+    "name": "Punta Cana International Airport",
+    "continent": "NA",
+    "country": "DO",
+    "city": "Punta Cana",
+    "iataCode": "PUJ"
+  },
+  {
+    "id": 308273,
+    "ident": "SEQM",
+    "type": "large_airport",
+    "name": "Mariscal Sucre International Airport",
+    "continent": "SA",
+    "country": "EC",
+    "city": "Quito",
+    "iataCode": "UIO"
+  },
+  {
+    "id": 3844,
+    "ident": "KRDU",
+    "type": "large_airport",
+    "name": "Raleigh Durham International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Raleigh/Durham",
+    "iataCode": "RDU"
+  },
+  {
+    "id": 3853,
+    "ident": "KRNO",
+    "type": "large_airport",
+    "name": "Reno Tahoe International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Reno",
+    "iataCode": "RNO"
+  },
+  {
+    "id": 5629,
+    "ident": "RJTY",
+    "type": "large_airport",
+    "name": "Yokota Air Base",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Fussa",
+    "iataCode": "OKO"
+  },
+  {
+    "id": 123,
+    "ident": "BIKF",
+    "type": "large_airport",
+    "name": "Keflavik International Airport",
+    "continent": "EU",
+    "country": "IS",
+    "city": "Reykjavík",
+    "iataCode": "KEF"
+  },
+  {
+    "id": 3847,
+    "ident": "KRIC",
+    "type": "large_airport",
+    "name": "Richmond International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Richmond",
+    "iataCode": "RIC"
+  },
+  {
+    "id": 2758,
+    "ident": "EVRA",
+    "type": "large_airport",
+    "name": "Riga International Airport",
+    "continent": "EU",
+    "country": "LV",
+    "city": "Riga",
+    "iataCode": "RIX"
+  },
+  {
+    "id": 5906,
+    "ident": "SBGL",
+    "type": "large_airport",
+    "name": "Rio Galeão – Tom Jobim International Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "Rio De Janeiro",
+    "iataCode": "GIG"
+  },
+  {
+    "id": 5112,
+    "ident": "OERK",
+    "type": "large_airport",
+    "name": "King Khaled International Airport",
+    "continent": "AS",
+    "country": "SA",
+    "city": "Riyadh",
+    "iataCode": "RUH"
+  },
+  {
+    "id": 3854,
+    "ident": "KROA",
+    "type": "large_airport",
+    "name": "Roanoke–Blacksburg Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Roanoke",
+    "iataCode": "ROA"
+  },
+  {
+    "id": 3855,
+    "ident": "KROC",
+    "type": "large_airport",
+    "name": "Greater Rochester International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Rochester",
+    "iataCode": "ROC"
+  },
+  {
+    "id": 3857,
+    "ident": "KRST",
+    "type": "large_airport",
+    "name": "Rochester International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Rochester",
+    "iataCode": "RST"
+  },
+  {
+    "id": 4370,
+    "ident": "LIRA",
+    "type": "large_airport",
+    "name": "Ciampino–G. B. Pastine International Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Rome",
+    "iataCode": "CIA"
+  },
+  {
+    "id": 4372,
+    "ident": "LIRF",
+    "type": "large_airport",
+    "name": "Leonardo da Vinci–Fiumicino Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Rome",
+    "iataCode": "FCO"
+  },
+  {
+    "id": 326363,
+    "ident": "URRP",
+    "type": "large_airport",
+    "name": "Platov International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Rostov-on-Don",
+    "iataCode": "ROV"
+  },
+  {
+    "id": 5910,
+    "ident": "SBGR",
+    "type": "large_airport",
+    "name": "Guarulhos - Governador André Franco Montoro International Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "São Paulo",
+    "iataCode": "GRU"
+  },
+  {
+    "id": 5974,
+    "ident": "SBSP",
+    "type": "large_airport",
+    "name": "Congonhas Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "São Paulo",
+    "iataCode": "CGH"
+  },
+  {
+    "id": 3892,
+    "ident": "KSMF",
+    "type": "large_airport",
+    "name": "Sacramento International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Sacramento",
+    "iataCode": "SMF"
+  },
+  {
+    "id": 3664,
+    "ident": "KMBS",
+    "type": "large_airport",
+    "name": "MBS International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Saginaw",
+    "iataCode": "MBS"
+  },
+  {
+    "id": 6406,
+    "ident": "TNCM",
+    "type": "large_airport",
+    "name": "Princess Juliana International Airport",
+    "continent": "NA",
+    "country": "SX",
+    "city": "Saint Martin",
+    "iataCode": "SXM"
+  },
+  {
+    "id": 3887,
+    "ident": "KSLC",
+    "type": "large_airport",
+    "name": "Salt Lake City International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Salt Lake City",
+    "iataCode": "SLC"
+  },
+  {
+    "id": 5977,
+    "ident": "SBSV",
+    "type": "large_airport",
+    "name": "Deputado Luiz Eduardo Magalhães International Airport",
+    "continent": "SA",
+    "country": "BR",
+    "city": "Salvador",
+    "iataCode": "SSA"
+  },
+  {
+    "id": 26412,
+    "ident": "UWWW",
+    "type": "large_airport",
+    "name": "Kurumoch International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Samara",
+    "iataCode": "KUF"
+  },
+  {
+    "id": 309298,
+    "ident": "ID-0017",
+    "type": "large_airport",
+    "name": "Aji Pangeran Tumenggung Pranoto International Airport",
+    "continent": "AS",
+    "country": "ID",
+    "city": "Samarinda",
+    "iataCode": "AAP"
+  },
+  {
+    "id": 3863,
+    "ident": "KSAT",
+    "type": "large_airport",
+    "name": "San Antonio International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "San Antonio",
+    "iataCode": "SAT"
+  },
+  {
+    "id": 3862,
+    "ident": "KSAN",
+    "type": "large_airport",
+    "name": "San Diego International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "San Diego",
+    "iataCode": "SAN"
+  },
+  {
+    "id": 3878,
+    "ident": "KSFO",
+    "type": "large_airport",
+    "name": "San Francisco International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "San Francisco",
+    "iataCode": "SFO"
+  },
+  {
+    "id": 4750,
+    "ident": "MMSD",
+    "type": "large_airport",
+    "name": "Los Cabos International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "San José del Cabo",
+    "iataCode": "SJD"
+  },
+  {
+    "id": 3883,
+    "ident": "KSJC",
+    "type": "large_airport",
+    "name": "Norman Y. Mineta San Jose International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "San Jose",
+    "iataCode": "SJC"
+  },
+  {
+    "id": 6384,
+    "ident": "TJSJ",
+    "type": "large_airport",
+    "name": "Luis Munoz Marin International Airport",
+    "continent": "NA",
+    "country": "PR",
+    "city": "San Juan",
+    "iataCode": "SJU"
+  },
+  {
+    "id": 4820,
+    "ident": "MSLP",
+    "type": "large_airport",
+    "name": "Monseñor Óscar Arnulfo Romero International Airport",
+    "continent": "NA",
+    "country": "SV",
+    "city": "San Salvador (San Luis Talpa)",
+    "iataCode": "SAL"
+  },
+  {
+    "id": 3894,
+    "ident": "KSNA",
+    "type": "large_airport",
+    "name": "John Wayne Airport-Orange County Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Santa Ana",
+    "iataCode": "SNA"
+  },
+  {
+    "id": 6193,
+    "ident": "SLVR",
+    "type": "large_airport",
+    "name": "Viru Viru International Airport",
+    "continent": "SA",
+    "country": "BO",
+    "city": "Santa Cruz",
+    "iataCode": "VVI"
+  },
+  {
+    "id": 6015,
+    "ident": "SCEL",
+    "type": "large_airport",
+    "name": "Comodoro Arturo Merino Benítez International Airport",
+    "continent": "SA",
+    "country": "CL",
+    "city": "Santiago",
+    "iataCode": "SCL"
+  },
+  {
+    "id": 4038,
+    "ident": "LEST",
+    "type": "large_airport",
+    "name": "Santiago de Compostela Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Santiago de Compostela",
+    "iataCode": "SCQ"
+  },
+  {
+    "id": 4638,
+    "ident": "MDSD",
+    "type": "large_airport",
+    "name": "Las Américas International Airport",
+    "continent": "NA",
+    "country": "DO",
+    "city": "Santo Domingo",
+    "iataCode": "SDQ"
+  },
+  {
+    "id": 27202,
+    "ident": "ZJSY",
+    "type": "large_airport",
+    "name": "Sanya Phoenix International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Sanya",
+    "iataCode": "SYX"
+  },
+  {
+    "id": 4469,
+    "ident": "LQSA",
+    "type": "large_airport",
+    "name": "Sarajevo International Airport",
+    "continent": "EU",
+    "country": "BA",
+    "city": "Sarajevo",
+    "iataCode": "SJJ"
+  },
+  {
+    "id": 3899,
+    "ident": "KSRQ",
+    "type": "large_airport",
+    "name": "Sarasota Bradenton International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Sarasota/Bradenton",
+    "iataCode": "SRQ"
+  },
+  {
+    "id": 3864,
+    "ident": "KSAV",
+    "type": "large_airport",
+    "name": "Savannah Hilton Head International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Savannah",
+    "iataCode": "SAV"
+  },
+  {
+    "id": 3401,
+    "ident": "KBFI",
+    "type": "large_airport",
+    "name": "Boeing Field King County International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Seattle",
+    "iataCode": "BFI"
+  },
+  {
+    "id": 3875,
+    "ident": "KSEA",
+    "type": "large_airport",
+    "name": "Seattle Tacoma International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Seattle",
+    "iataCode": "SEA"
+  },
+  {
+    "id": 5653,
+    "ident": "RKSI",
+    "type": "large_airport",
+    "name": "Incheon International Airport",
+    "continent": "AS",
+    "country": "KR",
+    "city": "Seoul",
+    "iataCode": "ICN"
+  },
+  {
+    "id": 5656,
+    "ident": "RKSS",
+    "type": "large_airport",
+    "name": "Gimpo International Airport",
+    "continent": "AS",
+    "country": "KR",
+    "city": "Seoul",
+    "iataCode": "GMP"
+  },
+  {
+    "id": 27223,
+    "ident": "ZSPD",
+    "type": "large_airport",
+    "name": "Shanghai Pudong International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Shanghai",
+    "iataCode": "PVG"
+  },
+  {
+    "id": 27225,
+    "ident": "ZSSS",
+    "type": "large_airport",
+    "name": "Shanghai Hongqiao International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Shanghai",
+    "iataCode": "SHA"
+  },
+  {
+    "id": 5510,
+    "ident": "RCBS",
+    "type": "large_airport",
+    "name": "Kinmen Airport",
+    "continent": "AS",
+    "country": "TW",
+    "city": "Shang-I",
+    "iataCode": "KNH"
+  },
+  {
+    "id": 2537,
+    "ident": "EINN",
+    "type": "large_airport",
+    "name": "Shannon Airport",
+    "continent": "EU",
+    "country": "IE",
+    "city": "Shannon",
+    "iataCode": "SNN"
+  },
+  {
+    "id": 5239,
+    "ident": "OMSJ",
+    "type": "large_airport",
+    "name": "Sharjah International Airport",
+    "continent": "AS",
+    "country": "AE",
+    "city": "Sharjah",
+    "iataCode": "SHJ"
+  },
+  {
+    "id": 27243,
+    "ident": "ZYTX",
+    "type": "large_airport",
+    "name": "Taoxian Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Shenyang",
+    "iataCode": "SHE"
+  },
+  {
+    "id": 27198,
+    "ident": "ZGSZ",
+    "type": "large_airport",
+    "name": "Shenzhen Bao'an International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Shenzhen",
+    "iataCode": "SZX"
+  },
+  {
+    "id": 5197,
+    "ident": "OISS",
+    "type": "large_airport",
+    "name": "Shiraz Shahid Dastghaib International Airport",
+    "continent": "AS",
+    "country": "IR",
+    "city": "Shiraz",
+    "iataCode": "SYZ"
+  },
+  {
+    "id": 41624,
+    "ident": "OPST",
+    "type": "large_airport",
+    "name": "Sialkot Airport",
+    "continent": "AS",
+    "country": "PK",
+    "city": "Sialkot",
+    "iataCode": "SKT"
+  },
+  {
+    "id": 26476,
+    "ident": "VDSR",
+    "type": "large_airport",
+    "name": "Siem Reap International Airport",
+    "continent": "AS",
+    "country": "KH",
+    "city": "Siem Reap",
+    "iataCode": "REP"
+  },
+  {
+    "id": 6474,
+    "ident": "UKFF",
+    "type": "large_airport",
+    "name": "Simferopol International Airport",
+    "continent": "EU",
+    "country": "UA",
+    "city": "Simferopol",
+    "iataCode": "SIP"
+  },
+  {
+    "id": 26887,
+    "ident": "WSSS",
+    "type": "large_airport",
+    "name": "Singapore Changi Airport",
+    "continent": "AS",
+    "country": "SG",
+    "city": "Singapore",
+    "iataCode": "SIN"
+  },
+  {
+    "id": 3909,
+    "ident": "KSUX",
+    "type": "large_airport",
+    "name": "Sioux Gateway Airport/Brigadier General Bud Day Field",
+    "continent": "NA",
+    "country": "US",
+    "city": "Sioux City",
+    "iataCode": "SUX"
+  },
+  {
+    "id": 4573,
+    "ident": "LWSK",
+    "type": "large_airport",
+    "name": "Skopje Alexander the Great Airport",
+    "continent": "EU",
+    "country": "MK",
+    "city": "Skopje",
+    "iataCode": "SKP"
+  },
+  {
+    "id": 6519,
+    "ident": "URSS",
+    "type": "large_airport",
+    "name": "Sochi International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Sochi",
+    "iataCode": "AER"
+  },
+  {
+    "id": 3977,
+    "ident": "LBSF",
+    "type": "large_airport",
+    "name": "Sofia Airport",
+    "continent": "EU",
+    "country": "BG",
+    "city": "Sofia",
+    "iataCode": "SOF"
+  },
+  {
+    "id": 32634,
+    "ident": "WAXX",
+    "type": "large_airport",
+    "name": "Dominique Edward Osok Airport",
+    "continent": "AS",
+    "country": "ID",
+    "city": "Sorong-Papua Island",
+    "iataCode": "SOQ"
+  },
+  {
+    "id": 3868,
+    "ident": "KSBN",
+    "type": "large_airport",
+    "name": "South Bend Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "South Bend",
+    "iataCode": "SBN"
+  },
+  {
+    "id": 2422,
+    "ident": "EGHI",
+    "type": "large_airport",
+    "name": "Southampton Airport",
+    "continent": "EU",
+    "country": "GB",
+    "city": "Southampton",
+    "iataCode": "SOU"
+  },
+  {
+    "id": 3552,
+    "ident": "KGEG",
+    "type": "large_airport",
+    "name": "Spokane International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Spokane",
+    "iataCode": "GEG"
+  },
+  {
+    "id": 3879,
+    "ident": "KSGF",
+    "type": "large_airport",
+    "name": "Springfield Branson National Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Springfield",
+    "iataCode": "SGF"
+  },
+  {
+    "id": 3897,
+    "ident": "KSPI",
+    "type": "large_airport",
+    "name": "Abraham Lincoln Capital Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Springfield",
+    "iataCode": "SPI"
+  },
+  {
+    "id": 3905,
+    "ident": "KSTL",
+    "type": "large_airport",
+    "name": "St Louis Lambert International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "St Louis",
+    "iataCode": "STL"
+  },
+  {
+    "id": 1986,
+    "ident": "CYYT",
+    "type": "large_airport",
+    "name": "St. John's International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "St. John's",
+    "iataCode": "YYT"
+  },
+  {
+    "id": 6489,
+    "ident": "ULLI",
+    "type": "large_airport",
+    "name": "Pulkovo Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "St. Petersburg",
+    "iataCode": "LED"
+  },
+  {
+    "id": 3080,
+    "ident": "GCLA",
+    "type": "large_airport",
+    "name": "La Palma Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Sta Cruz de la Palma, La Palma Island",
+    "iataCode": "SPC"
+  },
+  {
+    "id": 2602,
+    "ident": "ENZV",
+    "type": "large_airport",
+    "name": "Stavanger Airport Sola",
+    "continent": "EU",
+    "country": "NO",
+    "city": "Stavanger",
+    "iataCode": "SVG"
+  },
+  {
+    "id": 2701,
+    "ident": "ESSA",
+    "type": "large_airport",
+    "name": "Stockholm-Arlanda Airport",
+    "continent": "EU",
+    "country": "SE",
+    "city": "Stockholm",
+    "iataCode": "ARN"
+  },
+  {
+    "id": 2222,
+    "ident": "EDDS",
+    "type": "large_airport",
+    "name": "Stuttgart Airport",
+    "continent": "EU",
+    "country": "DE",
+    "city": "Stuttgart",
+    "iataCode": "STR"
+  },
+  {
+    "id": 26789,
+    "ident": "WARR",
+    "type": "large_airport",
+    "name": "Juanda International Airport",
+    "continent": "AS",
+    "country": "ID",
+    "city": "Surabaya",
+    "iataCode": "SUB"
+  },
+  {
+    "id": 27145,
+    "ident": "YSSY",
+    "type": "large_airport",
+    "name": "Sydney Kingsford Smith International Airport",
+    "continent": "OC",
+    "country": "AU",
+    "city": "Sydney",
+    "iataCode": "SYD"
+  },
+  {
+    "id": 3913,
+    "ident": "KSYR",
+    "type": "large_airport",
+    "name": "Syracuse Hancock International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Syracuse",
+    "iataCode": "SYR"
+  },
+  {
+    "id": 5204,
+    "ident": "OITT",
+    "type": "large_airport",
+    "name": "Tabriz International Airport",
+    "continent": "AS",
+    "country": "IR",
+    "city": "Tabriz",
+    "iataCode": "TBZ"
+  },
+  {
+    "id": 5528,
+    "ident": "RCTP",
+    "type": "large_airport",
+    "name": "Taiwan Taoyuan International Airport",
+    "continent": "AS",
+    "country": "TW",
+    "city": "Taipei",
+    "iataCode": "TPE"
+  },
+  {
+    "id": 27193,
+    "ident": "ZBYN",
+    "type": "large_airport",
+    "name": "Taiyuan Wusu Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Taiyuan",
+    "iataCode": "TYN"
+  },
+  {
+    "id": 3924,
+    "ident": "KTLH",
+    "type": "large_airport",
+    "name": "Tallahassee Regional Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Tallahassee",
+    "iataCode": "TLH"
+  },
+  {
+    "id": 2301,
+    "ident": "EETN",
+    "type": "large_airport",
+    "name": "Lennart Meri Tallinn Airport",
+    "continent": "EU",
+    "country": "EE",
+    "city": "Tallinn",
+    "iataCode": "TLL"
+  },
+  {
+    "id": 3926,
+    "ident": "KTPA",
+    "type": "large_airport",
+    "name": "Tampa International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Tampa",
+    "iataCode": "TPA"
+  },
+  {
+    "id": 26392,
+    "ident": "UTTT",
+    "type": "large_airport",
+    "name": "Tashkent International Airport",
+    "continent": "AS",
+    "country": "UZ",
+    "city": "Tashkent",
+    "iataCode": "TAS"
+  },
+  {
+    "id": 6453,
+    "ident": "UGTB",
+    "type": "large_airport",
+    "name": "Tbilisi International Airport",
+    "continent": "AS",
+    "country": "GE",
+    "city": "Tbilisi",
+    "iataCode": "TBS"
+  },
+  {
+    "id": 5166,
+    "ident": "OIIE",
+    "type": "large_airport",
+    "name": "Imam Khomeini International Airport",
+    "continent": "AS",
+    "country": "IR",
+    "city": "Tehran",
+    "iataCode": "IKA"
+  },
+  {
+    "id": 5168,
+    "ident": "OIII",
+    "type": "large_airport",
+    "name": "Mehrabad International Airport",
+    "continent": "AS",
+    "country": "IR",
+    "city": "Tehran",
+    "iataCode": "THR"
+  },
+  {
+    "id": 4411,
+    "ident": "LLBG",
+    "type": "large_airport",
+    "name": "Ben Gurion International Airport",
+    "continent": "AS",
+    "country": "IL",
+    "city": "Tel Aviv",
+    "iataCode": "TLV"
+  },
+  {
+    "id": 3083,
+    "ident": "GCTS",
+    "type": "large_airport",
+    "name": "Tenerife South Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Tenerife Island",
+    "iataCode": "TFS"
+  },
+  {
+    "id": 3084,
+    "ident": "GCXO",
+    "type": "large_airport",
+    "name": "Tenerife Norte Airport",
+    "continent": "EU",
+    "country": "ES",
+    "city": "Tenerife Island",
+    "iataCode": "TFN"
+  },
+  {
+    "id": 4293,
+    "ident": "LGTS",
+    "type": "large_airport",
+    "name": "Thessaloniki Macedonia International Airport",
+    "continent": "EU",
+    "country": "GR",
+    "city": "Thessaloniki",
+    "iataCode": "SKG"
+  },
+  {
+    "id": 26629,
+    "ident": "VOTV",
+    "type": "large_airport",
+    "name": "Trivandrum International Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Thiruvananthapuram",
+    "iataCode": "TRV"
+  },
+  {
+    "id": 27192,
+    "ident": "ZBTJ",
+    "type": "large_airport",
+    "name": "Tianjin Binhai International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Tianjin",
+    "iataCode": "TSN"
+  },
+  {
+    "id": 4757,
+    "ident": "MMTJ",
+    "type": "large_airport",
+    "name": "General Abelardo L. Rodríguez International Airport",
+    "continent": "NA",
+    "country": "MX",
+    "city": "Tijuana",
+    "iataCode": "TIJ"
+  },
+  {
+    "id": 3972,
+    "ident": "LATI",
+    "type": "large_airport",
+    "name": "Tirana International Airport Mother Teresa",
+    "continent": "EU",
+    "country": "AL",
+    "city": "Tirana",
+    "iataCode": "TIA"
+  },
+  {
+    "id": 4793,
+    "ident": "MPTO",
+    "type": "large_airport",
+    "name": "Tocumen International Airport",
+    "continent": "NA",
+    "country": "PA",
+    "city": "Tocumen",
+    "iataCode": "PTY"
+  },
+  {
+    "id": 5576,
+    "ident": "RJGG",
+    "type": "large_airport",
+    "name": "Chubu Centrair International Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Tokoname",
+    "iataCode": "NGO"
+  },
+  {
+    "id": 5531,
+    "ident": "RJAA",
+    "type": "large_airport",
+    "name": "Narita International Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Tokyo",
+    "iataCode": "NRT"
+  },
+  {
+    "id": 5627,
+    "ident": "RJTT",
+    "type": "large_airport",
+    "name": "Tokyo Haneda International Airport",
+    "continent": "AS",
+    "country": "JP",
+    "city": "Tokyo",
+    "iataCode": "HND"
+  },
+  {
+    "id": 3925,
+    "ident": "KTOL",
+    "type": "large_airport",
+    "name": "Toledo Express Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Toledo",
+    "iataCode": "TOL"
+  },
+  {
+    "id": 4342,
+    "ident": "LIMF",
+    "type": "large_airport",
+    "name": "Turin Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Torino",
+    "iataCode": "TRN"
+  },
+  {
+    "id": 1990,
+    "ident": "CYYZ",
+    "type": "large_airport",
+    "name": "Lester B. Pearson International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Toronto",
+    "iataCode": "YYZ"
+  },
+  {
+    "id": 4070,
+    "ident": "LFBO",
+    "type": "large_airport",
+    "name": "Toulouse-Blagnac Airport",
+    "continent": "EU",
+    "country": "FR",
+    "city": "Toulouse/Blagnac",
+    "iataCode": "TLS"
+  },
+  {
+    "id": 4553,
+    "ident": "LTCG",
+    "type": "large_airport",
+    "name": "Trabzon International Airport",
+    "continent": "AS",
+    "country": "TR",
+    "city": "Trabzon",
+    "iataCode": "TZX"
+  },
+  {
+    "id": 4355,
+    "ident": "LIPH",
+    "type": "large_airport",
+    "name": "Treviso-Sant'Angelo Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Treviso",
+    "iataCode": "TSF"
+  },
+  {
+    "id": 3227,
+    "ident": "HLLT",
+    "type": "large_airport",
+    "name": "Tripoli International Airport",
+    "continent": "AF",
+    "country": "LY",
+    "city": "Tripoli",
+    "iataCode": "TIP"
+  },
+  {
+    "id": 2599,
+    "ident": "ENTC",
+    "type": "large_airport",
+    "name": "Tromsø Airport",
+    "continent": "EU",
+    "country": "NO",
+    "city": "Tromsø",
+    "iataCode": "TOS"
+  },
+  {
+    "id": 2601,
+    "ident": "ENVA",
+    "type": "large_airport",
+    "name": "Trondheim Airport Værnes",
+    "continent": "EU",
+    "country": "NO",
+    "city": "Trondheim",
+    "iataCode": "TRD"
+  },
+  {
+    "id": 3932,
+    "ident": "KTUS",
+    "type": "large_airport",
+    "name": "Tucson International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Tucson",
+    "iataCode": "TUS"
+  },
+  {
+    "id": 3930,
+    "ident": "KTUL",
+    "type": "large_airport",
+    "name": "Tulsa International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Tulsa",
+    "iataCode": "TUL"
+  },
+  {
+    "id": 2133,
+    "ident": "DTTA",
+    "type": "large_airport",
+    "name": "Tunis Carthage International Airport",
+    "continent": "AF",
+    "country": "TN",
+    "city": "Tunis",
+    "iataCode": "TUN"
+  },
+  {
+    "id": 26411,
+    "ident": "UWUU",
+    "type": "large_airport",
+    "name": "Ufa International Airport",
+    "continent": "EU",
+    "country": "RU",
+    "city": "Ufa",
+    "iataCode": "UFA"
+  },
+  {
+    "id": 26745,
+    "ident": "WAAA",
+    "type": "large_airport",
+    "name": "Hasanuddin International Airport",
+    "continent": "AS",
+    "country": "ID",
+    "city": "Ujung Pandang-Celebes Island",
+    "iataCode": "UPG"
+  },
+  {
+    "id": 27212,
+    "ident": "ZMUB",
+    "type": "large_airport",
+    "name": "Chinggis Khaan International Airport",
+    "continent": "AS",
+    "country": "MN",
+    "city": "Ulan Bator",
+    "iataCode": "ULN"
+  },
+  {
+    "id": 309668,
+    "ident": "DNAI",
+    "type": "large_airport",
+    "name": "Akwa Ibom International Airport",
+    "continent": "AF",
+    "country": "NG",
+    "city": "Uyo",
+    "iataCode": "QUO"
+  },
+  {
+    "id": 4427,
+    "ident": "LMML",
+    "type": "large_airport",
+    "name": "Malta International Airport",
+    "continent": "EU",
+    "country": "MT",
+    "city": "Valletta",
+    "iataCode": "MLA"
+  },
+  {
+    "id": 3948,
+    "ident": "KVPS",
+    "type": "large_airport",
+    "name": "Destin-Ft Walton Beach Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Valparaiso",
+    "iataCode": "VPS"
+  },
+  {
+    "id": 330820,
+    "ident": "ZBAD",
+    "type": "large_airport",
+    "name": "Beijing Daxing International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Beijing",
+    "iataCode": "PKX"
+  },
+  {
+    "id": 1941,
+    "ident": "CYVR",
+    "type": "large_airport",
+    "name": "Vancouver International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Vancouver",
+    "iataCode": "YVR"
+  },
+  {
+    "id": 4859,
+    "ident": "MUVR",
+    "type": "large_airport",
+    "name": "Juan Gualberto Gomez International Airport",
+    "continent": "NA",
+    "country": "CU",
+    "city": "Varadero",
+    "iataCode": "VRA"
+  },
+  {
+    "id": 3979,
+    "ident": "LBWN",
+    "type": "large_airport",
+    "name": "Varna Airport",
+    "continent": "EU",
+    "country": "BG",
+    "city": "Varna",
+    "iataCode": "VAR"
+  },
+  {
+    "id": 26444,
+    "ident": "VAGO",
+    "type": "large_airport",
+    "name": "Dabolim Airport",
+    "continent": "AS",
+    "country": "IN",
+    "city": "Vasco da Gama",
+    "iataCode": "GOI"
+  },
+  {
+    "id": 4368,
+    "ident": "LIPZ",
+    "type": "large_airport",
+    "name": "Venice Marco Polo Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Venice",
+    "iataCode": "VCE"
+  },
+  {
+    "id": 4366,
+    "ident": "LIPX",
+    "type": "large_airport",
+    "name": "Verona Villafranca Airport",
+    "continent": "EU",
+    "country": "IT",
+    "city": "Verona",
+    "iataCode": "VRN"
+  },
+  {
+    "id": 1979,
+    "ident": "CYYJ",
+    "type": "large_airport",
+    "name": "Victoria International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Victoria",
+    "iataCode": "YYJ"
+  },
+  {
+    "id": 4434,
+    "ident": "LOWW",
+    "type": "large_airport",
+    "name": "Vienna International Airport",
+    "continent": "EU",
+    "country": "AT",
+    "city": "Vienna",
+    "iataCode": "VIE"
+  },
+  {
+    "id": 2766,
+    "ident": "EYVI",
+    "type": "large_airport",
+    "name": "Vilnius International Airport",
+    "continent": "EU",
+    "country": "LT",
+    "city": "Vilnius",
+    "iataCode": "VNO"
+  },
+  {
+    "id": 2622,
+    "ident": "EPMO",
+    "type": "large_airport",
+    "name": "Modlin Airport",
+    "continent": "EU",
+    "country": "PL",
+    "city": "Warsaw",
+    "iataCode": "WMI"
+  },
+  {
+    "id": 2637,
+    "ident": "EPWA",
+    "type": "large_airport",
+    "name": "Warsaw Chopin Airport",
+    "continent": "EU",
+    "country": "PL",
+    "city": "Warsaw",
+    "iataCode": "WAW"
+  },
+  {
+    "id": 3483,
+    "ident": "KDCA",
+    "type": "large_airport",
+    "name": "Ronald Reagan Washington National Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Washington",
+    "iataCode": "DCA"
+  },
+  {
+    "id": 3602,
+    "ident": "KIAD",
+    "type": "large_airport",
+    "name": "Washington Dulles International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Washington",
+    "iataCode": "IAD"
+  },
+  {
+    "id": 5063,
+    "ident": "NZWN",
+    "type": "large_airport",
+    "name": "Wellington International Airport",
+    "continent": "OC",
+    "country": "NZ",
+    "city": "Wellington",
+    "iataCode": "WLG"
+  },
+  {
+    "id": 32672,
+    "ident": "ZSWZ",
+    "type": "large_airport",
+    "name": "Wenzhou Longwan International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Wenzhou",
+    "iataCode": "WNZ"
+  },
+  {
+    "id": 3766,
+    "ident": "KPBI",
+    "type": "large_airport",
+    "name": "Palm Beach International Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "West Palm Beach",
+    "iataCode": "PBI"
+  },
+  {
+    "id": 3605,
+    "ident": "KICT",
+    "type": "large_airport",
+    "name": "Wichita Eisenhower National Airport",
+    "continent": "NA",
+    "country": "US",
+    "city": "Wichita",
+    "iataCode": "ICT"
+  },
+  {
+    "id": 3898,
+    "ident": "KSPS",
+    "type": "large_airport",
+    "name": "",
+    "continent": "NA",
+    "country": "US",
+    "city": "Wichita Falls",
+    "iataCode": "SPS"
+  },
+  {
+    "id": 3039,
+    "ident": "FYWH",
+    "type": "large_airport",
+    "name": "Hosea Kutako International Airport",
+    "continent": "AF",
+    "country": "NA",
+    "city": "Windhoek",
+    "iataCode": "WDH"
+  },
+  {
+    "id": 1946,
+    "ident": "CYWG",
+    "type": "large_airport",
+    "name": "Winnipeg / James Armstrong Richardson International Airport",
+    "continent": "NA",
+    "country": "CA",
+    "city": "Winnipeg",
+    "iataCode": "YWG"
+  },
+  {
+    "id": 2638,
+    "ident": "EPWR",
+    "type": "large_airport",
+    "name": "Copernicus Wrocław Airport",
+    "continent": "EU",
+    "country": "PL",
+    "city": "Wrocław",
+    "iataCode": "WRO"
+  },
+  {
+    "id": 27200,
+    "ident": "ZHHH",
+    "type": "large_airport",
+    "name": "Wuhan Tianhe International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Wuhan",
+    "iataCode": "WUH"
+  },
+  {
+    "id": 27215,
+    "ident": "ZSAM",
+    "type": "large_airport",
+    "name": "Xiamen Gaoqi International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Xiamen",
+    "iataCode": "XMN"
+  },
+  {
+    "id": 27205,
+    "ident": "ZLXY",
+    "type": "large_airport",
+    "name": "Xi'an Xianyang International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Xi'an",
+    "iataCode": "XIY"
+  },
+  {
+    "id": 26744,
+    "ident": "VYYY",
+    "type": "large_airport",
+    "name": "Yangon International Airport",
+    "continent": "AS",
+    "country": "MM",
+    "city": "Yangon",
+    "iataCode": "RGN"
+  },
+  {
+    "id": 332096,
+    "ident": "YNT",
+    "type": "large_airport",
+    "name": "Yantai Penglai International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Yantai",
+    "iataCode": "YNT"
+  },
+  {
+    "id": 26378,
+    "ident": "USSS",
+    "type": "large_airport",
+    "name": "Koltsovo Airport",
+    "continent": "AS",
+    "country": "RU",
+    "city": "Yekaterinburg",
+    "iataCode": "SVX"
+  },
+  {
+    "id": 6446,
+    "ident": "UDYZ",
+    "type": "large_airport",
+    "name": "Zvartnots International Airport",
+    "continent": "AS",
+    "country": "AM",
+    "city": "Yerevan",
+    "iataCode": "EVN"
+  },
+  {
+    "id": 3993,
+    "ident": "LDZA",
+    "type": "large_airport",
+    "name": "Zagreb Airport",
+    "continent": "EU",
+    "country": "HR",
+    "city": "Zagreb",
+    "iataCode": "ZAG"
+  },
+  {
+    "id": 3260,
+    "ident": "HTZA",
+    "type": "large_airport",
+    "name": "Abeid Amani Karume International Airport",
+    "continent": "AF",
+    "country": "TZ",
+    "city": "Zanzibar",
+    "iataCode": "ZNZ"
+  },
+  {
+    "id": 27199,
+    "ident": "ZHCC",
+    "type": "large_airport",
+    "name": "Zhengzhou Xinzheng International Airport",
+    "continent": "AS",
+    "country": "CN",
+    "city": "Zhengzhou",
+    "iataCode": "CGO"
+  },
+  {
+    "id": 4505,
+    "ident": "LSZH",
+    "type": "large_airport",
+    "name": "Zürich Airport",
+    "continent": "EU",
+    "country": "CH",
+    "city": "Zurich",
+    "iataCode": "ZRH"
+  }
+]
