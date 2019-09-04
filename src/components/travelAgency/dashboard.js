@@ -9,12 +9,37 @@ import Button from "react-bootstrap/Button";
 import "../../assets/styles/navbar.css";
 import logo from "../../assets/images/logo.png";
 
+import jwtDecode from "jwt-decode";
+
 class TravelAgency extends Component {
   constructor() {
     super();
     document.title = "Dashboard";
     this.signOut = this.signOut.bind(this);
+    this.onLoad = this.onLoad.bind(this);
   }
+
+componentDidMount() {
+    this.onLoad();
+  }
+
+  onLoad() {
+    let token = null;
+    if (localStorage.getItem("session")) {
+      token = JSON.parse(localStorage.getItem("session"));
+    } else if (sessionStorage.getItem("session")) {
+      token = JSON.parse(sessionStorage.getItem("session"));
+    }
+    if (token !== null) {
+      const decodedToken = jwtDecode(token);
+      if (decodedToken.userType !== "airline") {
+        this.props.history.push("/NotAuthorized");
+      }
+    } else if (token === null) {
+      this.props.history.push("/");
+    }
+  }
+
   signOut(e) {
     localStorage.removeItem("session");
     sessionStorage.removeItem("session");

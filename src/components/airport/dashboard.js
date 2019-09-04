@@ -7,6 +7,8 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import ClosedRequests from "./closedRequests";
 
+import jwtDecode from "jwt-decode";
+
 import logo from "../../assets/images/logo.png";
 
 class Airport extends Component {
@@ -14,7 +16,30 @@ class Airport extends Component {
     super();
     document.title = "Dashboard";
     this.signOut = this.signOut.bind(this);
+    this.onLoad = this.onLoad.bind(this);
   }
+
+componentDidMount() {
+    this.onLoad();
+  }
+
+  onLoad() {
+    let token = null;
+    if (localStorage.getItem("session")) {
+      token = JSON.parse(localStorage.getItem("session"));
+    } else if (sessionStorage.getItem("session")) {
+      token = JSON.parse(sessionStorage.getItem("session"));
+    }
+    if (token !== null) {
+      const decodedToken = jwtDecode(token);
+      if (decodedToken.userType !== "airport") {
+        this.props.history.push("/NotAuthorized");
+      }
+    } else if (token === null) {
+      this.props.history.push("/");
+    }
+  }
+
   signOut(e) {
     localStorage.removeItem("session");
     sessionStorage.removeItem("session");
