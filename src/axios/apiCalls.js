@@ -228,7 +228,8 @@ export const performActionByAirport = signature => {
 export const closeRequest = signature => {
   return axios({
     data: {
-      id: signature.id
+      id: signature.id,
+      closedBy: signature.closedBy
     },
     url: `${BASE_URL}/request/closeRequest`,
     method: "POST"

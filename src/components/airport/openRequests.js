@@ -21,7 +21,9 @@ class OpenRequests extends Component {
       errors: "",
       success: "",
       modalShow: false,
-      data: ""
+      data: "",
+      destinationAirportCode: null,
+      departureAirportCode: null
     };
     this.decode = this.decode.bind(this);
     this.fetchOpenRequest = this.fetchOpenRequest.bind(this);
@@ -54,17 +56,24 @@ class OpenRequests extends Component {
   }
 
   closeRequests() {
+    let closedBy = null;
+    if (this.state.code === this.state.departureAirportCode) {
+      closedBy = "departureAirport";
+    } else if (this.state.code === this.state.destinationAirportCode) {
+      closedBy = "destinationAirport";
+    }
+
     const request = {
-      id: this.state.id
+      id: this.state.id,
+      closedBy: closedBy
     };
+    console.log(request);
     closeRequest(request)
       .then(res => {
         if (res.data.success) {
           this.setState(
             {
-              success: res.data.response,
-              id: "",
-              airportResponse: ""
+              success: res.data.response
             },
             function() {
               this.fetchOpenRequest();
@@ -85,7 +94,9 @@ class OpenRequests extends Component {
         this.setState(
           {
             errors:
-              e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+              e && e.response
+                ? e.response.data.err
+                : { error: "Something went wrong!" }
           },
           function() {
             this.fetchOpenRequest();
@@ -127,7 +138,9 @@ class OpenRequests extends Component {
         this.setState(
           {
             errors:
-              e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+              e && e.response
+                ? e.response.data.err
+                : { error: "Something went wrong!" }
           },
           function() {
             this.fetchOpenRequest();
@@ -154,7 +167,9 @@ class OpenRequests extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: "Something went wrong!" }
         });
       });
   }
@@ -224,9 +239,16 @@ class OpenRequests extends Component {
                     variant="success"
                     value="true"
                     onClick={() =>
-                      this.setState({ id: request._id }, function() {
-                        this.closeRequests();
-                      })
+                      this.setState(
+                        {
+                          id: request._id,
+                          destinationAirportCode: request.destinationCode,
+                          departureAirportCode: request.departureCode
+                        },
+                        function() {
+                          this.closeRequests();
+                        }
+                      )
                     }
                   >
                     Close Request

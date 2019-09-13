@@ -56,16 +56,15 @@ class OpenRequests extends Component {
 
   closeRequests() {
     const request = {
-      id: this.state.id
+      id: this.state.id,
+      closedBy: "airline"
     };
     closeRequest(request)
       .then(res => {
         if (res.data.success) {
           this.setState(
             {
-              success: res.data.response,
-              id: "",
-              airlineResponse: ""
+              success: res.data.response
             },
             function() {
               this.fetchOpenRequest();
@@ -86,7 +85,9 @@ class OpenRequests extends Component {
         this.setState(
           {
             errors:
-              e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+              e && e.response
+                ? e.response.data.err
+                : { error: "Something went wrong!" }
           },
           function() {
             this.fetchOpenRequest();
@@ -128,7 +129,9 @@ class OpenRequests extends Component {
         this.setState(
           {
             errors:
-              e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+              e && e.response
+                ? e.response.data.err
+                : { error: "Something went wrong!" }
           },
           function() {
             this.fetchOpenRequest();
@@ -155,7 +158,9 @@ class OpenRequests extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: "Something went wrong!" }
         });
       });
   }

@@ -63,7 +63,9 @@ class ClosedRequests extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: "Something went wrong!" }
         });
       });
   }
