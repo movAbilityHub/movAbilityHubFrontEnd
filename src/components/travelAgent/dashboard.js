@@ -26,7 +26,7 @@ class TravelAgent extends Component {
     this.onLoad = this.onLoad.bind(this);
   }
 
-componentDidMount() {
+  componentDidMount() {
     this.onLoad();
   }
 
@@ -39,13 +39,13 @@ componentDidMount() {
     }
     if (token !== null) {
       const decodedToken = jwtDecode(token);
-      if (decodedToken.userType !== "airline") {
+      if (decodedToken.userType !== "travelAgent") {
         this.props.history.push("/NotAuthorized");
       }
     } else if (token === null) {
       this.props.history.push("/");
     }
-  }  
+  }
 
   signOut(e) {
     localStorage.removeItem("session");
