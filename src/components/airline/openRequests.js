@@ -200,10 +200,18 @@ class OpenRequests extends Component {
                       : "No Action"}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    <b>Response By Airport:</b>{" "}
-                    {request.airportResponse === "true"
+                    <b>Response By Departure Airport:</b>{" "}
+                    {request.departureAirportResponse === "true"
                       ? "Approved"
-                      : request.airportResponse === "false"
+                      : request.departureAirportResponse === "false"
+                      ? "Denied"
+                      : "No Action"}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Response By Destination Airport:</b>{" "}
+                    {request.destinationAirportResponse === "true"
+                      ? "Approved"
+                      : request.destinationAirportResponse === "false"
                       ? "Denied"
                       : "No Action"}
                   </ListGroup.Item>

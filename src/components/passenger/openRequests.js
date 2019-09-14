@@ -218,6 +218,18 @@ class OpenRequests extends Component {
                       ? "Denied"
                       : "No Action"}
                   </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Closed By Departure Airport:</b>{" "}
+                    {request.closedByDepartureAirport === true ? "Yes" : "No"}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Closed By Destination Airport:</b>{" "}
+                    {request.closedByDestinationAirport === true ? "Yes" : "No"}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Closed By Airline:</b>{" "}
+                    {request.closedByAirline === true ? "Yes" : "No"}
+                  </ListGroup.Item>
                 </ListGroup>
                 <br />
                 <Card.Text>
