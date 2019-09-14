@@ -159,13 +159,27 @@ class OpenRequests extends Component {
                     <b>Departure Airport:</b> {request.origin}
                   </ListGroup.Item>
                   <ListGroup.Item>
+                    <b>Destination Airport:</b> {request.destination}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Airline:</b> {request.airline}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
                     <b>Travel Date:</b> {request.travelDate}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    <b>Response By Airport:</b>{" "}
-                    {request.airportResponse === "true"
+                    <b>Response By Departure Airport:</b>{" "}
+                    {request.departureAirportResponse === "true"
                       ? "Approved"
-                      : request.airportResponse === "false"
+                      : request.departureAirportResponse === "false"
+                      ? "Denied"
+                      : "No Action"}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Response By Destination Airport:</b>{" "}
+                    {request.destinationAirportResponse === "true"
+                      ? "Approved"
+                      : request.destinationAirportResponse === "false"
                       ? "Denied"
                       : "No Action"}
                   </ListGroup.Item>
@@ -193,6 +207,14 @@ class OpenRequests extends Component {
                   onClick={this.deleteRequest}
                 >
                   Cancel Request
+                </Button>
+                <Button
+                  className="button-center ml-2"
+                  variant="warning"
+                  value={request._id}
+                  onClick={this.closeRequest}
+                >
+                  Close Request
                 </Button>
               </Card.Body>
               <Card.Footer className="text-muted text-center">
