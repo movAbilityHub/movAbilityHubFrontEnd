@@ -228,7 +228,8 @@ export const performActionByAirport = signature => {
   return axios({
     data: {
       id: signature.id,
-      airportResponse: signature.airportResponse
+      airportResponse: signature.airportResponse,
+      responseBy: signature.responseBy
     },
     url: `${BASE_URL}/request/performActionByAirport`,
     method: "POST"

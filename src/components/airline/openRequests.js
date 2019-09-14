@@ -232,7 +232,8 @@ class OpenRequests extends Component {
                   onHide={modalClose}
                   data={this.state.data}
                 />
-                {request.airlineResponse === "true" ? (
+                {request.airlineResponse === "true" ||
+                request.airlineResponse === "false" ? (
                   <Button
                     className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1"
                     variant="success"

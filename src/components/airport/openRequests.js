@@ -67,7 +67,6 @@ class OpenRequests extends Component {
       id: this.state.id,
       closedBy: closedBy
     };
-    console.log(request);
     closeRequest(request)
       .then(res => {
         if (res.data.success) {
@@ -106,16 +105,23 @@ class OpenRequests extends Component {
   }
 
   performAction() {
+    let responseBy = null;
+    if (this.state.code === this.state.departureAirportCode) {
+      responseBy = "departureAirport";
+    } else if (this.state.code === this.state.destinationAirportCode) {
+      responseBy = "destinationAirport";
+    }
     const request = {
       id: this.state.id,
-      airportResponse: this.state.response
+      airportResponse: this.state.response,
+      responseBy: responseBy
     };
     performActionByAirport(request)
       .then(res => {
         if (res.data.success) {
           this.setState(
             {
-              success: res.data.message,
+              success: res.data.response,
               id: "",
               airportResponse: ""
             },
@@ -201,10 +207,18 @@ class OpenRequests extends Component {
                     <b>Disability:</b> {request.disability}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    <b>Response By Airport:</b>{" "}
-                    {request.airportResponse === "true"
+                    <b>Response By Departure Airport:</b>{" "}
+                    {request.departureAirportResponse === "true"
                       ? "Approved"
-                      : request.airportResponse === "false"
+                      : request.departureAirportResponse === "false"
+                      ? "Denied"
+                      : "No Action"}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Response By Destination Airport:</b>{" "}
+                    {request.destinationAirportResponse === "true"
+                      ? "Approved"
+                      : request.destinationAirportResponse === "false"
                       ? "Denied"
                       : "No Action"}
                   </ListGroup.Item>
@@ -233,7 +247,12 @@ class OpenRequests extends Component {
                   onHide={modalClose}
                   data={this.state.data}
                 />
-                {request.airportResponse === "true" ? (
+                {(this.state.code === request.originCode &&
+                  request.departureAirportResponse === "true") ||
+                request.departureAirportResponse === "false" ||
+                ((this.state.code === request.destinationCode &&
+                  request.destinationAirportResponse === "true") ||
+                  request.destinationAirportResponse === "false") ? (
                   <Button
                     className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1"
                     variant="success"
@@ -243,7 +262,7 @@ class OpenRequests extends Component {
                         {
                           id: request._id,
                           destinationAirportCode: request.destinationCode,
-                          departureAirportCode: request.departureCode
+                          departureAirportCode: request.originCode
                         },
                         function() {
                           this.closeRequests();
@@ -253,7 +272,10 @@ class OpenRequests extends Component {
                   >
                     Close Request
                   </Button>
-                ) : request.airportResponse === "null" ? (
+                ) : (this.state.code === request.originCode &&
+                    request.departureAirportResponse === "null") ||
+                  (this.state.code === request.destinationCode &&
+                    request.destinationAirportResponse === "null") ? (
                   <>
                     <Button
                       className="col-8 col-xs-8 col-sm-8 col-md-4 col-lg-3 m-1"
@@ -261,7 +283,12 @@ class OpenRequests extends Component {
                       value="true"
                       onClick={() =>
                         this.setState(
-                          { id: request._id, response: "true" },
+                          {
+                            id: request._id,
+                            response: "true",
+                            destinationAirportCode: request.destinationCode,
+                            departureAirportCode: request.originCode
+                          },
                           function() {
                             this.performAction();
                           }
@@ -276,7 +303,12 @@ class OpenRequests extends Component {
                       value="false"
                       onClick={() =>
                         this.setState(
-                          { id: request._id, response: "false" },
+                          {
+                            id: request._id,
+                            response: "false",
+                            destinationAirportCode: request.destinationCode,
+                            departureAirportCode: request.originCode
+                          },
                           function() {
                             this.performAction();
                           }
