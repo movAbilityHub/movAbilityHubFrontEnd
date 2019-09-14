@@ -9,6 +9,7 @@ import jwtDecode from "jwt-decode";
 
 import { viewOpenRequest } from "../../axios/apiCalls";
 import { cancelRequest } from "../../axios/apiCalls";
+import { closeRequestByPassenger } from "../../axios/apiCalls";
 
 import Alert from "react-bootstrap/Alert";
 
@@ -25,6 +26,7 @@ class OpenRequests extends Component {
     this.decode = this.decode.bind(this);
     this.fetchOpenRequest = this.fetchOpenRequest.bind(this);
     this.deleteRequest = this.deleteRequest.bind(this);
+    this.closeRequest = this.closeRequest.bind(this);
   }
 
   async componentDidMount() {
@@ -61,6 +63,31 @@ class OpenRequests extends Component {
       id: e.target.value
     };
     cancelRequest(request)
+      .then(res => {
+        if (res.data.success) {
+          this.setState({ success: res.data.response }, function() {
+            this.fetchOpenRequest();
+          });
+        } else {
+          this.setState({ errors: res.data.errors, show: true });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors:
+            e && e.response
+              ? e.response.data.err
+              : { error: { error: "Something went wrong!" } }
+        });
+      });
+  }
+
+  closeRequest(e) {
+    this.setState({ errors: null, success: null });
+    const request = {
+      id: e.target.value
+    };
+    closeRequestByPassenger(request)
       .then(res => {
         if (res.data.success) {
           this.setState({ success: res.data.response }, function() {

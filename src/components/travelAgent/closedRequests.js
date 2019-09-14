@@ -37,7 +37,6 @@ class ClosedRequests extends Component {
           requesterID: decodedToken.id
         },
         function() {
-          console.log(this.state.requesterID);
           this.fetchClosedRequest();
         }
       );
@@ -51,9 +50,7 @@ class ClosedRequests extends Component {
     viewClosedRequest(request)
       .then(res => {
         if (res.data.success) {
-          this.setState({ closedRequests: res.data.request }, function() {
-            console.log(this.state.closedRequests);
-          });
+          this.setState({ closedRequests: res.data.request });
         } else {
           this.setState({
             errors: res.data
@@ -63,7 +60,9 @@ class ClosedRequests extends Component {
       .catch(e => {
         this.setState({
           errors:
-            e && e.response ? e.response.data.err : { error: "Something went wrong!" }
+            e && e.response
+              ? e.response.data.err
+              : { error: "Something went wrong!" }
         });
       });
   }

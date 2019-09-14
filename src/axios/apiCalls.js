@@ -152,6 +152,16 @@ export const cancelRequest = request => {
   });
 };
 
+export const closeRequestByPassenger = request => {
+  return axios({
+    data: {
+      id: request.id
+    },
+    url: `${BASE_URL}/request/closeRequestByPassenger`,
+    method: "POST"
+  });
+};
+
 export const getAccountsForApproval = () => {
   return axios({
     url: `${BASE_URL}/staffIATA/fetchAccountsAwaitingApproval`,

@@ -9,6 +9,7 @@ import jwtDecode from "jwt-decode";
 
 import { viewOpenRequest } from "../../axios/apiCalls";
 import { cancelRequest } from "../../axios/apiCalls";
+import { closeRequestByPassenger } from "../../axios/apiCalls";
 
 import Alert from "react-bootstrap/Alert";
 
@@ -25,6 +26,7 @@ class OpenRequests extends Component {
     this.decode = this.decode.bind(this);
     this.fetchOpenRequest = this.fetchOpenRequest.bind(this);
     this.deleteRequest = this.deleteRequest.bind(this);
+    this.closeRequest = this.closeRequest.bind(this);
   }
 
   async componentDidMount() {
@@ -61,6 +63,31 @@ class OpenRequests extends Component {
       id: e.target.value
     };
     cancelRequest(request)
+      .then(res => {
+        if (res.data.success) {
+          this.setState({ success: res.data.response }, function() {
+            this.fetchOpenRequest();
+          });
+        } else {
+          this.setState({ errors: res.data.errors, show: true });
+        }
+      })
+      .catch(e => {
+        this.setState({
+          errors:
+            e && e.response
+              ? e.response.data.err
+              : { error: { error: "Something went wrong!" } }
+        });
+      });
+  }
+
+  closeRequest(e) {
+    this.setState({ errors: null, success: null });
+    const request = {
+      id: e.target.value
+    };
+    closeRequestByPassenger(request)
       .then(res => {
         if (res.data.success) {
           this.setState({ success: res.data.response }, function() {
@@ -159,13 +186,27 @@ class OpenRequests extends Component {
                     <b>Departure Airport:</b> {request.origin}
                   </ListGroup.Item>
                   <ListGroup.Item>
+                    <b>Destination Airport:</b> {request.destination}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Airline:</b> {request.airline}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
                     <b>Travel Date:</b> {request.travelDate}
                   </ListGroup.Item>
                   <ListGroup.Item>
-                    <b>Response By Airport:</b>{" "}
-                    {request.airportResponse === "true"
+                    <b>Response By Departure Airport:</b>{" "}
+                    {request.departureAirportResponse === "true"
                       ? "Approved"
-                      : request.airportResponse === "false"
+                      : request.departureAirportResponse === "false"
+                      ? "Denied"
+                      : "No Action"}
+                  </ListGroup.Item>
+                  <ListGroup.Item>
+                    <b>Response By Destination Airport:</b>{" "}
+                    {request.destinationAirportResponse === "true"
+                      ? "Approved"
+                      : request.destinationAirportResponse === "false"
                       ? "Denied"
                       : "No Action"}
                   </ListGroup.Item>
@@ -193,6 +234,14 @@ class OpenRequests extends Component {
                   onClick={this.deleteRequest}
                 >
                   Cancel Request
+                </Button>
+                <Button
+                  className="button-center ml-2"
+                  variant="warning"
+                  value={request._id}
+                  onClick={this.closeRequest}
+                >
+                  Close Request
                 </Button>
               </Card.Body>
               <Card.Footer className="text-muted text-center">
